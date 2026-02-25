@@ -6,7 +6,7 @@
         module: "onko",
         title: "Nierenzellkarzinom (RCC)",
         name: "Nierenzellkarzinom (RCC)",
-        category: "onko",
+        category: "onko-uro",
         stand: "09/2024",
         sections: [
             {

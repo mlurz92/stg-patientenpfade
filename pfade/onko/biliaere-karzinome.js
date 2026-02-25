@@ -6,7 +6,7 @@
         module: "onko",
         title: "Biliäre Karzinome (CCA/GBC)",
         name: "Biliäre Karzinome (CCA/GBC)",
-        category: "onko",
+        category: "onko-gi",
         stand: "06/2025",
         sections:[
             {

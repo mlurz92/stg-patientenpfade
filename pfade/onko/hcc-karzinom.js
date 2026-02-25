@@ -6,7 +6,7 @@
         module: "onko",
         title: "Hepatozelluläres Karzinom (HCC)",
         name: "Hepatozelluläres Karzinom (HCC)",
-        category: "onko",
+        category: "onko-gi",
         stand: "06/2025",
         sections:[
             {
