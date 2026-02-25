@@ -15,7 +15,15 @@
         'tox': { name: 'Toxikologie', icon: 'fa-skull-crossbones', mod: 'zna' },
         'leit': { name: 'Leitsymptom', icon: 'fa-stethoscope', mod: 'zna' },
         'sonst': { name: 'Sonstige', icon: 'fa-circle-info', mod: 'zna' },
-        'onko': { name: 'Onkologie', icon: 'fa-ribbon', mod: 'onko' }
+        'onko': { name: 'Onkologie', icon: 'fa-ribbon', mod: 'onko' },
+        // Onkologie-Unterkategorien
+        'onko-gi': { name: 'Gastrointestinale Tumoren', icon: 'fa-bowl-food', mod: 'onko', parent: 'onko' },
+        'onko-uro': { name: 'Urologische Tumoren', icon: 'fa-filter', mod: 'onko', parent: 'onko' },
+        'onko-gyn': { name: 'Gynäkologische Tumoren', icon: 'fa-venus', mod: 'onko', parent: 'onko' },
+        'onko-pulmo': { name: 'Pulmonale Tumoren', icon: 'fa-lungs', mod: 'onko', parent: 'onko' },
+        'onko-hno': { name: 'Kopf-Hals-Tumoren', icon: 'fa-head-side-mask', mod: 'onko', parent: 'onko' },
+        'onko-haem': { name: 'Hämatologische Neoplasien', icon: 'fa-droplet', mod: 'onko', parent: 'onko' },
+        'onko-sonst': { name: 'Sonstige Tumoren', icon: 'fa-circle', mod: 'onko', parent: 'onko' }
     };
 
     var CNM = {};
@@ -90,7 +98,15 @@
         'tox': '#f97316',
         'leit': '#6366f1',
         'sonst': '#64748b',
-        'onko': '#be185d'
+        'onko': '#be185d',
+        // Onkologie-Unterkategorien Farben
+        'onko-gi': '#ea580c',
+        'onko-uro': '#0891b2',
+        'onko-gyn': '#db2777',
+        'onko-pulmo': '#7c3aed',
+        'onko-hno': '#059669',
+        'onko-haem': '#dc2626',
+        'onko-sonst': '#64748b'
     };
 
     var S = {
@@ -169,6 +185,20 @@
 
     function gc(k) {
         return CC[k] || '#64748b';
+    }
+
+    function isOnkoSubCat(k) {
+        return CATS[k] && CATS[k].parent === 'onko';
+    }
+
+    function getOnkoSubCats() {
+        var result = [];
+        for (var k in CATS) {
+            if (CATS[k].parent === 'onko') {
+                result.push(k);
+            }
+        }
+        return result;
     }
 
     function strip(html) {
@@ -1074,11 +1104,19 @@
         if (!S.mod || !E.categoryFilters) return;
         var counts = {};
         var keys = [];
+        var subKeys = [];
         var allKeys = Object.keys(CATS);
         for (var i = 0; i < allKeys.length; i++) {
-            if (CATS[allKeys[i]].mod === S.mod) {
-                keys.push(allKeys[i]);
-                counts[allKeys[i]] = 0;
+            var catKey = allKeys[i];
+            var cat = CATS[catKey];
+            if (cat.mod === S.mod) {
+                // Prüfen ob es eine Unterkategorie ist
+                if (cat.parent) {
+                    subKeys.push(catKey);
+                } else {
+                    keys.push(catKey);
+                }
+                counts[catKey] = 0;
             }
         }
         var modData = [];
@@ -1091,8 +1129,29 @@
         }
         var html = '<span class="sidebar-cat-chip' + (S.catD === 'all' ? ' active' : '') + '" data-cat="all">Alle <span class="cat-count">' + modData.length + '</span></span>';
         for (var k = 0; k < keys.length; k++) {
-            if (counts[keys[k]] > 0) {
-                html += '<span class="sidebar-cat-chip' + (S.catD === keys[k] ? ' active' : '') + '" data-cat="' + keys[k] + '">' + CATS[keys[k]].name + ' <span class="cat-count">' + counts[keys[k]] + '</span></span>';
+            var key = keys[k];
+            var catObj = CATS[key];
+            var hasSubCats = false;
+            // Prüfen ob diese Kategorie Unterkategorien hat
+            for (var s = 0; s < subKeys.length; s++) {
+                if (CATS[subKeys[s]].parent === key) {
+                    hasSubCats = true;
+                    break;
+                }
+            }
+            if (counts[key] > 0 || hasSubCats) {
+                var cl = gc(key);
+                html += '<span class="sidebar-cat-chip' + (S.catD === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + ' <span class="cat-count">' + counts[key] + '</span></span>';
+                // Unterkategorien anzeigen wenn Hauptkategorie ausgewählt ist
+                if (S.catD === key || isOnkoSubCat(S.catD)) {
+                    for (var t = 0; t < subKeys.length; t++) {
+                        var subKey = subKeys[t];
+                        if (CATS[subKey].parent === key && counts[subKey] > 0) {
+                            var subCl = gc(subKey);
+                            html += '<span class="sidebar-cat-chip sidebar-subcat' + (S.catD === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' <span class="cat-count">' + counts[subKey] + '</span></span>';
+                        }
+                    }
+                }
             }
         }
         E.categoryFilters.innerHTML = html;
@@ -1107,6 +1166,8 @@
                     }
                     ch.classList.add('active');
                     rNav();
+                    // Sidebar neu rendern um Unterkategorien ein-/auszublenden
+                    rSB();
                 });
             })(chips[m]);
         }
@@ -1115,9 +1176,19 @@
     function rNav() {
         if (!S.mod || !E.navList) return;
         var list = [];
+        
+        // Hilfsfunktion: Prüfen ob eine Kategorie zur Auswahl passt
+        function matchesCategory(sopCat, selectedCat) {
+            if (selectedCat === 'all') return true;
+            if (sopCat === selectedCat) return true;
+            // Wenn Hauptkategorie ausgewählt, zeige auch Unterkategorien
+            if (CATS[sopCat] && CATS[sopCat].parent === selectedCat) return true;
+            return false;
+        }
+        
         for (var i = 0; i < S.data.length; i++) {
             if (S.data[i].module === S.mod) {
-                if (S.catD === 'all' || S.data[i].category === S.catD) {
+                if (matchesCategory(S.data[i].category, S.catD)) {
                     list.push(S.data[i]);
                 }
             }
@@ -1155,9 +1226,9 @@
     function rHome() {
         if (!S.mod) return;
         var isZna = S.mod === 'zna';
-        if (E.heroArea) E.heroArea.innerHTML = '<img class="hero-logo" src="img/Basislogo_farbig.png" alt="Logo">' +
+        var isOnko = S.mod === 'onko';
+        if (E.heroArea) E.heroArea.innerHTML = '<img class="hero-logo-header" src="img/Patientenpfade_header.png" alt="Patientenpfade">' +
             '<h1 class="hero-title">' + (isZna ? 'Zentrale Notaufnahme' : 'Onkologie') + '</h1>' +
-            '<p class="hero-subtitle">Patientenpfade</p>' +
             '<div class="hero-search"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="heroSearchInput" placeholder="Pfad schnell finden..." autocomplete="off"></div>';
         var hsi = document.getElementById('heroSearchInput');
         if (hsi) {
@@ -1172,11 +1243,18 @@
         }
         var counts = {};
         var keys = [];
+        var subKeys = [];
         var allKeys = Object.keys(CATS);
         for (var i = 0; i < allKeys.length; i++) {
-            if (CATS[allKeys[i]].mod === S.mod) {
-                keys.push(allKeys[i]);
-                counts[allKeys[i]] = 0;
+            var catKey = allKeys[i];
+            var cat = CATS[catKey];
+            if (cat.mod === S.mod) {
+                if (cat.parent) {
+                    subKeys.push(catKey);
+                } else {
+                    keys.push(catKey);
+                }
+                counts[catKey] = 0;
             }
         }
         var modData = [];
@@ -1188,13 +1266,31 @@
             }
         }
         var gh = '<div class="cat-card cat-card-all" data-cat="all" style="--cat-color:var(--primary)"><i class="fa-solid fa-list cat-card-icon" style="color:var(--primary)"></i><span class="cat-card-name">Alle Pfade</span><span class="cat-card-count">' + modData.length + ' Einträge</span></div>';
-        for (var k = 0; k < keys.length; k++) {
-            if (counts[keys[k]] > 0) {
-                var cl = gc(keys[k]);
-                var ic = CATS[keys[k]].icon;
-                gh += '<div class="cat-card" data-cat="' + keys[k] + '" style="--cat-color:' + cl + '"><i class="fa-solid ' + ic + ' cat-card-icon" style="color:' + cl + '"></i><span class="cat-card-name">' + CATS[keys[k]].name + '</span><span class="cat-card-count">' + counts[keys[k]] + ' Pfade</span></div>';
+        
+        // Für Onkologie: Zeige Unterkategorien direkt
+        if (isOnko) {
+            for (var k = 0; k < keys.length; k++) {
+                var key = keys[k];
+                // Unterkategorien direkt anzeigen
+                for (var t = 0; t < subKeys.length; t++) {
+                    var subKey = subKeys[t];
+                    if (CATS[subKey].parent === key && counts[subKey] > 0) {
+                        var subCl = gc(subKey);
+                        gh += '<div class="cat-card" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid ' + CATS[subKey].icon + ' cat-card-icon" style="color:' + subCl + '"></i><span class="cat-card-name">' + CATS[subKey].name + '</span><span class="cat-card-count">' + counts[subKey] + ' Pfade</span></div>';
+                    }
+                }
+            }
+        } else {
+            // ZNA-Modul: Normale Darstellung
+            for (var k = 0; k < keys.length; k++) {
+                if (counts[keys[k]] > 0) {
+                    var cl = gc(keys[k]);
+                    var ic = CATS[keys[k]].icon;
+                    gh += '<div class="cat-card" data-cat="' + keys[k] + '" style="--cat-color:' + cl + '"><i class="fa-solid ' + ic + ' cat-card-icon" style="color:' + cl + '"></i><span class="cat-card-name">' + CATS[keys[k]].name + '</span><span class="cat-card-count">' + counts[keys[k]] + ' Pfade</span></div>';
+                }
             }
         }
+        
         if (E.catGrid) {
             E.catGrid.innerHTML = gh;
             var cards = E.catGrid.querySelectorAll('.cat-card');
@@ -1250,11 +1346,18 @@
         if (!S.mod || !E.browseCategoryFilters) return;
         var counts = {};
         var keys = [];
+        var subKeys = [];
         var allKeys = Object.keys(CATS);
         for (var i = 0; i < allKeys.length; i++) {
-            if (CATS[allKeys[i]].mod === S.mod) {
-                keys.push(allKeys[i]);
-                counts[allKeys[i]] = 0;
+            var catKey = allKeys[i];
+            var cat = CATS[catKey];
+            if (cat.mod === S.mod) {
+                if (cat.parent) {
+                    subKeys.push(catKey);
+                } else {
+                    keys.push(catKey);
+                }
+                counts[catKey] = 0;
             }
         }
         var modData = [];
@@ -1267,8 +1370,30 @@
         }
         var html = '<span class="browse-cat-chip' + (S.catB === 'all' ? ' active' : '') + '" data-cat="all">Alle</span>';
         for (var k = 0; k < keys.length; k++) {
-            if (counts[keys[k]] > 0) {
-                html += '<span class="browse-cat-chip' + (S.catB === keys[k] ? ' active' : '') + '" data-cat="' + keys[k] + '">' + CATS[keys[k]].name + ' (' + counts[keys[k]] + ')</span>';
+            var key = keys[k];
+            var catObj = CATS[key];
+            var hasSubCats = false;
+            // Prüfen ob diese Kategorie Unterkategorien hat
+            for (var s = 0; s < subKeys.length; s++) {
+                if (CATS[subKeys[s]].parent === key) {
+                    hasSubCats = true;
+                    break;
+                }
+            }
+            // Hauptkategorie anzeigen
+            if (counts[key] > 0 || hasSubCats) {
+                var cl = gc(key);
+                html += '<span class="browse-cat-chip' + (S.catB === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + '</span>';
+                // Unterkategorien anzeigen wenn Hauptkategorie ausgewählt ist
+                if (S.catB === key || isOnkoSubCat(S.catB)) {
+                    for (var t = 0; t < subKeys.length; t++) {
+                        var subKey = subKeys[t];
+                        if (CATS[subKey].parent === key && counts[subKey] > 0) {
+                            var subCl = gc(subKey);
+                            html += '<span class="browse-cat-chip browse-subcat' + (S.catB === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' (' + counts[subKey] + ')</span>';
+                        }
+                    }
+                }
             }
         }
         E.browseCategoryFilters.innerHTML = html;
@@ -1283,6 +1408,7 @@
                     }
                     ch.classList.add('active');
                     rBrowseList();
+                    rBrowseCats(); // Neu rendern für Unterkategorien
                     if (E.browseCatToggle) {
                         var tl = E.browseCatToggle.querySelector('.browse-active-cat');
                         if (S.catB !== 'all') {
@@ -1307,9 +1433,19 @@
     function rBrowseList() {
         if (!E.browseList) return;
         var list = [];
+        
+        // Hilfsfunktion: Prüfen ob eine Kategorie zur Auswahl passt
+        function matchesCategory(sopCat, selectedCat) {
+            if (selectedCat === 'all') return true;
+            if (sopCat === selectedCat) return true;
+            // Wenn Hauptkategorie ausgewählt, zeige auch Unterkategorien
+            if (CATS[sopCat] && CATS[sopCat].parent === selectedCat) return true;
+            return false;
+        }
+        
         for (var i = 0; i < S.data.length; i++) {
             if (S.data[i].module === S.mod) {
-                if (S.catB === 'all' || S.data[i].category === S.catB) {
+                if (matchesCategory(S.data[i].category, S.catB)) {
                     list.push(S.data[i]);
                 }
             }

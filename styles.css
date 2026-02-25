@@ -910,6 +910,21 @@ mark {
     transform: scale(1.02);
 }
 
+/* Portal-Logo-Header (für Portal/Home-Ansicht) */
+.portal-logo-header {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    margin: 0 auto 24px;
+    display: block;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+    transition: transform 0.3s var(--ease-out-cubic);
+}
+
+.portal-logo-header:hover {
+    transform: scale(1.02);
+}
+
 .portal-title {
     font-size: 1.8rem;
     font-weight: 800;
@@ -1049,6 +1064,21 @@ mark {
 }
 
 .hero-logo:hover {
+    transform: scale(1.02);
+}
+
+/* Hero-Logo-Header (für Modul-Ansichten ZNA und Onkologie) */
+.hero-logo-header {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
+    transition: transform 0.3s var(--ease-out-cubic);
+}
+
+.hero-logo-header:hover {
     transform: scale(1.02);
 }
 
@@ -2836,6 +2866,476 @@ mark {
     height: 120px;
 }
 
+/* ========================================
+   ONKOLOGIE-MODUL: Unterkategorien-Styles
+   ======================================== */
+
+/* Sidebar-Unterkategorien */
+.sidebar-subcat {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px 8px 28px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--text2);
+    font-size: 0.82rem;
+    transition: all 0.2s var(--ease-out-cubic);
+    line-height: 1.35;
+    min-height: 44px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+}
+
+.sidebar-subcat:hover {
+    background: var(--hover);
+    color: var(--text);
+    transform: translateX(2px);
+}
+
+.sidebar-subcat:active {
+    background: var(--active);
+    transform: scale(0.98);
+    transition-duration: 0.1s;
+}
+
+.sidebar-subcat.active {
+    background: var(--primary-light);
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.sidebar-subcat .nav-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+
+.sidebar-subcat:hover .nav-dot {
+    transform: scale(1.2);
+}
+
+.sidebar-subcat .nav-label {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.sidebar-subcat .cat-count {
+    font-size: 0.68rem;
+    background: var(--bg);
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: var(--text3);
+    margin-left: auto;
+}
+
+.sidebar-subcat.active .cat-count {
+    background: rgba(37, 99, 235, 0.15);
+    color: var(--primary);
+}
+
+[data-theme="dark"] .sidebar-subcat .cat-count {
+    background: var(--surface3);
+}
+
+[data-theme="dark"] .sidebar-subcat.active .cat-count {
+    background: rgba(59, 130, 246, 0.2);
+    color: var(--primary);
+}
+
+/* Home-Ansicht: Parent-Kategorie */
+.cat-card-parent {
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out-cubic);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    min-height: 120px;
+    grid-column: span 2;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.cat-card-parent::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(190, 24, 93, 0.08) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cat-card-parent:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: #be185d;
+}
+
+.cat-card-parent:hover::before {
+    opacity: 1;
+}
+
+.cat-card-parent:active {
+    transform: translateY(-1px) scale(0.98);
+    transition-duration: 0.1s;
+    background: var(--active);
+}
+
+.cat-card-parent .cat-card-icon {
+    font-size: 1.8rem;
+    color: #be185d;
+    transition: transform 0.3s var(--ease-out-cubic);
+    position: relative;
+    z-index: 1;
+}
+
+.cat-card-parent:hover .cat-card-icon {
+    transform: scale(1.15);
+}
+
+.cat-card-parent .cat-card-name {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cat-card-parent .cat-card-count {
+    font-size: 0.75rem;
+    color: var(--text3);
+    position: relative;
+    z-index: 1;
+}
+
+[data-theme="dark"] .cat-card-parent {
+    border-color: rgba(190, 24, 93, 0.3);
+}
+
+[data-theme="dark"] .cat-card-parent:hover {
+    border-color: #f472b6;
+}
+
+[data-theme="dark"] .cat-card-parent::before {
+    background: linear-gradient(135deg, rgba(244, 114, 182, 0.1) 0%, transparent 100%);
+}
+
+[data-theme="dark"] .cat-card-parent .cat-card-icon {
+    color: #f472b6;
+}
+
+/* Home-Ansicht: Unterkategorie-Karten */
+.cat-card-subcat {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    transition: all 0.3s var(--ease-out-cubic);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-xs);
+    min-height: 90px;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+.cat-card-subcat::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--subcat-color, var(--primary));
+    opacity: 0.8;
+    transition: opacity 0.3s, height 0.3s;
+}
+
+.cat-card-subcat:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    border-color: var(--subcat-color, var(--primary));
+}
+
+.cat-card-subcat:hover::before {
+    opacity: 1;
+    height: 4px;
+}
+
+.cat-card-subcat:active {
+    transform: translateY(-1px) scale(0.98);
+    transition-duration: 0.1s;
+    background: var(--active);
+}
+
+.cat-card-subcat .cat-card-icon {
+    font-size: 1.3rem;
+    transition: transform 0.3s var(--ease-out-cubic), color 0.3s;
+    position: relative;
+    z-index: 1;
+    color: var(--subcat-color, var(--primary));
+}
+
+.cat-card-subcat:hover .cat-card-icon {
+    transform: scale(1.1);
+}
+
+.cat-card-subcat .cat-card-name {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 1.3;
+}
+
+.cat-card-subcat .cat-card-count {
+    font-size: 0.7rem;
+    color: var(--text3);
+    position: relative;
+    z-index: 1;
+    background: var(--surface2);
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+[data-theme="dark"] .cat-card-subcat .cat-card-count {
+    background: var(--surface3);
+}
+
+/* Unterkategorie-Grid für Onkologie */
+.subcat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+    padding: 0 0 20px;
+    animation: fadeInUp 0.5s var(--ease-out-cubic) both;
+}
+
+.subcat-grid-header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 0;
+    margin-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.subcat-grid-header h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.subcat-grid-header .subcat-count {
+    font-size: 0.8rem;
+    color: var(--text3);
+    background: var(--surface2);
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.subcat-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: var(--text2);
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-family: inherit;
+    transition: all 0.2s var(--ease-out-cubic);
+    min-height: 40px;
+}
+
+.subcat-back-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+.subcat-back-btn:active {
+    transform: scale(0.98);
+}
+
+/* Browse-Filter: Unterkategorien */
+.browse-subcat {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 12px 8px 24px;
+    border-radius: 16px;
+    font-size: 0.78rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text2);
+    font-family: inherit;
+    transition: all 0.2s var(--ease-out-cubic);
+    min-height: 36px;
+    position: relative;
+    margin-left: 8px;
+}
+
+.browse-subcat::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--subcat-color, var(--text3));
+    transition: transform 0.2s;
+}
+
+.browse-subcat:hover {
+    border-color: var(--subcat-color, var(--primary));
+    color: var(--subcat-color, var(--primary));
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+.browse-subcat:hover::before {
+    transform: translateY(-50%) scale(1.3);
+}
+
+.browse-subcat.active {
+    background: var(--subcat-color, var(--primary));
+    color: #fff;
+    border-color: var(--subcat-color, var(--primary));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.browse-subcat.active::before {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.browse-subcat .cat-count {
+    font-size: 0.7rem;
+    background: rgba(0, 0, 0, 0.08);
+    padding: 2px 6px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.browse-subcat.active .cat-count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .browse-subcat .cat-count {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .browse-subcat.active .cat-count {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Kategorie-Gruppe mit Unterkategorien */
+.cat-group {
+    margin-bottom: 16px;
+}
+
+.cat-group-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: var(--surface2);
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s var(--ease-out-cubic);
+    min-height: 44px;
+}
+
+.cat-group-header:hover {
+    background: var(--hover);
+}
+
+.cat-group-header .toggle-icon {
+    font-size: 0.7rem;
+    color: var(--text3);
+    transition: transform 0.35s var(--ease-out-cubic);
+    margin-left: auto;
+}
+
+.cat-group-header.open .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.cat-group-children {
+    display: none;
+    padding-left: 12px;
+    margin-top: 4px;
+}
+
+.cat-group-children.open {
+    display: block;
+    animation: slideDown 0.3s var(--ease-out-cubic) both;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Onkologie-spezifische Farben für Unterkategorien */
+.subcat-onko-gi { --subcat-color: #ea580c; }
+.subcat-onko-uro { --subcat-color: #0891b2; }
+.subcat-onko-hcc { --subcat-color: #dc2626; }
+.subcat-onko-biliaer { --subcat-color: #ca8a04; }
+.subcat-onko-pankreas { --subcat-color: #7c3aed; }
+.subcat-onko-niere { --subcat-color: #059669; }
+.subcat-onko-sonstige { --subcat-color: #64748b; }
+
+/* Dunkelmodus-Anpassungen für Onkologie-Farben */
+[data-theme="dark"] .subcat-onko-gi { --subcat-color: #fb923c; }
+[data-theme="dark"] .subcat-onko-uro { --subcat-color: #22d3ee; }
+[data-theme="dark"] .subcat-onko-hcc { --subcat-color: #f87171; }
+[data-theme="dark"] .subcat-onko-biliaer { --subcat-color: #facc15; }
+[data-theme="dark"] .subcat-onko-pankreas { --subcat-color: #a78bfa; }
+[data-theme="dark"] .subcat-onko-niere { --subcat-color: #34d399; }
+[data-theme="dark"] .subcat-onko-sonstige { --subcat-color: #94a3b8; }
+
 @media (max-width: 1023px) {
     .sidebar {
         display: none;
@@ -2876,6 +3376,11 @@ mark {
         margin-bottom: 16px;
     }
     
+    .portal-logo-header {
+        max-width: 260px;
+        margin-bottom: 16px;
+    }
+    
     .portal-title {
         font-size: 1.5rem;
     }
@@ -2896,6 +3401,10 @@ mark {
     
     .hero-logo {
         width: 180px;
+    }
+    
+    .hero-logo-header {
+        max-width: 220px;
     }
     
     .hero-title {
@@ -2922,6 +3431,45 @@ mark {
     
     .cat-card-name {
         font-size: 0.78rem;
+    }
+    
+    /* Onkologie-Modul Responsive Tablet */
+    .cat-card-parent {
+        grid-column: span 2;
+        min-height: 100px;
+        padding: 16px 14px;
+    }
+    
+    .cat-card-parent .cat-card-icon {
+        font-size: 1.6rem;
+    }
+    
+    .cat-card-parent .cat-card-name {
+        font-size: 0.88rem;
+    }
+    
+    .subcat-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 8px;
+    }
+    
+    .cat-card-subcat {
+        min-height: 80px;
+        padding: 12px 10px;
+    }
+    
+    .cat-card-subcat .cat-card-icon {
+        font-size: 1.2rem;
+    }
+    
+    .cat-card-subcat .cat-card-name {
+        font-size: 0.75rem;
+    }
+    
+    .browse-subcat {
+        padding: 8px 12px 8px 22px;
+        font-size: 0.76rem;
+        min-height: 36px;
     }
     
     .browse-bar-top {
@@ -3028,6 +3576,11 @@ mark {
         margin-bottom: 16px;
     }
     
+    .hero-logo-header {
+        max-width: 180px;
+        margin-bottom: 16px;
+    }
+    
     .hero-title {
         font-size: 1.2rem;
     }
@@ -3077,6 +3630,70 @@ mark {
         max-width: 100px;
         padding: 8px 10px;
         font-size: 0.75rem;
+    }
+    
+    /* Onkologie-Modul Responsive Mobile */
+    .cat-card-parent {
+        grid-column: span 2;
+        min-height: 90px;
+        padding: 14px 12px;
+    }
+    
+    .cat-card-parent .cat-card-icon {
+        font-size: 1.4rem;
+    }
+    
+    .cat-card-parent .cat-card-name {
+        font-size: 0.82rem;
+    }
+    
+    .subcat-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    .cat-card-subcat {
+        min-height: 75px;
+        padding: 10px 8px;
+    }
+    
+    .cat-card-subcat .cat-card-icon {
+        font-size: 1.1rem;
+    }
+    
+    .cat-card-subcat .cat-card-name {
+        font-size: 0.72rem;
+    }
+    
+    .cat-card-subcat .cat-card-count {
+        font-size: 0.65rem;
+    }
+    
+    .browse-subcat {
+        padding: 6px 10px 6px 20px;
+        font-size: 0.72rem;
+        min-height: 34px;
+    }
+    
+    .browse-subcat::before {
+        left: 8px;
+        width: 5px;
+        height: 5px;
+    }
+    
+    .subcat-grid-header {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .subcat-grid-header h3 {
+        font-size: 0.9rem;
+    }
+    
+    .subcat-back-btn {
+        padding: 6px 12px;
+        font-size: 0.78rem;
+        min-height: 36px;
     }
 }
 
