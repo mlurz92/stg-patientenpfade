@@ -6,24 +6,24 @@
     var CATS = {
         'kardio': { name: 'Kardiologie', icon: 'fa-heart-pulse', mod: 'zna' },
         'pulmo': { name: 'Pneumologie', icon: 'fa-lungs', mod: 'zna' },
-        'gi': { name: 'Gastroenterologie', icon: 'fa-utensils', mod: 'zna' },
+        'gi': { name: 'Gastroenterologie', icon: 'fa-burger', mod: 'zna' },
         'neuro': { name: 'Neurologie', icon: 'fa-brain', mod: 'zna' },
-        'nephro': { name: 'Nephrologie', icon: 'fa-droplet', mod: 'zna' },
+        'nephro': { name: 'Nephrologie', icon: 'fa-kidney', mod: 'zna' },
         'metab': { name: 'Metabolisch', icon: 'fa-flask', mod: 'zna' },
-        'haem': { name: 'Hämatologie', icon: 'fa-syringe', mod: 'zna' },
+        'haem': { name: 'Hämatologie', icon: 'fa-pills', mod: 'zna' },
         'infekt': { name: 'Infektiologie', icon: 'fa-virus', mod: 'zna' },
         'tox': { name: 'Toxikologie', icon: 'fa-skull-crossbones', mod: 'zna' },
         'leit': { name: 'Leitsymptom', icon: 'fa-stethoscope', mod: 'zna' },
-        'sonst': { name: 'Sonstige', icon: 'fa-circle-info', mod: 'zna' },
+        'sonst': { name: 'Sonstige', icon: 'fa-ellipsis', mod: 'zna' },
         'onko': { name: 'Onkologie', icon: 'fa-ribbon', mod: 'onko' },
         // Onkologie-Unterkategorien
-        'onko-gi': { name: 'Gastrointestinale Tumoren', icon: 'fa-bowl-food', mod: 'onko', parent: 'onko' },
-        'onko-uro': { name: 'Urologische Tumoren', icon: 'fa-filter', mod: 'onko', parent: 'onko' },
-        'onko-gyn': { name: 'Gynäkologische Tumoren', icon: 'fa-venus', mod: 'onko', parent: 'onko' },
+        'onko-gi': { name: 'Gastrointestinale Tumoren', icon: 'fa-burger', mod: 'onko', parent: 'onko' },
+        'onko-uro': { name: 'Urologische Tumoren', icon: 'fa-bladder', mod: 'onko', parent: 'onko' },
+        'onko-gyn': { name: 'Gynäkologische Tumoren', icon: 'fa-venus-mars', mod: 'onko', parent: 'onko' },
         'onko-pulmo': { name: 'Pulmonale Tumoren', icon: 'fa-lungs', mod: 'onko', parent: 'onko' },
-        'onko-hno': { name: 'Kopf-Hals-Tumoren', icon: 'fa-head-side-mask', mod: 'onko', parent: 'onko' },
-        'onko-haem': { name: 'Hämatologische Neoplasien', icon: 'fa-droplet', mod: 'onko', parent: 'onko' },
-        'onko-sonst': { name: 'Sonstige Tumoren', icon: 'fa-circle', mod: 'onko', parent: 'onko' }
+        'onko-hno': { name: 'Kopf-Hals-Tumoren', icon: 'fa-user-nurse', mod: 'onko', parent: 'onko' },
+        'onko-haem': { name: 'Hämatologische Neoplasien', icon: 'fa-dna', mod: 'onko', parent: 'onko' },
+        'onko-sonst': { name: 'Sonstige Tumoren', icon: 'fa-disease', mod: 'onko', parent: 'onko' }
     };
 
     var CNM = {};
@@ -35,13 +35,13 @@
     })();
 
     var SIC = {
-        'Definition': 'fa-book-open',
-        'Ursachen': 'fa-magnifying-glass',
-        'Symptome': 'fa-clipboard-list',
-        'Diagnostik': 'fa-vials',
-        'Therapie': 'fa-pills',
+        'Definition': 'fa-book-medical',
+        'Ursachen': 'fa-magnifying-glass-chart',
+        'Symptome': 'fa-clipboard-check',
+        'Diagnostik': 'fa-microscope',
+        'Therapie': 'fa-prescription-bottle-medical',
         'Merke': 'fa-lightbulb',
-        'Disposition': 'fa-right-from-bracket',
+        'Disposition': 'fa-right-to-bracket',
         'Komplikationen': 'fa-triangle-exclamation',
         'Quellen': 'fa-quote-right',
         '1. Früherkennung & Risikobewertung': 'fa-magnifying-glass-chart',
@@ -63,7 +63,86 @@
         '4. Therapie: Metastasiert (Systemtherapie)': 'fa-pills',
         '5. Spezielle Situationen (Metastasen, nccRCC)': 'fa-shapes',
         '6. Erbliche Tumoren': 'fa-users-line',
-        '7. Rehabilitation & Nachsorge': 'fa-person-walking-arrow-right'
+        '7. Rehabilitation & Nachsorge': 'fa-person-walking-arrow-right',
+        // Erweiterte Onkologie Icons
+        'Epidemiologie & Risikofaktoren': 'fa-users',
+        'Epidemiologie': 'fa-users',
+        'Prävention & Vorsorge': 'fa-shield-virus',
+        'Diagnostik & Staging': 'fa-microscope',
+        'Pathologie': 'fa-dna',
+        'Pathologische Klassifikation und Diagnostik': 'fa-dna',
+        'Stadieneinteilung und Prognose': 'fa-chart-pie',
+        'Therapie': 'fa-prescription-bottle-medical',
+        'Therapie des nicht-muskelinvasiven Blasenkarzinoms (NMIBC)': 'fa-user-md',
+        'Therapie des muskelinvasiven Blasenkarzinoms (MIBC)': 'fa-user-md',
+        'Palliative Systemtherapie': 'fa-pills',
+        'Nachsorge': 'fa-calendar-check',
+        'Supportive Therapie & Rehabilitation': 'fa-heart-pulse',
+        'Supportivtherapie & Ernährung': 'fa-utensils',
+        'Rehabilitation & Nachsorge': 'fa-person-walking-arrow-right',
+        'Palliativmedizin': 'fa-hand-holding-heart',
+        'Therapie - Frühstadium': 'fa-scalpel',
+        'Therapie - Fortgeschrittenes Stadium': 'fa-pills',
+        'Therapie - Chirurgische Verfahren': 'fa-scalpel',
+        'Supportive Therapie': 'fa-heart-pulse',
+        'Palliative Therapie': 'fa-hand-holding-heart',
+        'Erstlinientherapie': 'fa-prescription-bottle',
+        'Besondere Subgruppen': 'fa-users-viewfinder',
+        'Rezidivtherapie': 'fa-rotate-left',
+        'Rehabilitation und Nachsorge': 'fa-person-walking-arrow-right',
+        'Supportivtherapie und Palliativmedizin': 'fa-hand-holding-heart',
+        'Therapie des lokalisierten Sarkoms': 'fa-scalpel',
+        'Therapie des metastasierten Sarkoms': 'fa-pills',
+        'Spezifische Sarkomsubtypen': 'fa-layer-group',
+        'Therapie des Seminoms': 'fa-dna',
+        'Therapie des Nicht-Seminoms': 'fa-dna',
+        'Restaging und Residualtumortherapie': 'fa-magnifying-glass',
+        'Therapierefraktäre Tumoren und Rezidive': 'fa-rotate-left',
+        'Sonderformen': 'fa-shapes',
+        'Toxizität, Supportivtherapie und Spätfolgen': 'fa-heart-pulse',
+        'Versorgungsqualität und Palliativmedizin': 'fa-hand-holding-heart',
+        'Strahlentherapie': 'fa-radiation',
+        'Medikamentöse Therapie': 'fa-pills',
+        'Palliativmedizinische Begleitung': 'fa-hand-holding-heart',
+        'Kinderwunsch & Fertilitätsprotektion': 'fa-baby',
+        'Zervixkarzinom in der Schwangerschaft': 'fa-baby-carriage',
+        'Spezielle Situationen': 'fa-circle-exclamation',
+        'Subtypen und Risikofaktoren': 'fa-layer-group',
+        'Subtypen (WHO-Klassifikation 5th ed. 2022)': 'fa-layer-group',
+        'Risikofaktoren': 'fa-triangle-exclamation',
+        'Prävention': 'fa-shield-virus',
+        'Vorsorge': 'fa-calendar-check',
+        // Weitere fehlende Onkologie Icons
+        'Risikofaktoren, Prävention und Früherkennung': 'fa-shield-virus',
+        'Histopathologische und molekulare Diagnostik': 'fa-dna',
+        'Bildgebende Diagnostik': 'fa-microscope',
+        'Operative und interventionelle Therapieverfahren': 'fa-scalpel',
+        'Systemtherapie': 'fa-pills',
+        'Pathologie': 'fa-dna',
+        'Nachsorge & Verlauf': 'fa-calendar-check',
+        'Therapieindikation': 'fa-clipboard-check',
+        'Transplantationskandidaten (fit, ≤70 Jahre)': 'fa-user-md',
+        'Nicht-Transplantationskandidaten (unfit/frail, >70 Jahre)': 'fa-user-injured',
+        'Rezidivtherapie (1.-3. Rezidiv)': 'fa-rotate-left',
+        'Supportivtherapie': 'fa-heart-pulse',
+        'Komplikationen': 'fa-triangle-exclamation',
+        'Rezidivdiagnostik & Therapie': 'fa-rotate-left',
+        'Verlaufskontrolle': 'fa-chart-line',
+        'Prävention und Früherkennung': 'fa-shield-virus',
+        'Operative Therapie': 'fa-scalpel',
+        'Lokoregionäre Therapie': 'fa-radiation',
+        'Therapie - Primärtherapie': 'fa-scalpel',
+        'Erhaltungstherapie': 'fa-pills',
+        'Therapie des lokal begrenzten Prostatakarzinoms': 'fa-user-md',
+        'Therapie des lokal fortgeschrittenen Prostatakarzinoms': 'fa-user-md',
+        'Therapie des metastasierten kastrationsresistenten Prostatakarzinoms (mCRPC)': 'fa-pills',
+        'Therapie des metastasierten kastrationssensitiven Prostatakarzinoms (mCSPC)': 'fa-pills',
+        'Supportive Therapie & Nachsorge': 'fa-heart-pulse',
+        'Therapie des Colitiskarzinoms': 'fa-pills',
+        'Therapie des Rektumkarzinoms': 'fa-pills',
+        'Therapie des Analkarzinoms': 'fa-pills',
+        'Diagnostik und Therapie': 'fa-microscope',
+        'Rezidiv und Metastasierung': 'fa-rotate-left'
     };
 
     var AO = [
@@ -133,7 +212,8 @@
         sCatOpen: false,
         bCatOpen: false,
         navStack: [],
-        isNavigating: false
+        isNavigating: false,
+        onkoCatOpen: false
     };
 
     var segTouchState = { startX: 0, startY: 0, startTime: 0, hasMoved: false, targetBtn: null };
@@ -146,29 +226,37 @@
     var sObs = null;
     var sSec = '';
     var E = {};
+    var mobileSidebarOpen = false;
 
-    function cache() {
-        var ids = [
-            'app', 'mobileHeader', 'backBtn', 'mobileTitle', 'themeToggleMobile', 'themeToggleMobileIcon',
-            'sidebar', 'appLogo', 'searchInput', 'searchClear', 'categoryFilters', 'navList',
-            'themeToggle', 'themeToggleIcon', 'themeToggleLabel', 'mainContent', 'contentHeader',
-            'breadcrumb', 'desktopTocBtn', 'contentScroll', 'viewPortal', 'viewHome', 'viewBrowse', 'viewSearch', 'viewSOP',
-            'heroArea', 'catGrid', 'homeInfo', 'browseSearchInput', 'browseSearchClear',
-            'browseCategoryFilters', 'browseList', 'searchViewInput', 'searchViewClear', 'searchResultsArea',
-            'fabAction', 'bottomNav', 'metaThemeColor', 'sectionPickerOverlay', 'sectionPickerBackdrop',
-            'sectionPickerClose', 'sectionPickerList', 'sectionPickerPrint', 'offlineBanner', 'offlineTimestamp',
-            'stickySectionBar', 'stickySectionIcon', 'stickySectionTitle', 'stickySopName',
-            'fontDecMobile', 'fontIncMobile', 'fontIndicatorMobile',
-            'fontDecDesktop', 'fontIncDesktop', 'fontIndicatorDesktop', 'pullIndicator',
-            'sidebarCatToggle', 'browseCatToggle', 'viewContainer',
-            'spotlightOverlay', 'spotlightBackdrop', 'spotlightContainer', 'spotlightInput',
-            'spotlightClear', 'spotlightResults', 'spotlightCancel', 'spotlightBtn',
-            'skeletonOverlay', 'pickerSheet', 'pickerHandle', 'moduleSubtitle'
-        ];
-        for (var i = 0; i < ids.length; i++) {
-            E[ids[i]] = document.getElementById(ids[i]);
-        }
-    }
+     function cache() {
+         var ids = [
+             'app', 'mobileHeader', 'backBtn', 'mobileTitle', 'themeToggleMobile', 'themeToggleMobileIcon',
+             'sidebar', 'appLogo', 'searchInput', 'searchClear', 'categoryFilters', 'navList',
+             'themeToggle', 'themeToggleIcon', 'themeToggleLabel', 'mainContent', 'contentHeader',
+             'breadcrumb', 'desktopTocBtn', 'contentScroll', 'viewPortal', 'viewHome', 'viewBrowse', 'viewSearch', 'viewSOP',
+             'heroArea', 'catGrid', 'homeInfo', 'browseSearchInput', 'browseSearchClear',
+             'browseCategoryFilters', 'browseList', 'searchViewInput', 'searchViewClear', 'searchResultsArea',
+             'bottomNav', 'metaThemeColor', 'sectionPickerOverlay', 'sectionPickerBackdrop',
+             'sectionPickerClose', 'sectionPickerList', 'sectionPickerPrint', 'offlineBanner', 'offlineTimestamp',
+             'stickySectionBar', 'stickySectionIcon', 'stickySectionTitle', 'stickySopName',
+             'stickySubcatBtn', 'stickySubcatLabel', 'stickySubcatMenu',
+             'fontDecMobile', 'fontIncMobile', 'fontIndicatorMobile',
+             'fontDecDesktop', 'fontIncDesktop', 'fontIndicatorDesktop', 'pullIndicator',
+             'sidebarCatToggle', 'browseCatToggle', 'viewContainer',
+             'spotlightOverlay', 'spotlightBackdrop', 'spotlightContainer', 'spotlightInput',
+             'spotlightClear', 'spotlightResults', 'spotlightCancel', 'spotlightBtn',
+             'skeletonOverlay', 'pickerSheet', 'pickerHandle', 'moduleSubtitle',
+             // Mobile Sidebar elements
+             'sidebarToggleMobile', 'sidebarMobileOverlay', 'sidebarMobileBackdrop', 'sidebarMobile',
+             'sidebarMobileClose', 'searchInputMobile', 'searchClearMobile',
+             'sidebarCatToggleMobile', 'categoryFiltersMobile', 'sidebarNavMobile', 'navListMobile',
+             'themeToggleMobileBtn', 'themeToggleMobileIcon', 'themeToggleMobileLabel',
+             'fontDecMobileBtn', 'fontIncMobileBtn', 'fontIndicatorMobileBtn'
+         ];
+         for (var i = 0; i < ids.length; i++) {
+             E[ids[i]] = document.getElementById(ids[i]);
+         }
+     }
 
     function rc(v) {
         if (!v) return 'sonst';
@@ -313,6 +401,10 @@
         S.isNavigating = true;
         S.navStack.push(window.location.hash);
         S.sopId = newSopId;
+        // Close mobile sidebar if open
+        if (mobileSidebarOpen) {
+            closeMobileSidebar();
+        }
         animatePush(function() {
             window.location.hash = '#/sop/' + newSopId;
             S.isNavigating = false;
@@ -745,6 +837,7 @@
         if (E.themeToggleIcon) E.themeToggleIcon.className = dk ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
         if (E.themeToggleMobileIcon) E.themeToggleMobileIcon.className = dk ? 'fa-solid fa-sun' : 'fa-solid fa-moon';
         if (E.themeToggleLabel) E.themeToggleLabel.textContent = dk ? 'Light Mode' : 'Dark Mode';
+        if (E.themeToggleMobileLabel) E.themeToggleMobileLabel.textContent = dk ? 'Light Mode' : 'Dark Mode';
         if (E.metaThemeColor) E.metaThemeColor.setAttribute('content', dk ? '#1e293b' : '#ffffff');
     }
 
@@ -758,6 +851,7 @@
         localStorage.setItem('sop-fontsize', S.fs);
         if (E.fontIndicatorDesktop) E.fontIndicatorDesktop.textContent = S.fs;
         if (E.fontIndicatorMobile) E.fontIndicatorMobile.textContent = S.fs;
+        if (E.fontIndicatorMobileBtn) E.fontIndicatorMobileBtn.textContent = S.fs;
     }
 
     function cFs(d) {
@@ -1020,6 +1114,8 @@
                 E.sidebar.classList.remove('hidden');
             }
         }
+        // Mobile Sidebar Toggle Visibility - nur in mobiler Ansicht anzeigen
+        updateSidebarToggleVisibility();
         dSO();
         if (t === 'portal') {
             if (E.viewPortal) E.viewPortal.classList.add('active');
@@ -1047,6 +1143,7 @@
                 if (bb) bb.classList.add('active');
             }
             if (E.backBtn) E.backBtn.classList.add('show');
+            // FAB nicht in Browse-Ansicht anzeigen - nur in SOP-Ansicht
         } else if (t === 'search') {
             if (E.viewSearch) E.viewSearch.classList.add('active');
             rSearch();
@@ -1101,7 +1198,39 @@
     }
 
     function rSB() {
-        if (!S.mod || !E.categoryFilters) return;
+        if (!S.mod) return;
+        // Desktop Sidebar
+        if (E.categoryFilters) {
+            renderCategoryFilters(E.categoryFilters, S.catD, function(catKey) {
+                if (catKey === 'onko') {
+                    S.onkoCatOpen = !S.onkoCatOpen;
+                } else if (catKey !== 'all') {
+                    S.onkoCatOpen = false;
+                }
+                S.catD = catKey;
+                rNav();
+                rSB();
+            });
+        }
+        // Mobile Sidebar
+        if (E.categoryFiltersMobile) {
+            renderCategoryFilters(E.categoryFiltersMobile, S.catD, function(catKey) {
+                if (catKey === 'onko') {
+                    S.onkoCatOpen = !S.onkoCatOpen;
+                } else if (catKey !== 'all') {
+                    S.onkoCatOpen = false;
+                }
+                S.catD = catKey;
+                rNav();
+                rSB();
+                // Close mobile sidebar when category is selected
+                closeMobileSidebar();
+            });
+        }
+    }
+
+    function renderCategoryFilters(container, activeCat, onSelect) {
+        if (!container || !S.mod) return;
         var counts = {};
         var keys = [];
         var subKeys = [];
@@ -1110,7 +1239,6 @@
             var catKey = allKeys[i];
             var cat = CATS[catKey];
             if (cat.mod === S.mod) {
-                // Prüfen ob es eine Unterkategorie ist
                 if (cat.parent) {
                     subKeys.push(catKey);
                 } else {
@@ -1127,12 +1255,11 @@
                 if (counts[c] !== undefined) counts[c]++;
             }
         }
-        var html = '<span class="sidebar-cat-chip' + (S.catD === 'all' ? ' active' : '') + '" data-cat="all">Alle <span class="cat-count">' + modData.length + '</span></span>';
+        var html = '<span class="sidebar-cat-chip' + (activeCat === 'all' ? ' active' : '') + '" data-cat="all">Alle <span class="cat-count">' + modData.length + '</span></span>';
         for (var k = 0; k < keys.length; k++) {
             var key = keys[k];
             var catObj = CATS[key];
             var hasSubCats = false;
-            // Prüfen ob diese Kategorie Unterkategorien hat
             for (var s = 0; s < subKeys.length; s++) {
                 if (CATS[subKeys[s]].parent === key) {
                     hasSubCats = true;
@@ -1141,47 +1268,54 @@
             }
             if (counts[key] > 0 || hasSubCats) {
                 var cl = gc(key);
-                html += '<span class="sidebar-cat-chip' + (S.catD === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + ' <span class="cat-count">' + counts[key] + '</span></span>';
-                // Unterkategorien anzeigen wenn Hauptkategorie ausgewählt ist
-                if (S.catD === key || isOnkoSubCat(S.catD)) {
+                html += '<span class="sidebar-cat-chip' + (activeCat === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + ' <span class="cat-count">' + counts[key] + '</span></span>';
+                if ((key === 'onko' && S.onkoCatOpen) || isOnkoSubCat(activeCat)) {
                     for (var t = 0; t < subKeys.length; t++) {
                         var subKey = subKeys[t];
                         if (CATS[subKey].parent === key && counts[subKey] > 0) {
                             var subCl = gc(subKey);
-                            html += '<span class="sidebar-cat-chip sidebar-subcat' + (S.catD === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' <span class="cat-count">' + counts[subKey] + '</span></span>';
+                            html += '<span class="sidebar-cat-chip sidebar-subcat' + (activeCat === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' <span class="cat-count">' + counts[subKey] + '</span></span>';
                         }
                     }
                 }
             }
         }
-        E.categoryFilters.innerHTML = html;
-        var chips = E.categoryFilters.querySelectorAll('.sidebar-cat-chip');
+        container.innerHTML = html;
+        var chips = container.querySelectorAll('.sidebar-cat-chip');
         for (var m = 0; m < chips.length; m++) {
             (function(ch) {
                 ch.addEventListener('click', function() {
-                    S.catD = ch.getAttribute('data-cat');
-                    var allChips = E.categoryFilters.querySelectorAll('.sidebar-cat-chip');
+                    var catKey = ch.getAttribute('data-cat');
+                    var allChips = container.querySelectorAll('.sidebar-cat-chip');
                     for (var n = 0; n < allChips.length; n++) {
                         allChips[n].classList.remove('active');
                     }
                     ch.classList.add('active');
-                    rNav();
-                    // Sidebar neu rendern um Unterkategorien ein-/auszublenden
-                    rSB();
+                    if (onSelect) onSelect(catKey);
                 });
             })(chips[m]);
         }
     }
 
     function rNav() {
-        if (!S.mod || !E.navList) return;
+        if (!S.mod) return;
+        // Desktop Navigation
+        if (E.navList) {
+            renderNavList(E.navList);
+        }
+        // Mobile Navigation
+        if (E.navListMobile) {
+            renderNavList(E.navListMobile, true);
+        }
+    }
+
+    function renderNavList(container, isMobile) {
+        if (!container) return;
         var list = [];
         
-        // Hilfsfunktion: Prüfen ob eine Kategorie zur Auswahl passt
         function matchesCategory(sopCat, selectedCat) {
             if (selectedCat === 'all') return true;
             if (sopCat === selectedCat) return true;
-            // Wenn Hauptkategorie ausgewählt, zeige auch Unterkategorien
             if (CATS[sopCat] && CATS[sopCat].parent === selectedCat) return true;
             return false;
         }
@@ -1211,15 +1345,50 @@
             var nm = S.hQ ? hl(d.name || '', S.hQ) : (d.name || '');
             html += '<li><a href="#/sop/' + d.id + '" class="' + (isAct ? 'active' : '') + '" data-id="' + d.id + '"><span class="nav-dot" style="background:' + cl + '"></span><span class="nav-label">' + nm + '</span></a></li>';
         }
-        E.navList.innerHTML = html;
-        var links = E.navList.querySelectorAll('a');
+        container.innerHTML = html;
+        var links = container.querySelectorAll('a');
         for (var m = 0; m < links.length; m++) {
             (function(a) {
                 a.addEventListener('click', function(e) {
                     e.preventDefault();
                     pushNav(a.getAttribute('data-id'));
+                    if (isMobile) {
+                        closeMobileSidebar();
+                    }
                 });
             })(links[m]);
+        }
+    }
+
+    function openMobileSidebar() {
+        if (!E.sidebarMobileOverlay) return;
+        E.sidebarMobileOverlay.classList.add('show');
+        document.body.style.overflow = 'hidden';
+        mobileSidebarOpen = true;
+        haptic('light');
+        // Render mobile sidebar content if module is selected
+        if (S.mod) {
+            rSB();
+            rNav();
+        }
+    }
+
+    function closeMobileSidebar() {
+        if (!E.sidebarMobileOverlay) return;
+        E.sidebarMobileOverlay.classList.remove('show');
+        document.body.style.overflow = '';
+        mobileSidebarOpen = false;
+    }
+
+    // Mobile Sidebar Toggle Visibility - wird bei Resize aufgerufen
+    function updateSidebarToggleVisibility() {
+        if (!E.sidebarToggleMobile) return;
+        var isMobile = window.innerWidth < 768;
+        // Button anzeigen nur wenn: mobile Ansicht UND nicht auf Portal
+        if (S.tab !== 'portal' && isMobile) {
+            E.sidebarToggleMobile.classList.add('show');
+        } else {
+            E.sidebarToggleMobile.classList.remove('show');
         }
     }
 
@@ -1368,6 +1537,7 @@
                 if (counts[c] !== undefined) counts[c]++;
             }
         }
+        // Kategorie-Chips als Sprung-Navigation
         var html = '<span class="browse-cat-chip' + (S.catB === 'all' ? ' active' : '') + '" data-cat="all">Alle</span>';
         for (var k = 0; k < keys.length; k++) {
             var key = keys[k];
@@ -1384,8 +1554,8 @@
             if (counts[key] > 0 || hasSubCats) {
                 var cl = gc(key);
                 html += '<span class="browse-cat-chip' + (S.catB === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + '</span>';
-                // Unterkategorien anzeigen wenn Hauptkategorie ausgewählt ist
-                if (S.catB === key || isOnkoSubCat(S.catB)) {
+                // Unterkategorien anzeigen wenn Onkologie-Hauptkategorie ausgewählt ist UND Onko-Expansion aktiviert ist
+                if ((key === 'onko' && S.onkoCatOpen) || isOnkoSubCat(S.catB)) {
                     for (var t = 0; t < subKeys.length; t++) {
                         var subKey = subKeys[t];
                         if (CATS[subKey].parent === key && counts[subKey] > 0) {
@@ -1401,30 +1571,33 @@
         for (var m = 0; m < chips.length; m++) {
             (function(ch) {
                 ch.addEventListener('click', function() {
-                    S.catB = ch.getAttribute('data-cat');
+                    var catKey = ch.getAttribute('data-cat');
+                    // Onkologie-Expansion toggeln oder zurücksetzen
+                    if (catKey === 'onko') {
+                        S.onkoCatOpen = !S.onkoCatOpen;
+                    } else if (catKey !== 'all') {
+                        // Wenn andere Kategorie gewählt, Onko-Expansion zurücksetzen
+                        S.onkoCatOpen = false;
+                    }
+                    // Aktiven Chip aktualisieren
                     var allChips = E.browseCategoryFilters.querySelectorAll('.browse-cat-chip');
                     for (var n = 0; n < allChips.length; n++) {
                         allChips[n].classList.remove('active');
                     }
                     ch.classList.add('active');
-                    rBrowseList();
-                    rBrowseCats(); // Neu rendern für Unterkategorien
-                    if (E.browseCatToggle) {
-                        var tl = E.browseCatToggle.querySelector('.browse-active-cat');
-                        if (S.catB !== 'all') {
-                            if (!tl) {
-                                var sp = document.createElement('span');
-                                sp.className = 'browse-active-cat';
-                                sp.textContent = CATS[S.catB].name;
-                                var icon = E.browseCatToggle.querySelector('.toggle-icon');
-                                if (icon) E.browseCatToggle.insertBefore(sp, icon);
-                            } else {
-                                tl.textContent = CATS[S.catB].name;
-                            }
-                        } else if (tl) {
-                            tl.remove();
+                    S.catB = catKey;
+                    
+                    // Zur Kategorie scrollen (Sprung-Navigation)
+                    if (catKey !== 'all' && E.browseList) {
+                        var targetItem = E.browseList.querySelector('.browse-cat-header[data-cat="' + catKey + '"]');
+                        if (targetItem) {
+                            targetItem.scrollIntoView({ behavior: 'smooth', block: 'start' });
                         }
+                    } else if (catKey === 'all' && E.contentScroll) {
+                        E.contentScroll.scrollTo({ top: 0, behavior: 'smooth' });
                     }
+                    
+                    rBrowseCats(); // Neu rendern für Unterkategorien
                 });
             })(chips[m]);
         }
@@ -1434,22 +1607,14 @@
         if (!E.browseList) return;
         var list = [];
         
-        // Hilfsfunktion: Prüfen ob eine Kategorie zur Auswahl passt
-        function matchesCategory(sopCat, selectedCat) {
-            if (selectedCat === 'all') return true;
-            if (sopCat === selectedCat) return true;
-            // Wenn Hauptkategorie ausgewählt, zeige auch Unterkategorien
-            if (CATS[sopCat] && CATS[sopCat].parent === selectedCat) return true;
-            return false;
-        }
-        
+        // Alle SOPs des aktuellen Moduls holen
         for (var i = 0; i < S.data.length; i++) {
             if (S.data[i].module === S.mod) {
-                if (matchesCategory(S.data[i].category, S.catB)) {
-                    list.push(S.data[i]);
-                }
+                list.push(S.data[i]);
             }
         }
+        
+        // Nach Suche filtern
         if (S.bQ) {
             var q = S.bQ.toLowerCase();
             var filtered = [];
@@ -1460,23 +1625,60 @@
             }
             list = filtered;
         }
-        var html = '';
+        
+        // Nach Kategorie gruppieren
+        var grouped = {};
+        var categoryOrder = [];
         for (var k = 0; k < list.length; k++) {
             var d = list[k];
-            var cl = gc(d.category);
-            var cn = CATS[d.category] ? CATS[d.category].name : '';
-            var nm = S.bQ ? hl(d.name || '', S.bQ) : (d.name || '');
-            html += '<div class="browse-item" data-id="' + d.id + '"><span class="bi-dot" style="background:' + cl + '"></span><span class="bi-name">' + nm + '</span><span class="bi-cat">' + cn + '</span><i class="fa-solid fa-chevron-right bi-arrow"></i></div>';
+            var cat = d.category;
+            if (!grouped[cat]) {
+                grouped[cat] = [];
+                categoryOrder.push(cat);
+            }
+            grouped[cat].push(d);
         }
+        
+        // HTML generieren mit Kategorie-Headern
+        var html = '';
+        for (var c = 0; c < categoryOrder.length; c++) {
+            var catKey = categoryOrder[c];
+            var catItems = grouped[catKey];
+            var catCl = gc(catKey);
+            var catName = CATS[catKey] ? CATS[catKey].name : '';
+            var catIcon = CATS[catKey] ? CATS[catKey].icon : 'fa-circle';
+            
+            // Kategorie-Header
+            html += '<div class="browse-cat-header" data-cat="' + catKey + '">';
+            html += '<span class="browse-cat-header-dot" style="background:' + catCl + '"></span>';
+            html += '<i class="fa-solid ' + catIcon + '" style="color:' + catCl + '"></i>';
+            html += '<span class="browse-cat-header-name">' + catName + '</span>';
+            html += '<span class="browse-cat-header-count">' + catItems.length + '</span>';
+            html += '</div>';
+            
+            // SOPs dieser Kategorie
+            for (var m = 0; m < catItems.length; m++) {
+                var item = catItems[m];
+                var itemCl = gc(item.category);
+                var itemNm = S.bQ ? hl(item.name || '', S.bQ) : (item.name || '');
+                html += '<div class="browse-item" data-id="' + item.id + '">';
+                html += '<span class="bi-dot" style="background:' + itemCl + '"></span>';
+                html += '<span class="bi-name">' + itemNm + '</span>';
+                html += '<i class="fa-solid fa-chevron-right bi-arrow"></i>';
+                html += '</div>';
+            }
+        }
+        
         if (list.length === 0) html = '<div class="search-empty"><i class="fa-solid fa-search"></i><p>Keine Pfade gefunden.</p></div>';
         E.browseList.innerHTML = html;
+        
         var items = E.browseList.querySelectorAll('.browse-item');
-        for (var m = 0; m < items.length; m++) {
+        for (var n = 0; n < items.length; n++) {
             (function(it) {
                 it.addEventListener('click', function() {
                     pushNav(it.getAttribute('data-id'));
                 });
-            })(items[m]);
+            })(items[n]);
         }
     }
 
@@ -1565,7 +1767,9 @@
                 for (var v = 0; v < AO.length; v++) {
                     if (AO[v] === title) { isAO = true; break; }
                 }
-                var op = S.allO || isAO;
+                // Im Onkologie-Modul keine Sections automatisch expandieren
+                var isOnkoModule = (d.module === 'onko');
+                var op = (!isOnkoModule && (S.allO || isAO));
                 html += '<div class="sop-section" data-sec="' + i + '" style="animation-delay:' + (i * 0.05) + 's"><div class="sop-section-head" data-idx="' + i + '"><i class="fa-solid ' + ic + ' sec-icon" style="color:' + cl + '"></i><span class="sec-title">' + title + '</span><i class="fa-solid fa-chevron-down sec-toggle' + (op ? ' open' : '') + '"></i></div><div class="sop-section-body' + (op ? ' open' : '') + '">' + htmlSec + '</div></div>';
             }
         }
@@ -1694,8 +1898,24 @@
         if (!E.breadcrumb) return;
         var html = '<a href="#/" class="bc-portal">Portal</a>';
         if (S.mod) {
-            var modName = S.mod === 'zna' ? 'ZNA' : 'Onko';
+            // Verwende vollständige Modulnamen
+            var modName = S.mod === 'zna' ? 'Zentrale Notaufnahme' : 'Onkologie';
             html += '<span class="sep"><i class="fa-solid fa-chevron-right"></i></span><a href="#/' + S.mod + '/home" class="bc-home">' + modName + '</a>';
+            
+            // Kategorie anzeigen wenn eine ausgewählt ist
+            var currentCat = S.tab === 'browse' ? S.catB : S.catD;
+            if (currentCat && currentCat !== 'all' && CATS[currentCat]) {
+                // Prüfen ob es eine Onkologie-Unterkategorie ist
+                var catObj = CATS[currentCat];
+                var catLabel = catObj.name;
+                
+                // Wenn Unterkategorie, zeige "Onkologie > Unterkategorie"
+                if (catObj.parent && CATS[catObj.parent]) {
+                    catLabel = CATS[catObj.parent].name + ' > ' + catLabel;
+                }
+                
+                html += '<span class="sep"><i class="fa-solid fa-chevron-right"></i></span><span class="bc-cat">' + catLabel + '</span>';
+            }
         }
         for (var i = 0; i < items.length; i++) {
             html += '<span class="sep"><i class="fa-solid fa-chevron-right"></i></span>';
@@ -1837,35 +2057,81 @@
         }
     }
 
-    function uSticky() {
-        if (S.tab !== 'sop' || !E.stickySectionBar || !E.contentScroll || !E.viewSOP) {
-            if (E.stickySectionBar) E.stickySectionBar.classList.remove('show');
-            return;
-        }
-        var secs = E.viewSOP.querySelectorAll('.sop-section');
-        var ct = E.contentScroll.scrollTop + 120;
-        var cur = null;
-        for (var i = 0; i < secs.length; i++) {
-            if (secs[i].offsetTop <= ct) cur = secs[i];
-        }
-        if (cur) {
-            var hd = cur.querySelector('.sop-section-head');
-            var ti = hd ? hd.querySelector('.sec-title') : null;
-            var ic = hd ? hd.querySelector('.sec-icon') : null;
-            if (ti) {
-                if (E.stickySectionTitle) E.stickySectionTitle.textContent = ti.textContent;
-                if (ic && E.stickySectionIcon) E.stickySectionIcon.className = ic.className;
-                var d = null;
-                for (var j = 0; j < S.data.length; j++) {
-                    if (S.data[j].id === S.sopId) { d = S.data[j]; break; }
-                }
-                if (d && E.stickySopName) E.stickySopName.textContent = d.name || '';
-                E.stickySectionBar.classList.add('show');
-            }
-        } else {
-            E.stickySectionBar.classList.remove('show');
-        }
-    }
+     function uSticky() {
+         if (S.tab !== 'sop' || !E.stickySectionBar || !E.contentScroll || !E.viewSOP) {
+             if (E.stickySectionBar) E.stickySectionBar.classList.remove('show');
+             return;
+         }
+         var secs = E.viewSOP.querySelectorAll('.sop-section');
+         var ct = E.contentScroll.scrollTop + 120;
+         var cur = null;
+         for (var i = 0; i < secs.length; i++) {
+             if (secs[i].offsetTop <= ct) cur = secs[i];
+         }
+         if (cur) {
+             var hd = cur.querySelector('.sop-section-head');
+             var ti = hd ? hd.querySelector('.sec-title') : null;
+             var ic = hd ? hd.querySelector('.sec-icon') : null;
+             if (ti) {
+                 if (E.stickySectionTitle) E.stickySectionTitle.textContent = ti.textContent;
+                 if (ic && E.stickySectionIcon) E.stickySectionIcon.className = ic.className;
+                 var d = null;
+                 for (var j = 0; j < S.data.length; j++) {
+                     if (S.data[j].id === S.sopId) { d = S.data[j]; break; }
+                 }
+                 if (d && E.stickySopName) E.stickySopName.textContent = d.name || '';
+                 // Unterkategorien-Menü rendern
+                 renderSubcatMenu(d);
+                 E.stickySectionBar.classList.add('show');
+             }
+         } else {
+             E.stickySectionBar.classList.remove('show');
+         }
+     }
+
+     function renderSubcatMenu(sopData) {
+         if (!sopData || !E.stickySubcatMenu) return;
+         var category = sopData.category;
+         // Prüfen, ob die Kategorie Unterkategorien hat
+         var subcats = [];
+         for (var k in CATS) {
+             if (CATS[k].parent === category) {
+                 subcats.push(k);
+             }
+         }
+         if (subcats.length === 0) {
+             if (E.stickySubcatBtn) E.stickySubcatBtn.style.display = 'none';
+             return;
+         }
+         if (E.stickySubcatBtn) E.stickySubcatBtn.style.display = 'flex';
+         // Menü-Inhalte generieren
+         var html = '';
+         for (var i = 0; i < subcats.length; i++) {
+             var subcatKey = subcats[i];
+             var subcat = CATS[subcatKey];
+             html += '<button class="sticky-subcat-item" data-cat="' + subcatKey + '">';
+             html += '<i class="fa-solid ' + subcat.icon + '"></i> ' + subcat.name;
+             html += '</button>';
+         }
+         E.stickySubcatMenu.innerHTML = html;
+         // Event-Listener für Unterkategorien-Items
+         var items = E.stickySubcatMenu.querySelectorAll('.sticky-subcat-item');
+         for (var j = 0; j < items.length; j++) {
+             (function(item, subcatKey) {
+                 item.addEventListener('click', function() {
+                     // Navigation zur Unterkategorie
+                     S.catB = subcatKey;
+                     window.location.hash = '#/' + S.mod + '/browse';
+                 });
+             })(items[j], subcats[j]);
+         }
+     }
+
+     function toggleSubcatMenu() {
+         if (!E.stickySubcatBtn || !E.stickySubcatMenu) return;
+         E.stickySubcatBtn.classList.toggle('open');
+         E.stickySubcatMenu.classList.toggle('open');
+     }
 
     function dSO() {
         if (sObs) {
@@ -1969,13 +2235,15 @@
         if (E.backBtn) {
             E.backBtn.addEventListener('click', function() { popNav(); });
         }
-        if (E.desktopTocBtn) {
-            E.desktopTocBtn.addEventListener('click', function() { oPk(); });
-        }
-        if (E.fabAction) {
-            E.fabAction.addEventListener('click', function() { oPk(); });
-        }
-        if (E.sectionPickerBackdrop) {
+         if (E.desktopTocBtn) {
+             E.desktopTocBtn.addEventListener('click', function() { oPk(); });
+         }
+         if (E.stickySubcatBtn) {
+             E.stickySubcatBtn.addEventListener('click', function() {
+                 toggleSubcatMenu();
+             });
+         }
+         if (E.sectionPickerBackdrop) {
             E.sectionPickerBackdrop.addEventListener('click', function() { cPk(); });
         }
         if (E.sectionPickerClose) {
@@ -2017,7 +2285,11 @@
         }
         window.addEventListener('online', function() { S.off = false; uOff(); });
         window.addEventListener('offline', function() { S.off = true; S.ts = new Date(); uOff(); });
-        window.addEventListener('resize', function() { S.mob = window.innerWidth < 1024; });
+        window.addEventListener('resize', function() { 
+            S.mob = window.innerWidth < 1024; 
+            // Mobile Sidebar Toggle Visibility bei Resize aktualisieren
+            updateSidebarToggleVisibility();
+        });
         if (E.spotlightBtn) {
             E.spotlightBtn.addEventListener('click', openSpotlight);
         }
@@ -2049,12 +2321,70 @@
             if (e.key === 'Escape') {
                 if (E.spotlightOverlay && E.spotlightOverlay.classList.contains('show')) closeSpotlight();
                 if (E.sectionPickerOverlay && E.sectionPickerOverlay.classList.contains('show')) cPk();
+                if (mobileSidebarOpen) closeMobileSidebar();
             }
             if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
                 e.preventDefault();
                 openSpotlight();
             }
         });
+        
+        // Mobile Sidebar Event Listeners
+        if (E.sidebarToggleMobile) {
+            E.sidebarToggleMobile.addEventListener('click', function() {
+                if (mobileSidebarOpen) {
+                    closeMobileSidebar();
+                } else {
+                    openMobileSidebar();
+                }
+            });
+        }
+        if (E.sidebarMobileClose) {
+            E.sidebarMobileClose.addEventListener('click', function() {
+                closeMobileSidebar();
+            });
+        }
+        if (E.sidebarMobileBackdrop) {
+            E.sidebarMobileBackdrop.addEventListener('click', function() {
+                closeMobileSidebar();
+            });
+        }
+        if (E.sidebarCatToggleMobile) {
+            E.sidebarCatToggleMobile.addEventListener('click', function() {
+                S.sCatOpen = !S.sCatOpen;
+                this.classList.toggle('open', S.sCatOpen);
+                if (E.categoryFiltersMobile) E.categoryFiltersMobile.classList.toggle('open', S.sCatOpen);
+            });
+        }
+        if (E.searchInputMobile) {
+            E.searchInputMobile.addEventListener('input', function() {
+                S.hQ = this.value;
+                rNav();
+                if (E.searchClearMobile) E.searchClearMobile.classList.toggle('show', this.value.length > 0);
+            });
+        }
+        if (E.searchClearMobile) {
+            E.searchClearMobile.addEventListener('click', function() {
+                if (E.searchInputMobile) E.searchInputMobile.value = '';
+                S.hQ = '';
+                rNav();
+                this.classList.remove('show');
+                if (E.searchInputMobile) E.searchInputMobile.focus();
+            });
+        }
+        if (E.themeToggleMobileBtn) {
+            E.themeToggleMobileBtn.addEventListener('click', function() {
+                S.theme = S.theme === 'dark' ? 'light' : 'dark';
+                aTh();
+            });
+        }
+        if (E.fontDecMobileBtn) {
+            E.fontDecMobileBtn.addEventListener('click', function() { cFs(-1); });
+        }
+        if (E.fontIncMobileBtn) {
+            E.fontIncMobileBtn.addEventListener('click', function() { cFs(1); });
+        }
+        
         window.addEventListener('hashchange', router);
     }
 
@@ -2079,6 +2409,8 @@
         bind();
         initSwipeGestures();
         initDraggablePicker();
+        // Initiale Sidebar-Toggle-Sichtbarkeit setzen
+        updateSidebarToggleVisibility();
         router();
         if (window.location.protocol !== 'file:') {
             setTimeout(checkForUpdate, 1000);

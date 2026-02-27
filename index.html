@@ -34,6 +34,49 @@
     <div id="app">
         <div id="navStack" data-stack="[]"></div>
         
+        <!-- Mobile Sidebar Toggle Button -->
+        <button class="sidebar-toggle-mobile" id="sidebarToggleMobile" aria-label="Menü öffnen">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <!-- Mobile Sidebar Overlay -->
+        <div class="sidebar-mobile-overlay" id="sidebarMobileOverlay">
+            <div class="sidebar-mobile-backdrop" id="sidebarMobileBackdrop"></div>
+            <aside class="sidebar-mobile" id="sidebarMobile">
+                <div class="sidebar-mobile-header">
+                    <span class="sidebar-mobile-title">Menü</span>
+                    <button class="sidebar-mobile-close" id="sidebarMobileClose" aria-label="Menü schließen">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="sidebar-mobile-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInputMobile" placeholder="Suchen..." autocomplete="off">
+                    <button class="sidebar-mobile-search-clear" id="searchClearMobile"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <button class="sidebar-mobile-cat-toggle" id="sidebarCatToggleMobile">
+                    <i class="fa-solid fa-filter"></i> Kategorien
+                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                </button>
+                <div class="sidebar-mobile-cats" id="categoryFiltersMobile"></div>
+                <nav class="sidebar-mobile-nav" id="sidebarNavMobile">
+                    <ul id="navListMobile"></ul>
+                </nav>
+                <div class="sidebar-mobile-bottom">
+                    <button class="sidebar-mobile-btn" id="themeToggleMobileBtn">
+                        <i id="themeToggleMobileIcon" class="fa-solid fa-moon"></i>
+                        <span id="themeToggleMobileLabel">Dark Mode</span>
+                    </button>
+                    <div class="sidebar-mobile-font">
+                        <i class="fa-solid fa-text-height"></i>
+                        <button id="fontDecMobileBtn">A&minus;</button>
+                        <span id="fontIndicatorMobileBtn">15</span>
+                        <button id="fontIncMobileBtn">A+</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-top">
                 <a class="sidebar-brand" id="appLogo" href="#">
@@ -110,6 +153,13 @@
                     <i class="fa-solid fa-circle-info" id="stickySectionIcon"></i>
                     <span id="stickySectionTitle"></span>
                     <span class="sticky-sop" id="stickySopName"></span>
+                    <div class="sticky-subcat-dropdown">
+                        <button class="sticky-subcat-btn" id="stickySubcatBtn">
+                            <span id="stickySubcatLabel">Unterkategorien</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="sticky-subcat-menu" id="stickySubcatMenu"></div>
+                    </div>
                 </div>
 
                 <div class="view-container" id="viewContainer">
@@ -179,9 +229,7 @@
         </main>
     </div>
 
-    <button class="fab" id="fabAction">
-        <i class="fa-solid fa-list-ul"></i>
-    </button>
+
 
     <div class="spotlight-overlay" id="spotlightOverlay">
         <div class="spotlight-backdrop" id="spotlightBackdrop"></div>
