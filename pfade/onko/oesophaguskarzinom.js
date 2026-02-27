@@ -7,13 +7,13 @@
         title: "Ösophaguskarzinom",
         name: "Ösophaguskarzinom",
         category: "onko-gi",
-        stand: "02/26",
+        stand: "12/23",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
-                    <li>Achte häufigste Krebserkrankung weltweit</li>
+                    <li>Sechsthäufigste Krebserkrankung weltweit</li>
                     <li>Plattenepithelkarzinom häufiger in Entwicklungsländern</li>
                     <li>Adenokarzinom in westlichen Ländern steigend</li>
                     <li>Männer deutlich häufiger betroffen (Verhältnis ca. 3-4:1)</li>
@@ -46,34 +46,40 @@
                 </div>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Primärdiagnostik</h3>
                 <ul>
                     <li><strong>Ösophagogastroduodenoskopie (ÖGD):</strong> Goldstandard mit Biopsieentnahme.</li>
                     <li><strong>Biopsie:</strong> Mindestens 6 Proben aus verdächtigen Arealen.</li>
+                    <li><strong>Endosonographie (EUS):</strong> T-Infiltrationstiefe und lokale Lymphknoten.</li>
                 </ul>
                 <h3>Staging-Untersuchungen</h3>
                 <ul>
-                    <li><strong>Endosonographie (EUS):</strong> T-Infiltrationstiefe und lokale Lymphknoten.</li>
                     <li><strong>CT Thorax/Abdomen:</strong> Fernmetastasen-Ausschluss.</li>
                     <li><strong>PET-CT:</strong> Bei cT3/T4 oder Lymphknotenverdacht.</li>
                     <li><strong>Bronchoskopie:</strong> Bei Tumoren im oberen/mittleren Drittel zum Tracheainfiltrations-Ausschluss.</li>
                     <li><strong>Laparoskopie:</strong> Bei Adenokarzinomen des distalen Ösophagus/gastroösophagealen Übergangs.</li>
                 </ul>
-                <h3>Molekulare Diagnostik</h3>
-                <ul>
-                    <li><strong>HER2-Status:</strong> Bei Adenokarzinom für Trastuzumab-Therapie.</li>
-                    <li><strong>MSI-H/dMMR:</strong> Für Immuntherapie-Option.</li>
-                    <li><strong>PD-L1:</strong> CPS für Immuntherapie.</li>
-                </ul>`
-            },
-            {
-                title: "3. Therapie",
-                html: `<h3>Chirurgische Therapie</h3>
+                <h3>Chirurgische Therapie</h3>
                 <ul>
                     <li><strong>Transthorakale Ösophagektomie:</strong> Standard bei Tumoren des mittleren/distalen Drittels.</li>
                     <li><strong>Transhiatale Ösophagektomie:</strong> Alternative bei distalen Tumoren.</li>
                     <li><strong>Magenschlauchbildung:</strong> Rekonstruktion als Standard.</li>
+                    <li><strong>Keine Resektion bei Fernmetastasen:</strong> Präoperativer Nachweis von Fernmetastasen = Kontraindikation zur Operation</li>
+                </div>
+                <h3>Molekulare Diagnostik</h3>
+                <ul>
+                    <li><strong>HER2-Status:</strong> Bei Adenokarzinom für Trastuzumab-Therapie.</li>
+                    <li><strong>MSI/dMMR:</strong> Für Immuntherapie-Option empfohlen.</li>
+                    <li><strong>PD-L1:</strong> CPS für Immuntherapie.</li>
+                </ul>`
+            },
+            {
+                title: "Therapie",
+                html: `<h3>Endoskopische Therapie</h3>
+                <ul>
+                    <li>Endoskopische Resektion (ER) bei frühen Tumoren (T1a)</li>
+                    <li>Lokal ablative Verfahren</li>
                 </ul>
                 <h3>Neoadjuvante/Perioperative Therapie</h3>
                 <ul>
@@ -85,16 +91,23 @@
                     <li>Bei Inoperabilität oder Ablehnung der Operation.</li>
                     <li>Dosierung: 50,4 Gy + Chemotherapie (5-FU/Cisplatin oder Carboplatin/Paclitaxel).</li>
                 </ul>
-                <h3>Palliative Systemtherapie</h3>
+                <h3>Palliative Systemtherapie (Version 4.0)</h3>
                 <ul>
                     <li><strong>Erstlinie HER2-positiv:</strong> Trastuzumab + Chemotherapie.</li>
-                    <li><strong>Erstlinie HER2-negativ:</strong> FOLFOX/CAPOX ± Nivolumab/Pembrolizumab.</li>
+                    <li><strong>Erstlinie Adenokarzinom HER2-negativ mit PD-L1:</strong> Platinbasierte Chemotherapie + Pembrolizumab</li>
+                    <li><strong>Erstlinie Plattenepithelkarzinom mit PD-L1:</strong> Platinbasierte Chemotherapie + Pembrolizumab</li>
+                    <li><strong>Alternativ Plattenepithelkarzinom:</strong> Nivolumab + Ipilimumab (Kombination)</li>
+                    <li><strong>Zweitlinie MSI/dMMR:</strong> Checkpoint-Inhibitor nach Versagen der Erstlinie</li>
                     <li><strong>Zweitlinie:</strong> Ramucirumab ± Paclitaxel, Irinotecan.</li>
+                </ul>
+                <h3>Restaging nach neoadjuvanter Therapie</h3>
+                <ul>
+                    <li>Bei Tumorpersistenz/Lokalrezidiv nach Radiochemotherapie: Operative Resektion prüfen</li>
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
-                html: `<h3>Strukturierte Nachsorge</h3>
+                title: "Nachsorge",
+                html: `<h3>Strukturierte Nachsorge (Version 4.0)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -116,21 +129,32 @@
                                 <td>Anamnese, körperliche Untersuchung, Labor</td>
                             </tr>
                             <tr>
+                                <td>Ab Jahr 5</td>
+                                <td>Jährlich</td>
+                                <td>Anamnese, körperliche Untersuchung, Labor</td>
+                            </tr>
+                            <tr>
                                 <td>Jahr 1, 2, 3, 5</td>
                                 <td>-</td>
-                                <td>ÖGD, CT Thorax/Abdomen</td>
+                                <td>ÖGD, CT Thorax/Abdomen (bei potenziell kurativer Therapie)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <h3>Weitere Maßnahmen</h3>
+                <h3>Rehabilitation</h3>
                 <ul>
-                    <li>Ernährungsberatung (Dilatationen bei Stenosen).</li>
-                    <li>Logopädie bei Schluckstörungen.</li>
-                    <li>Psychoonkologische Betreuung.</li>
+                    <li>Strukturierte Rehabilitationsmaßnahmen empfohlen</li>
+                    <li>Ernährungsberatung (Dilatationen bei Stenosen)</li>
+                    <li>Logopädie bei Schluckstörungen</li>
+                    <li>Psychoonkologische Betreuung</li>
+                </ul>
+                <h3>Supportivtherapie</h3>
+                <ul>
+                    <li>Frühzeitige Integration der Palliativversorgung</li>
+                    <li>Multiprofessionelle symptomorientierte Betreuung</li>
                 </ul>`
             }
         ],
-        sources: "<p>S3-Leitlinie Ösophaguskarzinom. AWMF-Registernummer: 021-023OL. Leitlinienprogramm Onkologie.</p>"
+        sources: "<p>S3-Leitlinie Ösophaguskarzinom. AWMF-Registernummer: 021-023OL. Version 4.0 - Dezember 2023. Leitlinienprogramm Onkologie.</p>"
     });
 })();

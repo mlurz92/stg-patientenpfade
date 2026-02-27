@@ -7,10 +7,10 @@
         title: "Biliäre Karzinome (CCA/GBC)",
         name: "Biliäre Karzinome (CCA/GBC)",
         category: "onko-gi",
-        stand: "06/2025",
+        stand: "06/25",
         sections:[
             {
-                title: "1. Definition & Risikofaktoren",
+                title: "Risikofaktoren, Prävention und Früherkennung",
                 html: `<h3>Anatomische Einteilung</h3>
                 <ul>
                     <li><strong>iCCA (Intrahepatisches Cholangiokarzinom):</strong> Entstehung proximal der sekundären Gallengangsaufzweigungen in der Leber.</li>
@@ -54,23 +54,8 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik, Typisierung & Staging",
-                html: `<h3>Bildgebende Diagnostik</h3>
-                <ul>
-                    <li><strong>Initiale Beurteilung:</strong> Sonografie zur Einschätzung.</li>
-                    <li><strong>Primäres Staging:</strong> Dynamische hepatische MRT-Untersuchung (inklusive MRCP zur Gangdarstellung) sowie mehrphasisches KM-CT von Thorax und Abdomen.</li>
-                    <li><strong>Endoskopische Diagnostik:</strong> Endosonografie (EUS) zur Beurteilung lokaler Lymphknoten und distaler Tumorausbreitung.</li>
-                    <li><strong>PET/CT:</strong> Bei unklaren Befunden hinsichtlich Tumorausbreitung oder Rezidivverdacht nach Tumorboard-Empfehlung.</li>
-                </ul>
-                <h3>Diagnosesicherung & Biopsie</h3>
-                <div class="callout callout-wichtig">
-                    <p>Vor oder im Rahmen einer jeden Tumortherapie sollen Tumoren der Gallenwege und Gallenblase histologisch oder zytologisch gesichert werden.</p>
-                </div>
-                <ul>
-                    <li><strong>pCCA / dCCA:</strong> ERC mit Bürstenzytologie oder Zangenbiopsie (ggf. Cholangioskopie zur Sensitivitätssteigerung).</li>
-                    <li><strong>iCCA:</strong> Perkutane (sonografisch gesteuerte) Biopsie.</li>
-                </ul>
-                <h3>Differenzierung der iCCA Subtypen</h3>
+                title: "Histopathologische und molekulare Diagnostik",
+                html: `<h3>Differenzierung der iCCA Subtypen</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -103,11 +88,9 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>`
-            },
-            {
-                title: "3. Molekulare Diagnostik & Zielstrukturen",
-                html: `<p>Cholangiokarzinome (insbesondere das iCCA) weisen eine hohe Rate an potenziell therapierelevanten molekularen Alterationen auf. Eine molekulare Charakterisierung soll im geeigneten Kontext getestet werden, spätestens bis zur Entscheidung über eine Zweitlinientherapie.</p>
+                </div>
+                <h3>Molekulare Diagnostik & Zielstrukturen</h3>
+                <p>Cholangiokarzinome (insbesondere das iCCA) weisen eine hohe Rate an potenziell therapierelevanten molekularen Alterationen auf. Eine molekulare Charakterisierung soll im geeigneten Kontext getestet werden, spätestens bis zur Entscheidung über eine Zweitlinientherapie.</p>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -161,12 +144,36 @@
                 </div>`
             },
             {
-                title: "4. Operative Verfahren & Biliäre Drainage",
+                title: "Bildgebende und endoskopische Diagnostik",
+                html: `<h3>Bildgebende Diagnostik</h3>
+                <ul>
+                    <li><strong>Initiale Beurteilung:</strong> Sonografie zur Einschätzung.</li>
+                    <li><strong>Primäres Staging:</strong> Dynamische hepatische MRT-Untersuchung (inklusive MRCP zur Gangdarstellung) sowie mehrphasisches KM-CT von Thorax und Abdomen.</li>
+                    <li><strong>Endoskopische Diagnostik:</strong> Endosonografie (EUS) zur Beurteilung lokaler Lymphknoten und distaler Tumorausbreitung.</li>
+                    <li><strong>PET/CT:</strong> Bei unklaren Befunden hinsichtlich Tumorausbreitung oder Rezidivverdacht nach Tumorboard-Empfehlung.</li>
+                </ul>
+                <h3>Diagnosesicherung & Biopsie</h3>
+                <div class="callout callout-wichtig">
+                    <p>Vor oder im Rahmen einer jeden Tumortherapie sollen Tumoren der Gallenwege und Gallenblase histologisch oder zytologisch gesichert werden.</p>
+                </div>
+                <ul>
+                    <li><strong>pCCA / dCCA:</strong> ERC mit Bürstenzytologie oder Zangenbiopsie (ggf. Cholangioskopie zur Sensitivitätssteigerung).</li>
+                    <li><strong>iCCA:</strong> Perkutane (sonografisch gesteuerte) Biopsie.</li>
+                </ul>
+                <h3>Staging</h3>
+                <p>Das Staging erfolgt nach TNM-Klassifikation (UICC 8. Auflage) mit besonderer Berücksichtigung der Resektabilität.</p>`
+            },
+            {
+                title: "Operative und interventionelle Therapieverfahren",
                 html: `<h3>Kurative Resektion</h3>
                 <ul>
                     <li>Eine Resektion eines pCCA, dCCA oder iCCA soll erfolgen, wenn eine komplette Resektion (R0) möglich erscheint.</li>
                     <li><strong>Gallenblasenkarzinom:</strong> Bei cM0 und R0-Möglichkeit Resektion. Wird postoperativ (z.B. nach Cholezystektomie) ein Tumor &ge; T1b festgestellt, soll onkologisch nachreseziert werden (Leberbettresektion + Lymphadenektomie). Bei T1a (Mukosakarzinom) und R0-Situation am D. cysticus ist keine Nachresektion nötig.</li>
-                    <li><strong>Lebertransplantation (LTX):</strong> Für das iCCA außerhalb von Studien nicht empfohlen. Bei irresektablem, nicht-metastasiertem pCCA, welches die Mayo-Kriterien erfüllt, kann eine LTX unter Studienbedingungen erwogen werden.</li>
+                </ul>
+                <h3>Lebertransplantation</h3>
+                <ul>
+                    <li>Für das iCCA außerhalb von Studien nicht empfohlen.</li>
+                    <li>Bei irresektablem, nicht-metastasiertem pCCA, welches die Mayo-Kriterien erfüllt, kann eine LTX unter Studienbedingungen erwogen werden.</li>
                 </ul>
                 <h3>Lokale & Interventionelle Verfahren</h3>
                 <ul>
@@ -181,7 +188,7 @@
                 </ul>`
             },
             {
-                title: "5. Systemtherapie (Adjuvant & Palliativ)",
+                title: "Systemtherapie",
                 html: `<h3>Adjuvante Therapie</h3>
                 <div class="callout callout-hinweis">
                     <p>Aufgrund des hohen Rezidivrisikos sollen Patienten nach chirurgischer Tumorentfernung (R0, R1) eine adjuvante Systemtherapie mit <strong>Capecitabin</strong> erhalten.</p>
@@ -208,27 +215,6 @@
                 <h3>Drittlinientherapie</h3>
                 <ul>
                     <li>Nach Versagen der vorherigen Linien kann eine <strong>Irinotecan-haltige Therapie</strong> (z.B. FOLFIRI) angeboten werden.</li>
-                </ul>`
-            },
-            {
-                title: "6. Verlaufskontrolle, Nachsorge & Supportivtherapie",
-                html: `<h3>Nachsorge (Kurativer Ansatz)</h3>
-                <ul>
-                    <li>Erste Kontrolle mittels biphasischem CT oder dynamischem MRT nach 4 bis 12 Wochen.</li>
-                    <li><strong>Im ersten Jahr:</strong> Alle 3 Monate.</li>
-                    <li><strong>Im zweiten Jahr:</strong> Alle 3 bis 6 Monate.</li>
-                </ul>
-                <h3>Verlaufskontrolle (Unter Systemtherapie)</h3>
-                <ul>
-                    <li>Bildgebende Kontrollen (diagnostisch bestes Verfahren) alle 6 bis 12 Wochen.</li>
-                    <li>Interpretation nach Auswerteprinzipien von <strong>RECIST 1.1</strong> (bzw. iRECIST unter Immuntherapie).</li>
-                </ul>
-                <h3>Supportivtherapie & Palliativversorgung</h3>
-                <ul>
-                    <li><strong>Mangelernährung:</strong> Erfassen und behandeln, da sie Lebensqualität und Therapietoleranz beeinträchtigt.</li>
-                    <li><strong>Palliativversorgung:</strong> Allen Patienten mit UICC Stadium IV soll frühzeitig die Integration der Palliativmedizin angeboten werden, auch parallel zur tumorgerichteten Therapie.</li>
-                    <li><strong>Symptomkontrolle:</strong> Pruritusbehandlung gemäß AWMF-Leitlinie; konsequente Schmerztherapie; biliäre Entlastung.</li>
-                    <li><strong>Psychoonkologie:</strong> Patientenzentrierte Kommunikation in allen Phasen der Erkrankung.</li>
                 </ul>`
             }
         ],

@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Dritthäufigste krebsbedingte Todesursache in westlichen Ländern</li>
@@ -49,7 +49,7 @@
                 </div>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Primärdiagnostik</h3>
                 <ul>
                     <li><strong>Abdomensonographie:</strong> Initial, aber sensitivitätslimitiert.</li>
@@ -75,7 +75,7 @@
                 </ul>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Chirurgische Therapie</h3>
                 <ul>
                     <li><strong>Kephalische Duodenopankreatektomie (Kausch-Whipple):</strong> Standard bei Kopfprozess.</li>
@@ -109,7 +109,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>

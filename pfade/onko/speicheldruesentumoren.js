@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Seltene Tumoren (ca. 3-5% aller Kopf-Hals-Tumoren)</li>
@@ -100,7 +100,7 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li>Schmerzlose Schwellung (häufigstes Symptom).</li>
@@ -158,7 +158,7 @@
                 </div>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Chirurgie (Standard)</h3>
                 <ul>
                     <li><strong>Parotis:</strong> Laterale oder totale Parotidektomie mit Fazialis-Erhalt wenn möglich.</li>
@@ -211,7 +211,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>

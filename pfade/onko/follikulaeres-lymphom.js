@@ -1,16 +1,14 @@
 (function() {
     'use strict';
-    if (!window.SOP_DATA) window.SOP_DATA = [];
-    window.SOP_DATA.push({
+    if (!window.PFADE_DATA) window.PFADE_DATA = [];
+    window.PFADE_DATA.push({
         id: "follikulaeres-lymphom",
-        module: "onko",
-        title: "Follikuläres Lymphom",
         name: "Follikuläres Lymphom",
-        category: "onko-haem",
-        stand: "02/26",
+        category: "onko",
+        stand: "S3-LL 1.0 (06/20)",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Zweithäufigstes Non-Hodgkin-Lymphom (ca. 20-25% aller NHL)</li>
@@ -22,7 +20,7 @@
                 <h3>Biologie</h3>
                 <ul>
                     <li>t(14;18)(q32;q21): BCL2-IGH-Translokation in ca. 85%.</li>
-                    <li>Überexpression von BCL2 → Apoptose-Inhibition.</li>
+                    <li>Überexpression von BCL2 &rarr; Apoptose-Inhibition.</li>
                     <li>Immunphänotyp: CD20+, CD10+, BCL2+, BCL6+, CD23 variabel, CD5-.</li>
                     <li>Indolenter Verlauf, aber nicht kurabel.</li>
                 </ul>
@@ -68,7 +66,7 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li>Oft asymptomatisch, Zufallsbefund.</li>
@@ -121,11 +119,21 @@
                 </div>
                 <ul>
                     <li>Low (0-1), Intermediate (2), High (3-5).</li>
+                </ul>
+                <h3>Geriatrisches Screening</h3>
+                <ul>
+                    <li>Assessment vor Therapieeinleitung bei älteren Patienten.</li>
                 </ul>`
             },
             {
-                title: "3. Therapie",
-                html: `<h3>Watch and Wait</h3>
+                title: "Therapie",
+                html: `<h3>Therapie der frühen Stadien (I-II)</h3>
+                <ul>
+                    <li><strong>Strahlentherapie:</strong> Kurative Intention bei Stadium I-II.</li>
+                    <li><strong>Strahlendosis:</strong> 24-30 Gy.</li>
+                    <li><strong>Bei asymptomatischen Patienten mit eingeschränkter Lebenserwartung:</strong> Watch and Wait möglich.</li>
+                </ul>
+                <h3>Fortgeschrittene Stadien (III-IV) - Watch and Wait</h3>
                 <ul>
                     <li>Standard bei asymptomatischen Patienten (ca. 20-30%).</li>
                     <li>Kein Überlebensvorteil durch frühe Therapie.</li>
@@ -137,6 +145,7 @@
                     <li>B-Symptome.</li>
                     <li>Zytopenien durch Knochenmarkinfiltration.</li>
                     <li>Organbeteiligung.</li>
+                    <li>Schneller Progress.</li>
                 </ul>
                 <h3>Erstlinientherapie</h3>
                 <ul>
@@ -145,9 +154,9 @@
                     <li><strong>R-Bendamustin:</strong> Gute Verträglichkeit, häufig bevorzugt.</li>
                     <li><strong>Rituximab-Erhaltung:</strong> Alle 2 Monate für 2 Jahre nach Chemoimmuntherapie.</li>
                 </ul>
-                <h3>Radioimmuntherapie</h3>
+                <h3>Chemotherapie-freie Behandlung</h3>
                 <ul>
-                    <li><strong>90Y-Ibritumomab:</strong> Alternative bei ausgewählten Patienten.</li>
+                    <li>Rituximab + Lenalidomid als Alternative.</li>
                 </ul>
                 <h3>Rezidivtherapie</h3>
                 <ul>
@@ -156,7 +165,7 @@
                     <li><strong>EZH2-Inhibitor:</strong> Tazemetostat bei EZH2-Mutation.</li>
                     <li><strong>Lenalidomid + Rituximab:</strong> Immunmodulatorisch.</li>
                     <li><strong>CAR-T-Zellen:</strong> Nach 2+ Vortherapien.</li>
-                    <li><strong>ASCT:</strong> Bei chemosensiblem Rezidiv in Erwägung.</li>
+                    <li><strong>ASCT:</strong> Bei chemosensiblem Rezidiv in Erwägung ziehen.</li>
                 </ul>
                 <h3>Transformation</h3>
                 <ul>
@@ -167,7 +176,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>
@@ -202,6 +211,14 @@
                     <li>CT bei klinischem Verdacht auf Progress.</li>
                     <li>PET-CT bei Verdacht auf Transformation.</li>
                 </ul>
+                <h3>Rezidivverdacht</h3>
+                <ul>
+                    <li>Bei Verdacht auf Transformation: PET-CT und Biopsie.</li>
+                </ul>
+                <h3>Früherkennung von Zweitmalignomen</h3>
+                <ul>
+                    <li>Erhöhtes Risiko für Sekundärmalignome beachten.</li>
+                </ul>
                 <h3>Weitere Maßnahmen</h3>
                 <ul>
                     <li>Lebenslange Nachsorge.</li>
@@ -217,6 +234,6 @@
                 </ul>`
             }
         ],
-        sources: "<p>S3-Leitlinie Follikuläres Lymphom. AWMF-Registernummer: 068-004. Leitlinienprogramm Onkologie.</p>"
+        sources: "<p>S3-Leitlinie Follikuläres Lymphom, Kurzversion 1.0. AWMF-Registernummer: 018/033OL. Leitlinienprogramm Onkologie (Deutsche Krebsgesellschaft, Deutsche Krebshilfe, AWMF). Version 1.0 &ndash; Juni 2020.</p>"
     });
 })();

@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Oropharynxkarzinom: Häufigste Kopf-Hals-Tumoren in westlichen Ländern</li>
@@ -79,7 +79,7 @@
                 </div>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li><strong>Oropharynx:</strong> Halsschmerzen, Otalgie, Dysphagie, Halslymphknoten.</li>
@@ -137,7 +137,7 @@
                 </ul>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Oropharynxkarzinom - Frühstadium (T1-T2, N0-1)</h3>
                 <ul>
                     <li><strong>Strahlentherapie:</strong> Alleinige Bestrahlung (IMRT).</li>
@@ -170,7 +170,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>

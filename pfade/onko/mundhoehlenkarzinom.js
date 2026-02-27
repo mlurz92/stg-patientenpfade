@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Häufigste maligne Erkrankung der Mundhöhle</li>
@@ -69,7 +69,7 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li>Nicht heilende Ulzeration oder Wunde.</li>
@@ -131,7 +131,7 @@
                 </ul>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Frühstadium (T1-T2, N0)</h3>
                 <ul>
                     <li><strong>Chirurgie:</strong> Transorale Resektion mit Sicherheitsabstand (mindestens 5 mm).</li>
@@ -177,7 +177,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>

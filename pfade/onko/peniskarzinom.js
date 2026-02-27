@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Seltene Tumorentität (ca. 0,5% aller Malignome bei Männern)</li>
@@ -55,7 +55,7 @@
                 </div>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Primärdiagnostik</h3>
                 <ul>
                     <li><strong>Klinische Untersuchung:</strong> Inspektion und Palpation des Penis und der Leistenregion.</li>
@@ -113,7 +113,7 @@
                 </div>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Lokale Therapie des Primärtumors</h3>
                 <ul>
                     <li><strong>Tis/Ta/T1 (oberflächlich):</strong> Topische Therapie (5-FU, Imiquimod), Lasertherapie, Kryotherapie.</li>
@@ -147,7 +147,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge</h3>
                 <div class="table-wrap">
                     <table>

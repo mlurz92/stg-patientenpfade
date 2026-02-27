@@ -10,7 +10,7 @@
         stand: "02/26",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Inzidenz steigend (v.a. durch frühe Detektion kleiner Tumoren)</li>
@@ -67,7 +67,7 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li>Palpabler Schilddrüsenknoten.</li>
@@ -125,7 +125,7 @@
                 </div>`
             },
             {
-                title: "3. Therapie",
+                title: "Therapie",
                 html: `<h3>Differenziertes Karzinom (papillär/follikulär)</h3>
                 <ul>
                     <li><strong>Chirurgie:</strong> Totale Thyreoidektomie (Standard).</li>
@@ -157,7 +157,7 @@
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Differenziertes Karzinom</h3>
                 <div class="table-wrap">
                     <table>

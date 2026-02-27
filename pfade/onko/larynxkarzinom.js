@@ -7,77 +7,77 @@
         title: "Larynxkarzinom",
         name: "Larynxkarzinom",
         category: "onko-hno",
-        stand: "02/26",
+        stand: "11/19",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
-                    <li>Häufigste bösartige Erkrankung des Kehlkopfes</li>
-                    <li>In Deutschland ca. 3.500 Neuerkrankungen/Jahr</li>
-                    <li>Männer : Frauen = 5 : 1</li>
-                    <li>Median bei Diagnose: ca. 65 Jahre</li>
-                    <li>5-Jahres-Überleben abhängig vom Stadium (I: ca. 80-90%)</li>
+                    <li>Das Larynxkarzinom ist nach dem Mundhöhlen- und Rachenkarzinom der <strong>dritthäufigste bösartige Tumor</strong> im Kopf-Halsbereich.</li>
+                    <li>Die altersstandardisierte Inzidenzrate lag in Deutschland im Jahr 2012 bei <strong>5,4 pro 100.000 bei Männern</strong> und bei <strong>1,0 pro 100.000 bei Frauen</strong>.</li>
+                    <li>Es erkranken pro Jahr etwa <strong>3.100 Männer und 490 Frauen</strong> neu an einem Larynxkarzinom.</li>
+                    <li>Das durchschnittliche Erkrankungsalter liegt bei Frauen bei 64 Jahren und bei Männern bei 66 Jahren.</li>
+                    <li>Seit 2000 nimmt die Erkrankungsrate beim Larynxkarzinom bei jüngeren Männern deutlich ab. Die Inzidenzrate bei Frauen ist konstant geblieben.</li>
                 </ul>
-                <h3>Lokalisation</h3>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Lokalisation</th>
-                                <th>Häufigkeit</th>
-                                <th>Besonderheiten</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>Glottis</strong></td>
-                                <td>Ca. 60-65%</td>
-                                <td>Frühe Symptome (Heiserkeit), günstige Prognose</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Supraglottis</strong></td>
-                                <td>Ca. 30-35%</td>
-                                <td>Späte Symptome, frühe Lymphknotenmetastasen</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Subglottis</strong></td>
-                                <td>Ca. 1-5%</td>
-                                <td>Sehr selten, späte Diagnose</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
                 <h3>Risikofaktoren</h3>
                 <ul>
-                    <li><strong>Rauchen:</strong> Hauptrisikofaktor (ca. 90% der Patienten).</li>
-                    <li><strong>Alkohol:</strong> Synergismus mit Rauchen.</li>
-                    <li><strong>HPV-Infektion:</strong> Insbesondere bei Supraglottis-Karzinomen.</li>
-                    <li><strong>Asbest:</strong> Erhöhtes Risiko.</li>
-                    <li><strong>Chronische Laryngitis:</strong> Langjährige Entzündung.</li>
+                    <li><strong>Tabakkonsum</strong> ist ein wesentlicher Risikofaktor für die Entwicklung des Larynxkarzinoms.</li>
+                    <li><strong>Alkoholkonsum</strong> ist ein wesentlicher Risikofaktor für die Entwicklung des Larynxkarzinoms.</li>
+                    <li>Bei <strong>Asbestexposition</strong>, intensiver und mehrjähriger Exposition gegenüber schwefelsäurehaltigen Aerosolen und bei ionisierenden Strahlen (z.B. durch Uran) ist das Larynxkarzinom als <strong>Berufskrankheit</strong> anerkannt.</li>
+                    <li>Die Adressaten dieser Leitlinie sollten ihre Patienten darauf hinweisen, den Tabakkonsum aufzugeben und den Alkoholkonsum weitgehend zu reduzieren.</li>
+                </ul>
+                <h3>Vorläuferläsionen</h3>
+                <ul>
+                    <li>Bei klinischem Verdacht auf eine mögliche <strong>Vorläuferläsion</strong> eines Larynxkarzinoms (z.B. Leukoplakie, Erythroplakie, papillomatöse Schleimhautveränderungen) soll eine <strong>histologische Abklärung</strong> erfolgen, bevorzugt als Exzisionsbiopsie.</li>
+                    <li>Bei mittelschwerer oder schwerer Dysplasie/squamöser intraepithelialer Neoplasie sollten regelmäßige Kontrollen erfolgen.</li>
+                </ul>
+                <h3>Anatomische Regionen</h3>
+                <ul>
+                    <li><strong>Glottis</strong>: Häufigste Lokalisation, beste Prognose</li>
+                    <li><strong>Supraglottis</strong>: Zweithäufigste, frühzeitige Lymphknotenmetastasen</li>
+                    <li><strong>Subglottis</strong>: Seltenste Lokalisation, schlechteste Prognose</li>
+                </ul>
+                <h3>Prognosefaktoren</h3>
+                <ul>
+                    <li>Die Prognose des Larynxkarzinoms hängt im Wesentlichen von der <strong>Lokalisation, TNM-Klassifikation und vom R-Status</strong> ab.</li>
+                    <li>Ferner sind die <strong>Differenzierung</strong> und das Vorhandensein einer <strong>Lymphgefäßinvasion</strong> prognoserelevant.</li>
+                    <li>Glottische Karzinome haben die beste, subglottische Karzinome die schlechteste Prognose.</li>
+                    <li>Im Gegensatz zum Oropharynxkarzinom spielt beim Larynxkarzinom der <strong>HPV-Status</strong> als prognostischer Faktor <strong>keine Rolle</strong>.</li>
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
-                html: `<h3>Symptome</h3>
+                title: "Diagnostik & Staging",
+                html: `<h3>Klinische Symptome</h3>
                 <ul>
-                    <li><strong>Glottis:</strong> Anhaltende Heiserkeit (>3 Wochen) als Frühsymptom.</li>
-                    <li><strong>Supraglottis:</strong> Dysphagie, Globusgefühl, Otalgie, Halslymphknoten.</li>
-                    <li><strong>Subglottis:</strong> Dyspnoe, Stridor (Spätsymptome).</li>
+                    <li>Bei allen Patienten mit <strong>Heiserkeit über mehr als 4 Wochen</strong> soll der Kehlkopf endoskopisch untersucht werden.</li>
+                    <li>Die Symptome des Larynxkarzinoms sind abhängig von der Lokalisation des Tumors und gehen nicht immer mit einer Stimmveränderung einher.</li>
+                    <li>Bei über mehrere Wochen anhaltenden oder gar zunehmenden <strong>Schluckstörungen</strong> soll eine endoskopische Kehlkopfuntersuchung erfolgen.</li>
                 </ul>
-                <h3>Primärdiagnostik</h3>
+                <h3>Interdisziplinäres Tumorboard</h3>
                 <ul>
-                    <li><strong>Laryngoskopie:</strong> Direkte und indirekte Untersuchung.</li>
-                    <li><strong>Stroboskopie:</strong> Beurteilung der Stimmlippenbewegung.</li>
-                    <li><strong>Panendoskopie:</strong> Ausschluss Zweittumor (Ösophagus, Bronchien).</li>
-                    <li><strong>Biopsie:</strong> Histologische Sicherung.</li>
+                    <li>Die Behandlung des Larynxkarzinoms soll <strong>interdisziplinär nach Abstimmung jedes individuellen Falls innerhalb von Tumorboards</strong> unter Beteiligung der Fachdisziplinen Hals-Nasen-Ohrenheilkunde, Strahlentherapie, medizinische Onkologie, Pathologie und Radiologie durchgeführt werden.</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Bildgebung</h3>
+                <p>Bei folgenden Patienten mit Larynxkarzinom soll eine Bildgebung durchgeführt werden:</p>
                 <ul>
-                    <li><strong>CT/MRT Hals:</strong> Ausbreitung, Knorpelinfiltration, Lymphknoten.</li>
-                    <li><strong>CT Thorax:</strong> Metastasenausschluss.</li>
-                    <li><strong>Ultraschall Hals:</strong> Lymphknotenbeurteilung.</li>
-                    <li><strong>PET-CT:</strong> Bei fortgeschrittenem Stadium.</li>
+                    <li>Karzinome der Stimmlippen mit Bewegungseinschränkung oder Fixation</li>
+                    <li>Karzinome der vorderen Kommissur mit Ausdehnung nach supra- und/oder subglottisch</li>
+                    <li>Karzinome der Supraglottis außer bei Lokalisation am freien Rand der Epiglottis</li>
+                    <li>Karzinome mit subglottischer Ausdehnung</li>
+                </ul>
+                <p>Zur Festlegung der lokalen Ausdehnung sollen eine <strong>kontrastverstärkte CT</strong> und/oder eine <strong>MRT</strong> durchgeführt werden.</p>
+                <p>Zur Feststellung der N-Kategorie soll gleichzeitig die gesamte Region von der Schädelbasis bis zur oberen Thoraxapertur mit der CT oder MRT untersucht werden.</p>
+                <h3>Panendoskopie</h3>
+                <p>Die <strong>Panendoskopie soll bei Patienten mit Larynxkarzinom durchgeführt werden</strong> zum Ausschluss von Zweittumoren.</p>
+                <h3>Biopsie</h3>
+                <ul>
+                    <li>Kleine, umschriebene malignomsuspekte Schleimhautveränderungen (z.B. der Stimmlippen) sollen zur Diagnosesicherung vollständig entfernt werden (Exzisionsbiopsie).</li>
+                    <li>Bei größeren Tumoren sollen lediglich Biopsien durchgeführt werden.</li>
+                    <li>Bei Biopsien soll die Probeentnahme aus dem <strong>Randbereich des Tumors</strong> und wenn möglich zentral aus dem Tumorgrund erfolgen.</li>
+                </ul>
+                <h3>Wächterlymphknoten</h3>
+                <ul>
+                    <li>Es kann <strong>keine Empfehlung</strong> für die Eignung der SLN-Biopsie als Methode zur Vermeidung einer elektiven Halslymphknotenausräumung beim Larynxkarzinom ausgesprochen werden.</li>
                 </ul>
                 <h3>TNM-Klassifikation</h3>
                 <div class="table-wrap">
@@ -91,19 +91,19 @@
                         <tbody>
                             <tr>
                                 <td><strong>T1</strong></td>
-                                <td>Auf eine Unterregion beschränkt, normale Mobilität</td>
+                                <td>Auf eine Unterregion beschränkt, normale Stimmlippenmobilität</td>
                             </tr>
                             <tr>
                                 <td><strong>T2</strong></td>
-                                <td>Befall mehrerer Unterregionen oder eingeschränkte Mobilität</td>
+                                <td>Befall mehrerer Unterregionen oder eingeschränkte/fehlende Mobilität</td>
                             </tr>
                             <tr>
                                 <td><strong>T3</strong></td>
-                                <td>Fixation der Stimmlippe oder Befall angrenzender Strukturen</td>
+                                <td>Fixation der Stimmlippe, Befall angrenzender Strukturen</td>
                             </tr>
                             <tr>
                                 <td><strong>T4a</strong></td>
-                                <td>Durchbruch durch Knorpel, Befall von Schilddrüse, Ösophagus</td>
+                                <td>Durchbruch durch Schildknorpel, Befall von Schilddrüse, Ösophagus</td>
                             </tr>
                             <tr>
                                 <td><strong>T4b</strong></td>
@@ -111,88 +111,264 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>`
-            },
-            {
-                title: "3. Therapie",
-                html: `<h3>Frühstadium (T1-T2, N0)</h3>
+                </div>
+                <h3>R-Klassifikation</h3>
                 <ul>
-                    <li><strong>Strahlentherapie:</strong> Alternative zur Operation, gute funktionelle Ergebnisse.</li>
-                    <li><strong>Laserchirurgie:</strong> Transorale endoskopische Resektion.</li>
-                    <li><strong>Offene Chirurgie:</strong> Bei bestimmten Lokalisationen.</li>
-                    <li>Organerhalt ist primäres Ziel.</li>
+                    <li><strong>R0</strong>: Tumor in sano reseziert, der exakte Abstand von Tumorverbänden zum Resektionsrand spielt keine Rolle, solange der unmittelbare Rand tumorfrei ist.</li>
+                    <li><strong>R1</strong>: Tumor erreicht mikroskopisch einen der Präparateränder unmittelbar.</li>
+                    <li><strong>R2</strong>: Makroskopisch Tumor im Patienten verblieben.</li>
+                    <li><strong>RX</strong>: Resektionsrand histomorphologisch nicht sicher beurteilbar.</li>
                 </ul>
-                <h3>Lokal fortgeschritten (T3-T4, N+)</h3>
+                <h3>Histopathologischer Befund</h3>
+                <p>Folgende Parameter sollen angegeben werden:</p>
                 <ul>
-                    <li><strong>Laryngektomie:</strong> Totale Entfernung des Kehlkopfes bei T4.</li>
-                    <li><strong>Radiochemotherapie:</strong> Alternativ bei Organerhaltswunsch.</li>
-                    <li><strong>Neck Dissection:</strong> Bei Lymphknotenbefall.</li>
-                    <li><strong>Induktionschemotherapie:</strong> Gefolgt von Bestrahlung bei ausgewählten Patienten.</li>
-                </ul>
-                <h3>Rekonstruktion</h3>
-                <ul>
-                    <li><strong>Stimmprothese:</strong> Shunt-Ventil nach Laryngektomie.</li>
-                    <li><strong>Ösophagusstimme:</strong> Training der Ruktusstimme.</li>
-                    <li><strong>Elektrolarynx:</strong> Externe Stimmhilfe.</li>
-                </ul>
-                <h3>Metastasiertes Stadium</h3>
-                <ul>
-                    <li><strong>Systemtherapie:</strong> Platin-basierte Chemotherapie ± Cetuximab.</li>
-                    <li><strong>Immuntherapie:</strong> Nivolumab oder Pembrolizumab bei rezidivierter/metastasierter Erkrankung.</li>
-                    <li>Palliative Bestrahlung zur Symptomkontrolle.</li>
+                    <li>Tumorlokalisation und -größe</li>
+                    <li>Histologischer Tumortyp nach aktueller WHO-Klassifikation</li>
+                    <li>Lokale Tumorausdehnung, infiltrierte Strukturen</li>
+                    <li>Lymphknotenmetastasen nach Level und Seite getrennt (Anzahl untersuchte/befallene LK, größter Durchmesser, kapselüberschreitendes Wachstum)</li>
+                    <li>Lymphgefäß-/Veneninvasion und perineurale Invasion</li>
+                    <li>Vorhandensein einer in situ Komponente</li>
+                    <li>Differenzierungsgrad</li>
+                    <li>Abstand zu den lateralen und basalen Resektaträndern</li>
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
-                html: `<h3>Strukturierte Nachsorge</h3>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Zeitraum</th>
-                                <th>Intervall</th>
-                                <th>Untersuchungen</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Jahr 1</td>
-                                <td>Alle 1-3 Monate</td>
-                                <td>Laryngoskopie, Halsultraschall</td>
-                            </tr>
-                            <tr>
-                                <td>Jahr 2</td>
-                                <td>Alle 2-4 Monate</td>
-                                <td>Laryngoskopie, Halsultraschall</td>
-                            </tr>
-                            <tr>
-                                <td>Jahr 3-5</td>
-                                <td>Alle 4-6 Monate</td>
-                                <td>Laryngoskopie, Halsultraschall</td>
-                            </tr>
-                            <tr>
-                                <td>Ab Jahr 5</td>
-                                <td>Jährlich</td>
-                                <td>Laryngoskopie, Halsultraschall</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h3>Weitere Maßnahmen</h3>
+                title: "Therapie - Frühstadium",
+                html: `<h3>Stadien I und II (cT1 cN0 und cT2 cN0)</h3>
                 <ul>
-                    <li>Regelmäßige Panendoskopie zur Früherkennung von Zweittumoren.</li>
-                    <li>Logopädische Betreuung (Stimm- und Sprechtraining).</li>
-                    <li>Raucherentwöhnung.</li>
-                    <li>Alkoholkarenz.</li>
-                    <li>Psychoonkologische Betreuung.</li>
+                    <li>Glottische bzw. supraglottische Larynxkarzinome der Stadien I und II haben ein Therapiemodalitäts-unabhängiges <strong>krankheitsspezifisches 5-Jahresüberleben von 82-100% (Stadium I)</strong> bzw. <strong>82-92% (Stadium II)</strong>.</li>
+                    <li>Subglottische Karzinome der gleichen Tumorstadien haben eine ungünstigere Prognose.</li>
+                    <li>Das Gesamtüberleben nach chirurgischer Therapie und nach primärer Strahlentherapie unterscheidet sich nicht.</li>
                 </ul>
-                <h3>Zweitkarzinome</h3>
+                <h3>Therapieoptionen</h3>
+                <p>Patienten mit cT1 cN0 und cT2 cN0 sollten entweder:</p>
                 <ul>
-                    <li>Erhöhtes Risiko für Zweittumoren (ca. 10-15%).</li>
-                    <li>Häufigste Lokalisationen: Mundhöhle, Pharynx, Ösophagus, Lunge.</li>
+                    <li>Eine <strong>alleinige chirurgische Therapie</strong> durch Teilresektion, bevorzugt transoral, oder</li>
+                    <li>Eine <strong>alleinige Strahlentherapie</strong> erhalten.</li>
+                </ul>
+                <p>Die Stimmqualität nach transoraler Lasermikrochirurgie und primärer Radiotherapie des T1-Glottis-Ca ist <strong>gleichwertig</strong>.</p>
+                <h3>Elektive Neck Dissection</h3>
+                <ul>
+                    <li>Eine elektive Neck dissection soll bei <strong>Stadium I glottischen Karzinomen nicht</strong> erfolgen.</li>
+                    <li>Beim supraglottischen Karzinom der Kategorie cT1cN0 kann auf eine elektive Neck dissection verzichtet werden.</li>
+                    <li>Bei supraglottischen Karzinomen der Kategorie cT2-cT4acN0 soll in Abhängigkeit von der Tumorlokalisation eine ein- oder beidseitige elektive Neck dissection erfolgen.</li>
+                </ul>
+                <h3>Sicherheitsabstand</h3>
+                <ul>
+                    <li>Bei transoral-laserchirurgischer Resektion von T1/T2 Glottiskarzinomen mit strenger Begrenzung auf die Stimmlippe soll ein <strong>Sicherheitsabstand von mindestens 1 mm</strong> eingehalten werden.</li>
+                    <li>Bei der Laryngektomie von T3 und T4a Karzinomen sollte ein <strong>Sicherheitsabstand von mindestens 5 mm</strong> eingehalten werden.</li>
+                </ul>
+                <h3>Früherkennung</h3>
+                <ul>
+                    <li>Beim Kehlkopfkrebs ist es <strong>nicht sinnvoll</strong>, die gesamte Bevölkerung einem Screening zu unterziehen.</li>
+                    <li>Ein Screening auf ein Larynxkarzinom bei einer Risikopopulation (Raucher, regelmäßig größere Mengen Alkohol) kann <strong>nicht empfohlen</strong> werden, da der Nachweis der Wirksamkeit gegenwärtig fehlt.</li>
+                </ul>`
+            },
+            {
+                title: "Therapie - Fortgeschrittenes Stadium",
+                html: `<h3>Multimodale Therapieansätze</h3>
+                <p>Bei lokal fortgeschrittenen (nicht metastasierten) Larynxkarzinomen (Stadium III - IVA):</p>
+                <ul>
+                    <li>Die <strong>lokoregionäre Tumorkontrolle und das Gesamtüberleben</strong> nach primärer Radiochemotherapie sind <strong>statistisch signifikant besser</strong> als nach alleiniger Radiotherapie.</li>
+                    <li>Die lokoregionäre Tumorkontrolle nach simultaner Radiochemotherapie ist besser als nach neoadjuvanter Chemotherapie gefolgt von Strahlentherapie bzw. chirurgischer Therapie.</li>
+                </ul>
+                <h3>Radiochemotherapie</h3>
+                <ul>
+                    <li>Bei Patienten mit lokal fortgeschrittenen Larynxkarzinomen (M0), die nicht mit einer Operation behandelt werden, soll, besonders in der Altersgruppe bis 70 Jahren, eine <strong>primäre Radiochemotherapie einer alleinigen Strahlentherapie vorgezogen werden</strong>.</li>
+                    <li>Die primäre Radiochemotherapie soll mit einer <strong>simultan zur Strahlentherapie applizierten cisplatinhaltigen Chemotherapie</strong> durchgeführt werden.</li>
+                    <li>Bei Kontraindikationen für Cisplatin können alternativ auch Carboplatin +/- 5FU, Mitomycin C +/- 5FU oder Cetuximab parallel zur Strahlentherapie verabreicht werden.</li>
+                    <li>Eine Radiochemotherapie soll nur an Einrichtungen stattfinden, an denen Strahlen- oder Chemotherapie bedingte akute Toxizitäten erkannt und adäquat behandelt werden können.</li>
+                </ul>
+                <h3>Neoadjuvante Chemotherapie</h3>
+                <ul>
+                    <li>Eine neoadjuvante Chemotherapie vor geplanter definitiver Radio- oder Radiochemotherapie soll <strong>nicht durchgeführt werden</strong>, außer zum Zweck der Selektion zwischen Laryngektomie und Radio- bzw. Radiochemotherapie.</li>
+                    <li>Falls eine neoadjuvante Chemotherapie zum Zweck der Selektion indiziert wird, sollte diese mit bis zu 3 Zyklen <strong>Cisplatin, Docetaxel und +/- 5FU</strong> durchgeführt werden.</li>
+                </ul>
+                <h3>HPV-Status in der Therapieentscheidung</h3>
+                <ul>
+                    <li>Der <strong>HPV16/p16 Status des Tumors soll bei der Therapieentscheidung nicht berücksichtigt werden</strong>.</li>
+                </ul>
+                <h3>Strahlentherapie</h3>
+                <ul>
+                    <li>Die Strahlentherapie sollte als <strong>IMRT</strong> (intensitätsmodulierte Strahlentherapie) erfolgen.</li>
+                    <li>Bei simultaner Chemotherapie sollte die Strahlentherapie mit <strong>70-72 Gy in konventioneller Fraktionierung</strong> erfolgen (5x 1,8-2,2 Gy pro Woche).</li>
+                    <li>Therapiepausen über die geplanten Wochenendpausen hinaus sollten während der Strahlentherapie vermieden werden.</li>
+                    <li>Ungeplante Therapiepausen sollten nach Möglichkeit durch 2x tägliche Bestrahlungen an 1-2 Wochentagen bei unveränderter Einzeldosis kompensiert werden.</li>
+                </ul>
+                <h3>Postoperative Therapie</h3>
+                <p>Eine postoperative Radio- oder Radiochemotherapie soll erfolgen bei:</p>
+                <ul>
+                    <li>pT3-Karzinomen und pT4a-Karzinomen</li>
+                    <li>Karzinomen mit knappen oder positiven Resektionsrändern, perineuraler Invasion, Gefäßinvasion (Lymphgefäßinvasion und/oder Veneninvasion)</li>
+                    <li>Mehr als einem befallenen Lymphknoten</li>
+                    <li>Einem befallenen Lymphknoten mit extrakapsulärem Tumorwachstum</li>
+                </ul>
+                <p>Eine postoperative Radiochemotherapie soll erfolgen bei:</p>
+                <ul>
+                    <li>R1 oder Resektionsrand <5mm im Bereich der Mukosa</li>
+                    <li>Extrakapsulärem Tumorwachstum an den Lymphknoten</li>
+                </ul>
+                <p>Die postoperative Strahlentherapie sollte möglichst früh nach Abschluss der Wundheilung begonnen werden und innerhalb eines Zeitraums von <strong>höchstens 11 Wochen nach der Operation</strong> beendet werden.</p>
+                <h3>Larynxorganerhalt</h3>
+                <ul>
+                    <li>Larynxkarzinome in den Stadien cT1-cT2-N+, cT3 und cT4a cM0 sollen entweder mittels primärer Resektion gefolgt von adjuvanter Radio- oder Radiochemotherapie oder mittels primärer Radiochemotherapie behandelt werden.</li>
+                    <li>Bei cT4a cN0-cN3 cM0 Tumoren gibt es Hinweise aus Krebsregisterdatenbanken für ein besseres Gesamtüberleben mit einem primär chirurgischen Vorgehen.</li>
+                    <li>Das Sprechen und die Lebensqualität sind nach larynxerhaltender Therapie besser als nach einer Laryngektomie.</li>
+                    <li>Alle Patienten in den Stadien, bei denen eine Laryngektomie erforderlich wäre, sollen im interdisziplinären Tumorboard einvernehmlich beraten werden.</li>
+                </ul>`
+            },
+            {
+                title: "Therapie - Chirurgische Verfahren",
+                html: `<h3>Prätherapeutische Tracheotomie</h3>
+                <ul>
+                    <li>Eine Tracheotomie, die vor einer Laryngektomie durchgeführt wird, wirkt sich <strong>negativ auf die Prognose</strong> aus, weil häufiger Stomarezidive auftreten.</li>
+                    <li>Vor einer geplanten totalen Laryngektomie sollte auf eine Tracheotomie verzichtet werden.</li>
+                    <li>Im Falle einer Dyspnoe kann im Rahmen der Erstdiagnostik ein transorales Tumordebulking zur Vermeidung einer Tracheotomie durchgeführt werden.</li>
+                </ul>
+                <h3>Resektionstechniken</h3>
+                <ul>
+                    <li><strong>Transorale Lasermikrochirurgie (TLM)</strong>: Bevorzugte Methode für frühe Stadien</li>
+                    <li><strong>Transorale robotische Chirurgie (TORS)</strong>: Alternative für ausgewählte Fälle</li>
+                    <li><strong>Transzervikale Teilresektion</strong>: Vertikale oder horizontale Kehlkopfteilresektionen</li>
+                    <li><strong>Totale Laryngektomie</strong>: Bei fortgeschrittenen Tumoren (T4)</li>
+                </ul>
+                <p>Vertikale Teilresektionen haben vorrangig Beeinträchtigungen der Stimmgeneratorfunktion zur Folge, horizontale Teilresektionen führen generell zu Störungen der Verschlussmechanismen beim Schlucken und damit zu Aspirationen.</p>
+                <h3>Neck Dissection</h3>
+                <ul>
+                    <li>Sowohl eine elektive als auch therapeutische Neck dissection soll <strong>funktionelle Aspekte berücksichtigen</strong> und Strukturen wie den N. accessorius, den M. sternocleidomastoideus und die V. jugularis interna erhalten.</li>
+                    <li>Der Erhalt des N. accessorius bei der Neck-dissection führt zu einer <strong>Verbesserung der Lebensqualität</strong>.</li>
+                    <li>Ist nach einer operativen Therapie eines N+-Larynxkarzinoms eine adjuvante Radiochemotherapie oder Radiotherapie auch der kontralateralen Lymphabflusswege indiziert, sollte auf die Neck dissection des kontralateralen cN0-Halses verzichtet werden.</li>
+                </ul>
+                <h3>Salvage-Chirurgie</h3>
+                <ul>
+                    <li>Wird das Lymphabflussgebiet im Rahmen der primären Radio- oder Radiochemotherapie beim cN0-Hals in die Bestrahlung mit einbezogen, sollte <strong>keine elektive Neck-dissection folgen</strong>.</li>
+                    <li>Nach primärer Radio- oder Radiochemotherapie sollte eine Neck dissection nur erfolgen, wenn <strong>10-12 Wochen nach Abschluss der Therapie noch PET-positive Lymphknoten</strong> nachgewiesen wurden.</li>
+                    <li>Besteht nach primärer Radio-Chemotherapie nach 12 Wochen ein PET-negativer Lymphknotenbefund, sollte keine Neck dissection erfolgen, sondern eine klinische und bildgebende Verlaufskontrolle durchgeführt werden.</li>
+                </ul>
+                <h3>Rekonstruktive Chirurgie</h3>
+                <ul>
+                    <li>Rekonstruktive Maßnahmen sollten grundsätzlich Teil eines chirurgischen Konzeptes sein.</li>
+                    <li>Ziel der chirurgischen Maßnahme soll eine <strong>R0-Resektion</strong> sein.</li>
+                    <li>Falls eine R0-Resektion nicht möglich erscheint, soll keine primärchirurgische Therapie erfolgen.</li>
+                    <li>Bei R1 soll eine Nachresektion angestrebt werden.</li>
+                </ul>
+                <h3>Residualtumor, Rezidiv und Metastasierung</h3>
+                <ul>
+                    <li>Beim Auftreten von lokal oder lokoregionären Rezidiven sollte die Möglichkeit einer erneuten Operation oder/und die Radio- bzw. Radiochemotherapie in Abhängigkeit von der vorausgegangenen Therapie und der Ausdehnung des Rezidives überprüft werden.</li>
+                    <li>Besteht nach primärer Radiochemotherapie ein lokoregionäres Tumoresiduum (M0) sollen die Möglichkeiten der Salvage Chirurgie geprüft werden.</li>
+                </ul>`
+            },
+            {
+                title: "Supportive Therapie & Rehabilitation",
+                html: `<h3>Spezifische Supportivmaßnahmen nach Laryngektomie</h3>
+                <ul>
+                    <li>Nach Laryngektomie soll für eine <strong>Befeuchtung der unteren Atemwege</strong> gesorgt werden.</li>
+                    <li>Nach Laryngektomie soll der Patient zur <strong>selbständigen Pflege und Handhabung der Kanüle</strong> angeleitet werden.</li>
+                    <li>Abteilungen und Praxen, die Patienten nach Laryngektomie behandeln und Notärzte sollten das Material zur spezifischen Beatmungssituation vorhalten.</li>
+                </ul>
+                <h3>Zahnärztliche Betreuung</h3>
+                <ul>
+                    <li>Bei geplanter Radiochemotherapie des Larynxkarzinoms (primär oder adjuvant) sollte eine <strong>zahnärztliche Kontrolle vor Therapiebeginn</strong> erfolgen.</li>
+                    <li>Der Patient sollte über Prophylaxemaßnahmen informiert werden.</li>
+                </ul>
+                <h3>Stimmrehabilitation</h3>
+                <p>Die drei häufigsten Methoden der Stimmgebung nach Laryngektomie sind:</p>
+                <ul>
+                    <li><strong>Elektronische Sprechhilfe</strong></li>
+                    <li><strong>Ösophagusersatzstimme</strong></li>
+                    <li><strong>Stimmventil</strong> (z.B. Provox)</li>
+                </ul>
+                <p>Schon vor Beginn der Tumor-Therapie soll die spätere Stimmfunktion bedacht werden. In etwa 20% der Fälle kann keine geeignete Ersatzstimme erlernt werden.</p>
+                <h3>Schluckrehabilitation</h3>
+                <ul>
+                    <li>So früh wie möglich soll postoperativ die <strong>Schluckfunktion untersucht</strong> werden.</li>
+                    <li>Ziel ist die rasche orale Nahrungsaufnahme und bei Bedarf ein Schlucktraining.</li>
+                    <li>Nach Kehlkopf-Teilresektion sollte durch frühzeitiges Atem-/Schlucktraining das Aspirationsrisiko verringert werden.</li>
+                    <li>Nach Kehlkopf-Teilresektion sind Aspiration von Speichel, Flüssigkeiten und Nahrung zu Beginn typische Folgen.</li>
+                </ul>
+                <h3>Ernährung</h3>
+                <ul>
+                    <li>Eine <strong>PEG-Anlage sollte nur erfolgen</strong>, wenn zu erwarten ist, dass eine Sondenernährung über einen längeren Zeitraum erforderlich ist.</li>
+                    <li>Die Ernährung muss an das Therapieverfahren und die daraus resultierende Funktion des Schluckaktes angepasst werden.</li>
+                    <li>Nach Kehlkopf-Teilresektion kann eine künstliche Ernährungsform (nasogastrale Sonde oder PEG) indiziert sein.</li>
+                </ul>
+                <h3>Selbsthilfegruppen</h3>
+                <ul>
+                    <li>Im Rahmen der Primärtherapie soll über die Möglichkeit einer <strong>Kontaktaufnahme zu den Selbsthilfegruppen</strong> informiert werden.</li>
+                </ul>
+                <h3>Psychoonkologische Versorgung</h3>
+                <ul>
+                    <li>Die sofortige und langfristige bedarfsorientierte <strong>psychoonkologische Versorgung sollte sichergestellt</strong> sein.</li>
+                    <li>Die berufliche Rehabilitation ist nach Kehlkopfkrebs durch die funktionellen Einschränkungen eine besondere Herausforderung.</li>
+                    <li>Patienten mit Larynxkarzinom sollen darüber informiert werden, dass sie <strong>sozialrechtlichen Anspruch auf Anschlussheilbehandlung (AHB)</strong> haben.</li>
+                    <li>Larynxkarzinompatienten sollen in entsprechend spezialisierten Einrichtungen rehabilitiert werden.</li>
+                </ul>
+                <h3>Funktionalität und Lebensqualität</h3>
+                <ul>
+                    <li>Die Stimm- und Schluckfunktion sollte <strong>prätherapeutisch bei larynxerhaltender Therapie</strong> untersucht und dokumentiert werden.</li>
+                </ul>`
+            },
+            {
+                title: "Nachsorge",
+                html: `<h3>Grundsätze der Nachsorge</h3>
+                <ul>
+                    <li>Patienten mit einem Larynxkarzinom soll eine <strong>regelmäßige Nachsorge angeboten</strong> werden.</li>
+                    <li>Im Vordergrund der Nachsorge soll die <strong>klinische Untersuchung einschließlich Endoskopie</strong> stehen.</li>
+                </ul>
+                <h3>Klinisch-anamnestische Untersuchung</h3>
+                <p>Regelmäßige Nachsorgeuntersuchungen umfassen:</p>
+                <ul>
+                    <li>Laryngoskopie (direkte/indirekte)</li>
+                    <li>Videolaryngostroboskopie</li>
+                    <li>Halsultraschall</li>
+                    <li>Anamneseerhebung (Heiserkeit, Schluckstörungen, Schmerzen)</li>
+                </ul>
+                <h3>Bildgebung in der Nachsorge</h3>
+                <ul>
+                    <li>Bei Verdacht auf oder Nachweis eines Lokalrezidivs oder bei metastasenverdächtigen Symptomen sollte eine <strong>Schnittbildgebung</strong> durchgeführt werden.</li>
+                    <li>Bei Patienten mit primärer Strahlen-/Chemotherapie ist eine Schnittbildgebung zum Ausschluss eines Residualtumors bzw. Residualmetastase <strong>8-12 Wochen nach Abschluss der Therapie</strong> zu empfehlen.</li>
+                    <li>Die Bildgebung und deren zeitliche Untersuchungsintervalle sollten abhängig von der Größe und Lokalisation des Primärtumors sowie der Therapieform indiziert werden.</li>
+                </ul>
+                <h3>Kontroll-Mikrolaryngoskopie</h3>
+                <p>Bei verzögertem Heilungsverlauf oder klinischem Verdacht auf Rezidiv sollte eine <strong>Mikrolaryngoskopie</strong> durchgeführt werden, insbesondere:</p>
+                <ul>
+                    <li>Wenn suspekte Befunde (Granulationen, Erosionen, Keratosen, Dysplasien) sich nicht zurückbilden oder nach anfänglicher Verkleinerung wieder vergrößern</li>
+                    <li>Bei knappen Resektionsrändern in der vorderen Kommissur</li>
+                </ul>
+                <h3>Molekulare Diagnostik</h3>
+                <p>Es existieren <strong>keine etablierten Tumormarker</strong> für die molekulare Diagnostik in der Nachsorge von Patienten mit einem Larynxkarzinom.</p>
+                <h3>Sozialrechtliche und psychosoziale Beratung</h3>
+                <p>Die sozialrechtliche und psychosoziale Beratung sollte <strong>Bestandteil der Langzeitbetreuung</strong> von Patienten mit Larynxkarzinom sein.</p>
+                <h3>Versorgungsstrukturen</h3>
+                <ul>
+                    <li>Interdisziplinäre Betreuung und Vernetzung aller an der Versorgung beteiligten Fachrichtungen und Disziplinen sollen sichergestellt sein.</li>
+                </ul>`
+            },
+            {
+                title: "Palliative Therapie",
+                html: `<h3>Palliative Therapie</h3>
+                <p>Palliativmedizin ist definiert als ein Ansatz zur Verbesserung der Lebensqualität von Patienten und ihren Familien, die mit Problemen konfrontiert sind, welche mit einer lebensbedrohlichen Erkrankung einhergehen.</p>
+                <p>Bezüglich palliativmedizinischer Aspekte wird auf die <strong>S3-Leitlinie Palliativmedizin</strong> des Leitlinienprogramms Onkologie verwiesen.</p>
+                <h3>Palliative systemische medikamentöse Behandlung</h3>
+                <ul>
+                    <li>Bei ausreichendem Allgemeinzustand (= ECOG 0 bis 2) sollten Patienten mit Rezidiv oder Metastasierung nach Ausschöpfung lokoregionärer kurativer Therapieoptionen eine <strong>palliative Systemtherapie</strong> erhalten.</li>
+                </ul>
+                <h3>Erstlinientherapie</h3>
+                <ul>
+                    <li>Als palliative Chemotherapie sollte <strong>Platin (möglichst Cisplatin) und 5-FU in Kombination mit Cetuximab</strong> bei gutem Allgemeinzustand (= ECOG 0 bis 1) in der Erstlinientherapie gegeben werden.</li>
+                    <li>In der Erstlinientherapie kann ab ECOG 2 eine systemische Monotherapie gegeben oder Best-Supportive-Care angeboten werden.</li>
+                </ul>
+                <h3>Zweitlinientherapie</h3>
+                <ul>
+                    <li>In der Zweitlinientherapie sollte eine Therapie mit <strong>PD-1 Inhibitoren</strong> (Nivolumab, Pembrolizumab) angeboten werden.</li>
+                </ul>
+                <h3>Versorgungsstrukturen</h3>
+                <ul>
+                    <li>Interdisziplinäre Betreuung und Vernetzung aller an der Versorgung beteiligten Fachrichtungen und Disziplinen sollen sichergestellt sein.</li>
+                    <li>Larynxkarzinompatienten sollten in entsprechend spezialisierten Einrichtungen rehabilitiert werden.</li>
                 </ul>`
             }
         ],
-        sources: "<p>S3-Leitlinie Larynxkarzinom. AWMF-Registernummer: 007-102OL. Leitlinienprogramm Onkologie.</p>"
+        sources: "<p>S3-Leitlinie Diagnostik, Therapie und Nachsorge des Larynxkarzinoms. Kurzversion 1.1 – November 2019. AWMF-Registernummer: 017-076OL. Leitlinienprogramm Onkologie (Deutsche Krebsgesellschaft, Deutsche Krebshilfe, AWMF).</p>"
     });
 })();

@@ -7,17 +7,17 @@
         title: "Lungenkarzinom",
         name: "Lungenkarzinom",
         category: "onko-pulmo",
-        stand: "02/26",
+        stand: "04/25",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <ul>
                     <li>Häufigste krebsbedingte Todesursache weltweit</li>
-                    <li>In Deutschland ca. 55.000 Neuerkrankungen/Jahr</li>
+                    <li>In Deutschland ca. 57.000 Neuerkrankungen/Jahr (Männer: 35.290, Frauen: 21.930)</li>
                     <li>Männer : Frauen = 2 : 1 (Angleichung)</li>
                     <li>Median bei Diagnose: ca. 70 Jahre</li>
-                    <li>5-Jahres-Überleben gesamt: ca. 20%</li>
+                    <li>5-Jahres-Überleben: ca. 17% (Männer), ca. 22% (Frauen)</li>
                 </ul>
                 <h3>Histologische Typen</h3>
                 <div class="table-wrap">
@@ -37,12 +37,12 @@
                             </tr>
                             <tr>
                                 <td><strong>Plattenepithelkarzinom</strong></td>
-                                <td>Ca. 30%</td>
+                                <td>Ca. 25%</td>
                                 <td>Zentral, starke Raucherassoziation</td>
                             </tr>
                             <tr>
                                 <td><strong>Kleinzelliges Karzinom (SCLC)</strong></td>
-                                <td>Ca. 15%</td>
+                                <td>Ca. 20%</td>
                                 <td>Hohe Teilungsrate, frühe Metastasierung</td>
                             </tr>
                             <tr>
@@ -60,11 +60,12 @@
                     <li><strong>Asbest:</strong> Synergismus mit Rauchen.</li>
                     <li><strong>Radon:</strong> Natürliche Strahlenbelastung.</li>
                     <li><strong>Genetik:</strong> Familiäre Häufung, EGFR-Mutationen bei Adenokarzinomen.</li>
-                    <li><strong>Luftverschmutzung:</strong> Feinstaub.</li>
+                    <li><strong>Luftverschmutzung:</strong> Feinstaub (PM2,5).</li>
+                    <li><strong>Berufliche Exposition:</strong> Asbest, Dieselmotoremissionen, polyzyklische aromatische Kohlenwasserstoffe (PAK), Chromate, Arsen, Nickel.</li>
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Staging",
+                title: "Diagnostik & Staging",
                 html: `<h3>Symptome</h3>
                 <ul>
                     <li><strong>Lokal:</strong> Husten, Hämoptysen, Dyspnoe, Thoraxschmerzen.</li>
@@ -77,17 +78,26 @@
                     <li><strong>Bronchoskopie:</strong> Biopsie bei zentralen Tumoren.</li>
                     <li><strong>CT-gesteuerte Biopsie:</strong> Bei peripheren Tumoren.</li>
                     <li><strong>Mediastinoskopie:</strong> Bei unklarem Lymphknotenstatus.</li>
+                    <li><strong>PET-CT:</strong> Für Staging und Metastasensuche.</li>
                 </ul>
                 <h3>Molekulare Testung (NSCLC)</h3>
+                <p>Standardmäßige molekulare Diagnostik bei allen fortgeschrittenen Nicht-Plattenepithelkarzinomen:</p>
                 <ul>
-                    <li><strong>EGFR-Mutation:</strong> Exon 19-Deletion, L858R.</li>
-                    <li><strong>ALK-Translokation:</strong> EML4-ALK.</li>
-                    <li><strong>ROS1-Translokation:</strong> Selten, zielgerichtete Therapie möglich.</li>
-                    <li><strong>KRAS-Mutation:</strong> Häufig bei Rauchern.</li>
-                    <li><strong>PD-L1-Expression:</strong> Für Immuntherapie.</li>
-                    <li><strong>BRAF V600E:</strong> Zielgerichtete Therapie möglich.</li>
+                    <li><strong>EGFR-Mutation:</strong> Exon 19-Deletion, L858R (ca. 10-15% bei Kaukasiern).</li>
+                    <li><strong>ALK-Translokation:</strong> EML4-ALK (ca. 3-5%).</li>
+                    <li><strong>ROS1-Translokation:</strong> (ca. 1-2%).</li>
+                    <li><strong>BRAF V600E-Mutation:</strong> (ca. 1-3%).</li>
+                    <li><strong>KRAS-G12C-Mutation</strong></li>
+                    <ul>
+                        <li>Sotorasib, Adagrasib</li>
+                    </ul>
+                    <li><strong>PD-L1-Expression:</strong> Immunhistochemie für Immuntherapie-Entscheidung.</li>
+                    <li><strong>NTRK-Translokation:</strong> Selten, zielgerichtete Therapie möglich.</li>
+                    <li><strong>MET-Exon-14-Skipping:</strong> (ca. 2-4%).</li>
+                    <li><strong>RET-Translokation:</strong> (ca. 1-2%).</li>
+                    <li><strong>HER2-Mutation:</strong> (ca. 1-2%).</li>
                 </ul>
-                <h3>TNM-Stadien (NSCLC)</h3>
+                <h3>TNM-Stadien (NSCLC, 8. Edition)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -99,54 +109,77 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>I</strong></td>
-                                <td>T1-2 N0 M0</td>
-                                <td>Lokalisiert, operabel</td>
+                                <td><strong>IA</strong></td>
+                                <td>T1a/b N0 M0</td>
+                                <td>Tumor ≤3 cm, lokalisiert</td>
                             </tr>
                             <tr>
-                                <td><strong>II</strong></td>
-                                <td>T1-2 N1 M0, T3 N0 M0</td>
-                                <td>Lokal fortgeschritten, operabel</td>
+                                <td><strong>IB</strong></td>
+                                <td>T2a N0 M0</td>
+                                <td>Tumor 3-4 cm, lokalisiert</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIA</strong></td>
+                                <td>T2b N0 M0, T1-2 N1 M0</td>
+                                <td>Lokal fortgeschritten, regionäre LK</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIB</strong></td>
+                                <td>T3 N0 M0, T1-2 N2 M0</td>
+                                <td>Lokal fortgeschritten</td>
                             </tr>
                             <tr>
                                 <td><strong>IIIA</strong></td>
-                                <td>T3 N1 M0, T1-3 N2 M0</td>
+                                <td>T3-4 N1 M0, T1-3 N2 M0</td>
                                 <td>Lokal fortgeschritten, potenziell operabel</td>
                             </tr>
                             <tr>
-                                <td><strong>IIIB/IIIC</strong></td>
+                                <td><strong>IIIB</strong></td>
                                 <td>T4 N2-3 M0, T3-4 N3 M0</td>
                                 <td>Lokal fortgeschritten, inoperabel</td>
                             </tr>
                             <tr>
-                                <td><strong>IV</strong></td>
-                                <td>Jedes T, jedes N, M1</td>
-                                <td>Metastasiert</td>
+                                <td><strong>IIIC</strong></td>
+                                <td>T3-4 N3 M0</td>
+                                <td>Lokal fortgeschritten</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVA</strong></td>
+                                <td>Jedes T, jedes N, M1a/b</td>
+                                <td>Metastasen (pleural/perikardial oder intrathorakal)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVB</strong></td>
+                                <td>Jedes T, jedes N, M1c</td>
+                                <td>Fernmetastasen</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <h3>SCLC-Stadien</h3>
                 <ul>
-                    <li><strong>Limited Disease:</strong> Auf einen Hemithorax beschränkt.</li>
-                    <li><strong>Extensive Disease:</strong> Ausgedehnte Erkrankung.</li>
+                    <li><strong>Very Limited Disease (VLD):</strong> Auf einen Hemithorax beschränkt ohne Lymphknotenbefall im Mediastinum, inkl. ipsilaterale Pleuraerguss.</li>
+                    <li><strong>Limited Disease:</strong> Auf einen Hemithorax beschränkt, inkl. kontralaterale Mediastinal-LK und ipsilaterale Pleuraerguss.</li>
+                    <li><strong>Extensive Disease:</strong> Ausgedehnte Erkrankung außerhalb des Hemithorax.</li>
                 </ul>`
             },
             {
-                title: "3. Therapie",
-                html: `<h3>NSCLC - Frühe Stadien (I-II)</h3>
+                title: "Therapie",
+                html: `<h3>NSCLC - Stadium I-II (operabel)</h3>
                 <ul>
-                    <li><strong>Chirurgische Resektion:</strong> Lobektomie als Standard.</li>
-                    <li><strong>Adjuvante Chemotherapie:</strong> Bei Stadium II und selektiertem Stadium IB.</li>
-                    <li><strong>Adjuvante Immuntherapie:</strong> Atezolizumab bei PD-L1 ≥1% nach Chemotherapie.</li>
-                    <li><strong>Stereotaktische Bestrahlung:</strong> Bei Inoperabilität.</li>
+                    <li><strong>Chirurgische Resektion:</strong> Lobektomie als Standard, Segmentektomie bei limitierter Funktion.</li>
+                    <li><strong>Adjuvante Chemotherapie:</strong> Bei Stadium IB mit Risikofaktoren und Stadium II.</li>
+                    <li><strong>Adjuvante Immuntherapie:</strong> Atezolizumab bei PD-L1 ≥1% nach Chemotherapie (Stadium II-IIIA).</li>
+                    <li><strong>Neoadjuvante Therapie:</strong> Neoadjuvante Chemo-Immuntherapie (Nivolumab + Platin-basiert) für resektable NSCLC Stadium IB-IIIA.</li>
+                    <li><strong>Stereotaktische Bestrahlung (SBRT):</strong> Bei Inoperabilität.</li>
                 </ul>
-                <h3>NSCLC - Lokal fortgeschritten (III)</h3>
+                <h3>NSCLC - Stadium III (lokaler fortgeschritten)</h3>
                 <ul>
-                    <li><strong>Resektable Fälle:</strong> Operation + adjuvante Chemotherapie ± Radiotherapie.</li>
-                    <li><strong>Nicht-resektable Fälle:</strong> Definitive Radiochemotherapie + Durvalumab-Erhaltung.</li>
+                    <li><strong>Nicht-resektable Fälle:</strong> Definitive Radiochemotherapie (Platin-basiert) + Durvalumab-Erhaltung (mind. 12 Monate).</li>
+                    <li><strong>Resektable Fälle:</strong> Multimodale Therapie (Operation + adjuvante/neoadjuvante Chemotherapie ± Radiotherapie).</li>
                 </ul>
-                <h3>NSCLC - Metastasiert (IV)</h3>
+                <h3>NSCLC - Stadium IV (metastasiert)</h3>
+                <h4>Mit Treibermutationen (First-Line)</h4>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -158,48 +191,83 @@
                         <tbody>
                             <tr>
                                 <td><strong>EGFR-Mutation</strong></td>
-                                <td>TKI (Osimertinib) als Erstlinie</td>
+                                <td>Osimertinib (vorzugsweise), Erlotinib, Afatinib, Gefitinib + Chemotherapie</td>
                             </tr>
                             <tr>
                                 <td><strong>ALK-Translokation</strong></td>
-                                <td>TKI (Alectinib, Brigatinib, Lorlatinib)</td>
+                                <td>Alectinib (vorzugsweise), Brigatinib, Lorlatinib, Ceritinib, Crizotinib</td>
                             </tr>
                             <tr>
                                 <td><strong>ROS1-Translokation</strong></td>
-                                <td>TKI (Crizotinib, Entrectinib)</td>
+                                <td>Entrectinib (bevorzugt), Crizotinib, Lorlatinib</td>
                             </tr>
                             <tr>
                                 <td><strong>BRAF V600E</strong></td>
                                 <td>Dabrafenib + Trametinib</td>
                             </tr>
                             <tr>
-                                <td><strong>PD-L1 ≥50%, keine Treibermutation</strong></td>
+                                <td><strong>NTRK-Translokation</strong></td>
+                                <td>Larotrectinib, Entrectinib</td>
+                            </tr>
+                            <tr>
+                                <td><strong>MET-Exon-14-Skipping</strong></td>
+                                <td>Capmatinib, Tepotinib</td>
+                            </tr>
+                            <tr>
+                                <td><strong>RET-Translokation</strong></td>
+                                <td>Selpercatinib, Pralsetinib</td>
+                            </tr>
+                            <tr>
+                                <td><strong>HER2-Mutation</strong></td>
+                                <td>Trastuzumab-Deruxtecan, Afatinib</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Ohne Treibermutation</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Konstellation</th>
+                                <th>Therapieoptionen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>PD-L1 ≥50%</strong></td>
                                 <td>Pembrolizumab-Monotherapie</td>
                             </tr>
                             <tr>
-                                <td><strong>PD-L1 <50%, keine Treibermutation</strong></td>
-                                <td>Chemo-Immuntherapie (Pembrolizumab + Platin/Pemetrexed)</td>
+                                <td><strong>PD-L1 1-49%</strong></td>
+                                <td>Pembrolizumab + Platin-basiert (Chemo-Immuntherapie)</td>
                             </tr>
                             <tr>
-                                <td><strong>Keine Treibermutation, PD-L1 negativ</strong></td>
-                                <td>Platin-basierte Chemotherapie ± Immuntherapie</td>
+                                <td><strong>PD-L1 <1%</strong></td>
+                                <td>Chemo-Immuntherapie (Platin-basiert + Pembrolizumab/Nivolumab)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plattenepithelkarzinom</strong></td>
+                                <td>Chemo-Immuntherapie (Platin + Gemcitabine/Nab-Paclitaxel + Pembrolizumab)</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
                 <h3>SCLC - Limited Disease</h3>
                 <ul>
-                    <li><strong>Radiochemotherapie:</strong> Cisplatin/Etoposid + thorakale Bestrahlung.</li>
-                    <li><strong>Prophylaktische Hirnbestrahlung:</strong> Bei Ansprechen.</li>
+                    <li><strong>Radiochemotherapie:</strong> Cisplatin/Etoposid + thorakale Bestrahlung ( beginnend mit Zyklus 1 oder 2).</li>
+                    <li><strong>Prophylaktische Hirnbestrahlung:</strong> Bei gutem Ansprechen (nach individueller Nutzen-Risiko-Abwägung).</li>
+                    <li><strong>Adjuvante Immuntherapie:</strong> Atezolizumab nach Abschluss der Radiochemotherapie.</li>
                 </ul>
                 <h3>SCLC - Extensive Disease</h3>
                 <ul>
-                    <li><strong>Chemo-Immunotherapie:</strong> Cisplatin/Carboplatin + Etoposid + Atezolizumab/Durvalumab.</li>
-                    <li><strong>Zweitlinie:</strong> Topotecan oder Lurbinectedin.</li>
+                    <li><strong>Chemo-Immuntherapie:</strong> Carboplatin + Etoposid + Atezolizumab ODER Durvalumab.</li>
+                    <li><strong>Zweitlinientherapie:</strong> Topotecan, Lurbinectedin.</li>
+                    <li><strong>Drittlinientherapie:</strong> Re-Challenge mit Platin/Etoposid bei langer Remissionsdauer (>6 Monate).</li>
                 </ul>`
             },
             {
-                title: "4. Nachsorge",
+                title: "Nachsorge",
                 html: `<h3>Strukturierte Nachsorge (NSCLC)</h3>
                 <div class="table-wrap">
                     <table>
@@ -214,15 +282,15 @@
                             <tr>
                                 <td>Jahr 1-2</td>
                                 <td>Alle 3 Monate</td>
-                                <td>Anamnese, körperliche Untersuchung, CT Thorax</td>
+                                <td>Anamnese, körperliche Untersuchung, CT Thorax/Abdomen</td>
                             </tr>
                             <tr>
-                                <td>Jahr 3</td>
+                                <td>Jahr 3-5</td>
                                 <td>Alle 6 Monate</td>
-                                <td>Anamnese, körperliche Untersuchung, CT Thorax</td>
+                                <td>Anamnese, körperliche Untersuchung, CT Thorax/Abdomen</td>
                             </tr>
                             <tr>
-                                <td>Ab Jahr 4</td>
+                                <td>Ab Jahr 5</td>
                                 <td>Jährlich</td>
                                 <td>Anamnese, körperliche Untersuchung, CT Thorax</td>
                             </tr>
@@ -232,18 +300,207 @@
                 <h3>Weitere Maßnahmen</h3>
                 <ul>
                     <li>Bildgebung bei klinischem Verdacht auf Rezidiv.</li>
-                    <li>Raucherentwöhnung.</li>
+                    <li>Raucherentwöhnung (fortgesetzt).</li>
                     <li>Pneumologische Rehabilitation.</li>
                     <li>Psychoonkologische Betreuung.</li>
-                    <li>Impfungen (Influenza, Pneumokokken).</li>
+                    <li>Impfungen (Influenza, Pneumokokken, COVID-19).</li>
+                    <li>Langzeitnachsorge bei Bedarf.</li>
                 </ul>
                 <h3>SCLC-Nachsorge</h3>
                 <ul>
                     <li>Engmaschigere Kontrollen (alle 3 Monate in den ersten 2 Jahren).</li>
-                    <li>MRT Schädel bei Bedarf.</li>
+                    <li>MRT Schädel alle 6-12 Monate in den ersten 2 Jahren.</li>
+                    <li>PET-CT bei Verdacht auf Rezidiv.</li>
+                </ul>
+                <h3>Rehabilitation</h3>
+                <ul>
+                    <li>Stationäre pneumologische Anschlussrehabilitation (AHB).</li>
+                    <li>Physiotherapie und Atemtherapie.</li>
+                    <li>Sport- und Bewegungstherapie.</li>
+                    <li>Ernährungsberatung.</li>
+                    <li>Sozialberatung.</li>
+                </ul>`
+            },
+            {
+                title: "Früherkennung",
+                html: `<h3>Niedrigdosis-CT Screening (LDCT)</h3>
+                <p>Seit Juli 2024 ermöglicht die Lungenkrebs-Früherkennungs-Verordnung (LuKrFrühErkV) ein strukturiertes Lungenkrebs-Screening in Deutschland.</p>
+                <h4>Einschlusskriterien</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kriterium</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Alter</strong></td>
+                                <td>55-74 Jahre (bei Raucherentwöhnung bis 80 Jahre)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Raucherstatus</strong></td>
+                                <td>Aktuelle oder ehemalige Raucher (≥10 Packungsjahre)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Karenzzeit</strong></td>
+                                <td>Mindestens 15 Jahre seit Raucherentwöhnung möglich</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Erstwohnsitz</strong></td>
+                                <td>Deutschland</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Ausschlusskriterien</h4>
+                <ul>
+                    <li>Bereits diagnostizierter Lungenkrebs oder Verdacht darauf.</li>
+                    <li>Innerhalb der letzten 3 Jahre durchgeführte Thorax-CT.</li>
+                    <li>Akute Infektionskrankheit oder instabile chronische Erkrankung.</li>
+                    <li>Kontraindikationen für Kontrastmittel (bei CT mit Kontrast).</li>
+                </ul>
+                <h4>Lung-RADS Klassifikation 2022</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Kategorie</th>
+                                <th>Befund</th>
+                                <th>Empfehlung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Lung-RADS 0</strong></td>
+                                <td>Nicht beurteilbar</td>
+                                <td>Zusätzliche Bildgebung erforderlich</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 1</strong></td>
+                                <td>Negativ (keine Knoten)</td>
+                                <td>Jährliches Screening</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 2</strong></td>
+                                <td>Benigne appearance</td>
+                                <td>Jährliches Screening</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 3</strong></td>
+                                <td>Wahrscheinlich benigne</td>
+                                <td>6-Monats-Follow-up CT</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 4A</strong></td>
+                                <td>Verdacht auf Malignität</td>
+                                <td>Diagnostische Abklärung (PET-CT/Biopsie)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 4B</strong></td>
+                                <td>Sehr verdächtig</td>
+                                <td>Diagnostische Abklärung + interdisziplinäre Tumorkonferenz</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Lung-RADS 4X</strong></td>
+                                <td>Extraspezifische Malignitätszeichen</td>
+                                <td>Diagnostische Abklärung + interdisziplinäre Tumorkonferenz</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Screening-Intervall</h4>
+                <ul>
+                    <li><strong>Jährlich:</strong> Lung-RADS 1, 2</li>
+                    <li><strong>6 Monate:</strong> Lung-RADS 3</li>
+                    <li><strong>Diagnostische Abklärung:</strong> Lung-RADS 4A, 4B, 4X</li>
+                </ul>
+                <h4>Beratung und Raucherentwöhnung</h4>
+                <ul>
+                    <li>Strukturierte Beratung vor und nach dem Screening.</li>
+                    <li>Aktive Raucherentwöhnungsangebote (Nikotinersatztherapie, Medikamente).</li>
+                    <li>Multiprofessionelle Betreuung.</li>
+                </ul>`
+            },
+            {
+                title: "Palliativmedizin",
+                html: `<h3>Grundlagen der Palliativmedizin</h3>
+                <p>Die Palliativmedizin dient der Verbesserung der Lebensqualität von Patienten mit fortgeschrittenem Lungenkarzinom und deren Angehörigen.</p>
+                <h3>Dyspnoe-Therapie</h3>
+                <h4>Nicht-pharmakologische Maßnahmen</h4>
+                <ul>
+                    <li><strong>Lagerung:</strong> Aufrechte Position, Abstützen der Arme.</li>
+                    <li><strong>Atemtraining:</strong> Lippenbremse, Zwerchfellatmung.</li>
+                    <li><strong>Kühlung:</strong> Frische Luft, Ventilator.</li>
+                    <li><strong>Psychische Unterstützung:</strong> Angstreduktion, Entspannungstechniken.</li>
+                    <li><strong>Sauerstofftherapie:</strong> Bei Hypoxämie (SpO2 < 88%).</li>
+                </ul>
+                <h4>Pharmakologische Therapie</h4>
+                <ul>
+                    <li><strong>Opioide:</strong> Niedrigdosierte Morphinpräparate (z.B. Morphin retard 10mg alle 12h, oromorph 2-4stündlich).</li>
+                    <li><strong>Benzodiazepine:</strong> Bei starker Angst (z.B. Lorazepam 0,5-1mg sublingual).</li>
+                    <li><strong>Bronchodilatatoren:</strong> Bei obstruktiver Komponente.</li>
+                    <li><strong>Kortikosteroide:</strong> Bei lymphangischer Karzinose oder Obstruktion (z.B. Dexamethason 4-8mg).</li>
+                </ul>
+                <h3>Schmerztherapie</h3>
+                <h4>WHO-Stufenplan</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stufe</th>
+                                <th>Medikamente</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Stufe 1</strong></td>
+                                <td>Nicht-Opioid-Analgetika (Paracetamol, NSAR) + Koanalgetika</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stufe 2</strong></td>
+                                <td>Schwache Opioide (Tramadol, Dihydrocodein) + Stufe 1</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Stufe 3</strong></td>
+                                <td>Starke Opioide (Morphin, Oxycodon, Fentanyl) + Stufe 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Koanalgetika</h4>
+                <ul>
+                    <li><strong>Neuropathischer Schmerz:</strong> Gabapentin, Pregabalin, Duloxetin.</li>
+                    <li><strong>Knochenschmerzen:</strong> Bisphosphonate (Zoledronsäure), Denosumab.</li>
+                    <li><strong>Entzündliche Schmerzen:</strong> NSAR, Kortikosteroide.</li>
+                </ul>
+                <h4>Opioid-Rotation</h4>
+                <p>Bei unzureichender Schmerzlinderung oder Nebenwirkungen: Rotation auf anderes Opioid unter Berücksichtigung äquianalgetischer Dosierungen.</p>
+                <h3>Terminale Betreuung</h3>
+                <h4>Symptomkontrolle in der Sterbephase</h4>
+                <ul>
+                    <li><strong>Dyspnoe:</strong> Niedrigdosierte Opioide, ggf. Sedierung bei schwerer Atemnot.</li>
+                    <li><strong>Schmerzen:</strong> Kontinuierliche Opioidgabe (subkutan/retardiert).</li>
+                    <li><strong>Sekretion:</strong> Anticholinergika (Scopolamin, Butylscopolamin).</li>
+                    <li><strong>Unruhe:</strong> Benzodiazepine, Haloperidol.</li>
+                </ul>
+                <h4>Komunikation und Angehörigenbetreuung</h4>
+                <ul>
+                    <li>Regelmäßige Gespräche über Prognose und Behandlungsziele.</li>
+                    <li>Einbeziehung der Angehörigen in die Versorgung.</li>
+                    <li>Klärung von Patientenverfügung und Vorsorgevollmacht.</li>
+                    <li>Spirituelle und psychosoziale Unterstützung.</li>
+                </ul>
+                <h4>Versorgungsstrukturen</h4>
+                <ul>
+                    <li>Palliativstation.</li>
+                    <li>Palliativmedizinischer Konsiliardienst.</li>
+                    <li>Ambulante Palliativversorgung (SAPV).</li>
+                    <li>Hospizdienst.</li>
                 </ul>`
             }
         ],
-        sources: "<p>S3-Leitlinie Lungenkarzinom. AWMF-Registernummer: 020-007OL. Leitlinienprogramm Onkologie.</p>"
+        sources: "<p>S3-Leitlinie Lungenkarzinom. AWMF-Registernummer: 020-007OL. Version 4.0 – April 2025. Leitlinienprogramm Onkologie (Deutsche Krebsgesellschaft, Deutsche Krebshilfe, AWMF).</p>"
     });
 })();

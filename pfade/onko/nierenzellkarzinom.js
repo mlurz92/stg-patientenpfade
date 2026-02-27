@@ -10,7 +10,7 @@
         stand: "09/2024",
         sections: [
             {
-                title: "1. Epidemiologie & Risikofaktoren",
+                title: "Epidemiologie & Risikofaktoren",
                 html: `<h3>Epidemiologie</h3>
                 <p>Das Nierenzellkarzinom (RCC) macht über 90 % der bösartigen Nierenerkrankungen aus. Hauptrisikoalter liegt zwischen dem 60. und 70. Lebensjahr.</p>
                 <h3>Modifizierbare Risikofaktoren</h3>
@@ -22,7 +22,7 @@
                 </ul>`
             },
             {
-                title: "2. Diagnostik & Prognose",
+                title: "Diagnostik & Prognose",
                 html: `<h3>Bildgebende Diagnostik</h3>
                 <ul>
                     <li><strong>CT-Abdomen (Multiphasisch):</strong> Nativ, früharteriell und venös. Standard zur Planung bei V.a. RCC.</li>
@@ -81,7 +81,7 @@
                 </div>`
             },
             {
-                title: "3. Therapie: Nicht-metastasiert & Lokal",
+                title: "Therapie: Nicht-metastasiert & Lokal",
                 html: `<h3>Lokal begrenzte Tumoren (T1)</h3>
                 <ul>
                     <li><strong>Nierenteilresektion (Nierenerhalt):</strong> Standardtherapie bei T1a (< 4 cm) und T1b (4-7 cm), wenn technisch machbar.</li>
@@ -106,7 +106,7 @@
                 </ul>`
             },
             {
-                title: "4. Therapie: Metastasiert (Systemtherapie)",
+                title: "Therapie: Metastasiert (Systemtherapie)",
                 html: `<h3>Risikostratifizierung (IMDC-Score)</h3>
                 <p>Die Therapiewahl basiert auf dem IMDC-Risiko (Motzer-Kriterien): Karnofsky < 80%, Zeit Diagnose-Therapie < 1 Jahr, Hb < Norm, Calcium > Norm, Neutrophile > Norm, Thrombozyten > Norm.</p>
                 <ul>
@@ -159,7 +159,7 @@
                 </ul>`
             },
             {
-                title: "5. Spezielle Situationen (Metastasen, nccRCC)",
+                title: "Spezielle Situationen (Metastasen, nccRCC)",
                 html: `<h3>Metastasenchirurgie</h3>
                 <ul>
                     <li><strong>Oligometastasierung:</strong> Resektion oder stereotaktische Bestrahlung (SBRT) empfohlen, wenn R0 erreichbar (kurativer Ansatz).</li>
@@ -188,7 +188,7 @@
                 </ul>`
             },
             {
-                title: "6. Erbliche Tumoren",
+                title: "Erbliche Tumoren",
                 html: `<h3>Verdachtskriterien</h3>
                 <ul>
                     <li>Alter < 47 Jahre.</li>
@@ -241,7 +241,7 @@
                 </div>`
             },
             {
-                title: "7. Rehabilitation & Nachsorge",
+                title: "Rehabilitation & Nachsorge",
                 html: `<h3>Nachsorgeplan (Kurativ)</h3>
                 <p>Risikoadaptiert basierend auf Leibovich-Score oder UCLA-Score. Standard-Schema:</p>
                 <div class="table-wrap">
