@@ -61,22 +61,113 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Sonographie</h3>
                 <ul>
-                    <li><strong>Kolposkopie:</strong> Inspektion der Zervix mit Essigsäure und Jodlösung.</li>
-                    <li><strong>Zervixbiopsie:</strong> Gezielte Biopsie bei suspekten Arealen.</li>
-                    <li><strong>Konisation:</strong> Diagnostisch und therapeutisch bei CIN/frühem Karzinom.</li>
+                    <li><strong>Transvaginaler Ultraschall:</strong> Zur Festlegung der lokalen Tumorausbreitung.</li>
+                    <li><strong>Nierenultraschall:</strong> Zum Ausschluss einer Harntransportstörung.</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Magnetresonanztomographie (MRT)</h3>
                 <ul>
-                    <li><strong>Klinische Untersuchung:</strong> Unter Narkose zur Beurteilung der Parametrien.</li>
-                    <li><strong>MRT Becken:</strong> Beurteilung der lokalen Ausbreitung und Lymphknoten.</li>
-                    <li><strong>CT Thorax/Abdomen:</strong> Bei fortgeschrittenem Stadium.</li>
-                    <li><strong>Zystoskopie/Rektoskopie:</strong> Bei Verdacht auf Organinfiltration.</li>
-                    <li><strong>PET-CT:</strong> Bei fortgeschrittenem Stadium.</li>
+                    <li><strong>MRT-Becken:</strong> Patientinnen ab FIGO IB2 bis einschließlich III zur Beurteilung der lokoregionären Tumorausbreitung.</li>
+                    <li><strong>Indikationen:</strong> Lokales Staging, Beurteilung von Parametrieninfiltration, Lymphknotenbeurteilung.</li>
                 </ul>
-                <h3>FIGO-Stadien</h3>
+                <h3>Computertomographie (CT)</h3>
+                <ul>
+                    <li><strong>CT Thorax/Abdomen/Becken:</strong> Patientinnen ab FIGO IB2 zur Beurteilung der Tumorausbreitung.</li>
+                    <li><strong>Fallback:</strong> Wenn MRT technisch nicht möglich, erfolgt das Staging im Rahmen der CT.</li>
+                </ul>
+                <h3>PET-CT</h3>
+                <ul>
+                    <li><strong>Kein Einsatz:</strong> PET-CT sollte zur Therapieplanung des primären Zervixkarzinoms nicht eingesetzt werden.</li>
+                    <li><strong>Rezidiv-Diagnostik:</strong> Bei Erwägung lokaler Verfahren (RCHT, Exenteration) zum Ausschluss von Lymphknoten- und Fernmetastasen.</li>
+                </ul>
+                <h3>Endoskopische Untersuchungen</h3>
+                <ul>
+                    <li><strong>Zystoskopie:</strong> Bei Verdacht auf Blaseninfiltration (FIGO IVA).</li>
+                    <li><strong>Rektosigmoidoskopie:</strong> Bei Verdacht auf Rektuminfiltration.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Standard-Labor</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff, Elektrolyte.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li><strong>SCC-Antigen (Squamous Cell Carcinoma Antigen):</strong> Optional bei Plattenepithelkarzinom zur Verlaufskontrolle.</li>
+                    <li><strong>CEA:</strong> Optional bei Adenokarzinom.</li>
+                    <li><strong>CA 125:</strong> Bei Verdacht auf Ovarialbeteiligung.</li>
+                </ul>
+                <h3>Infektionsserologie</h3>
+                <ul>
+                    <li><strong>HIV-Test:</strong> Empfohlen bei allen Patientinnen mit Zervixkarzinom.</li>
+                    <li><strong>HPV-Status:</strong> Zur Charakterisierung des Tumors.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li><strong>Differentialkolposkopie und gezielte Biopsie:</strong> Bei makroskopisch nicht sicher beurteilbarem Tumor der Portio.</li>
+                    <li><strong>Konisation:</strong> Diagnostisch und therapeutisch bei CIN und frühem Karzinom.</li>
+                    <li><strong>Stanzbiopsie:</strong> Gewebeprobenentnahme mit Hohlnadel.</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Tumortypisierung:</strong> Nach WHO-Klassifikation (2020).</li>
+                    <li><strong>Grading:</strong> Differenzierungsgrad (G1-G3).</li>
+                    <li><strong>Invasionstiefe:</strong> Messung in mm.</li>
+                    <li><strong>Lymphgefäßinvasion (L-Status):</strong> L0 (keine), L1 (nachgewiesen).</li>
+                    <li><strong>Veneninvasion (V-Status):</strong> V0 (keine), V1 (mikroskopisch).</li>
+                    <li><strong>Perineuralscheideninfiltration (Pn-Status):</strong> Nachweis von Tumorzellen in perineuralen Spalträumen.</li>
+                </ul>
+                <h3>Spezielle Klassifikationen</h3>
+                <ul>
+                    <li><strong>Silva-Pattern:</strong> Wachstumsmuster bei Adenokarzinom (Pattern A, B, C) - prognostische Relevanz.</li>
+                    <li><strong>IECC (International Endocervical Adenocarcinoma Classification):</strong> Unterscheidung HPV-assoziiert vs. non-HPV-assoziiert.</li>
+                </ul>
+                <h3>Sentinel-Lymphknoten</h3>
+                <ul>
+                    <li><strong>Konzept:</strong> Zunehmend Bedeutung beim Zervixkarzinom.</li>
+                    <li><strong>Aufarbeitung:</strong> Intraoperative Schnellschnittuntersuchung bei Bedarf.</li>
+                </ul>
+                <h3>Lymphknoten-Status</h3>
+                <ul>
+                    <li><strong>Isolierte Tumorzellen (ITC):</strong> ≤ 0,2 mm.</li>
+                    <li><strong>Mikrometastasen:</strong> ≥ 0,2 mm bis ≤ 2 mm (pN1mic).</li>
+                    <li><strong> Makrometastasen:</strong> > 2 mm (pN1).</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>HPV-Status</h3>
+                <ul>
+                    <li><strong>HPV-Testung:</strong> Zur Charakterisierung des Tumors, insbesondere bei Adenokarzinomen.</li>
+                    <li><strong>High-risk HPV:</strong> HPV 16, 18 - Haupttypen bei Zervixkarzinom.</li>
+                </ul>
+                <h3>PD-L1-Expression</h3>
+                <ul>
+                    <li><strong>Immuntherapie-Indikation:</strong> PD-L1-positives Karzinom für Pembrolizumab-Therapie.</li>
+                    <li><strong>Testung:</strong> Immunhistochemische Bestimmung.</li>
+                </ul>
+                <h3>Molekulare Subtypen</h3>
+                <ul>
+                    <li><strong>HPV-assoziiert:</strong>ca. 85% der Zervixkarzinome.</li>
+                    <li><strong>Non-HPV-assoziiert:</strong>ca. 15%, oft schlechtere Prognose.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinische Untersuchung</h3>
+                <ul>
+                    <li><strong>Gynäkologische Untersuchung:</strong> Unter Narkose zur Beurteilung der Parametrien.</li>
+                    <li><strong>Bimanuelle Untersuchung:</strong> Beurteilung von Tumorgröße und -ausbreitung.</li>
+                </ul>
+                <h3>FIGO-Stadien (2018)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -95,24 +186,59 @@
                                 <td>Stromainvasion 3-5 mm, Breite ≤7 mm</td>
                             </tr>
                             <tr>
-                                <td><strong>IB1-IB3</strong></td>
-                                <td>Auf Zervix beschränkt, verschiedene Größen</td>
+                                <td><strong>IB1</strong></td>
+                                <td>≤ 2 cm</td>
                             </tr>
                             <tr>
-                                <td><strong>IIA/IIB</strong></td>
-                                <td>Befall oberes Drittel Vagina / Parametrien</td>
+                                <td><strong>IB2</strong></td>
+                                <td>> 2-4 cm</td>
                             </tr>
                             <tr>
-                                <td><strong>IIIA/IIIB</strong></td>
-                                <td>Befall unteres Drittel Vagina / Beckenwand</td>
+                                <td><strong>IB3</strong></td>
+                                <td>> 4 cm</td>
                             </tr>
                             <tr>
-                                <td><strong>IVA/IVB</strong></td>
-                                <td>Befall Blase/Rektum / Fernmetastasen</td>
+                                <td><strong>IIA1</strong></td>
+                                <td>Befall oberes Drittel Vagina, ≤ 4 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIA2</strong></td>
+                                <td>Befall oberes Drittel Vagina, > 4 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIB</strong></td>
+                                <td>Befall Parametrien</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIIA</strong></td>
+                                <td>Befall unteres Drittel Vagina</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IIIB</strong></td>
+                                <td>Befall Beckenwand</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVA</strong></td>
+                                <td>Befall Blase/Rektum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVB</strong></td>
+                                <td>Fernmetastasen</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>`
+                </div>
+                <h3>TNM-Klassifikation</h3>
+                <ul>
+                    <li><strong>T (Tumor):</strong> Primärtumorgröße und -ausbreitung.</li>
+                    <li><strong>N (Lymphknoten):</strong> Regionäre Lymphknoten (pelvin, paraaortal).</li>
+                    <li><strong>M (Metastasen):</strong> Fernmetastasen.</li>
+                </ul>
+                <h3>Besondere Faktoren</h3>
+                <ul>
+                    <li><strong>Kinderwunsch:</strong> Muss in die Therapieplanung einbezogen werden.</li>
+                    <li><strong>Menopausenstatus:</strong> Prä/Peri/Post für Ovarerhalt.</li>
+                </ul>`
             },
             {
                 title: "Pathologie",

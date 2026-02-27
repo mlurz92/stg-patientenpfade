@@ -41,38 +41,84 @@
                 </ul>`
             },
             {
-                title: "Pathologische Klassifikation und Diagnostik",
-                html: `<h3>Pathologische Klassifikation</h3>
-                <ul>
-                    <li>Die histopathologische Beurteilung der KZT soll auf Grundlage der WHO Klassifikation von 2016 erfolgen.</li>
-                </ul>
-                <h3>Diagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Hodensonographie</h3>
                 <ul>
                     <li>Bei klinischem Verdacht auf einen KZT sollen umgehend eine körperliche Untersuchung sowie eine beidseitige Hodensonographie mit mind. 7,5 MHz Schallkopf erfolgen.</li>
+                </ul>
+                <h3>Ausbreitungsdiagnostik (Staging)</h3>
+                <ul>
                     <li>Männer mit neu diagnostiziertem KZT sollen zur Ausbreitungsdiagnostik eine kontrastmittelgestützte CT von Abdomen/Becken und Thorax erhalten.</li>
                     <li>Die MRT des Abdomens/Beckens soll bei Männern mit neu diagnostiziertem KZT anstelle der CT bei Kontraindikationen gegen die Gabe von iodhaltigem Kontrastmittel eingesetzt werden.</li>
                     <li>Bei Patienten der schlechten Prognose-Gruppe nach IGCCCG sowie bei Patienten mit exzessiver Beta-hCG-Wert-Erhöhung sollte die Ausbreitungsdiagnostik um eine MRT des Schädels ergänzt werden.</li>
                     <li>Die FDG-PET/CT soll in der primären Ausbreitungsdiagnostik <strong>nicht</strong> routinemäßig eingesetzt werden.</li>
                 </ul>
-                <h3>Tumormarker</h3>
+                <h3>Restaging</h3>
+                <ul>
+                    <li>Die FDG-PET/CT kann bei Seminom-Patienten mit Residualtumoren > 3 cm nach Chemotherapie eingesetzt werden.</li>
+                    <li>Der Zeitpunkt der FDG-PET/CT soll frühestens sechs Wochen nach dem Ende des letzten Zyklus der Chemotherapie liegen.</li>
+                    <li>Die FDG-PET/CT sollte bei Patienten mit einem nichtseminomatösen KZT <strong>nicht</strong> eingesetzt werden.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Serumtumormarker</h3>
                 <ul>
                     <li>Bei Patienten mit Verdacht auf einen KZT sollen <strong>vor der Ablatio testis</strong> die Serumtumormarker AFP, Beta-hCG und LDH bestimmt werden.</li>
                     <li>Postoperativ sollen bei Patienten mit präoperativ erhöhten Werten die Serumtumormarker alle 5-7 Tage bis zum Erreichen des Normalwertes kontrolliert werden.</li>
                 </ul>
-                <h3>Chirurgische Diagnostik</h3>
+                <h3>Endokrinologische Diagnostik</h3>
+                <ul>
+                    <li>Das Abfragen von Symptomen und die Bestimmung der Testosteron- und LH-Spiegel sollen Bestandteil der Diagnostik, Therapie und Nachsorge sein.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Pathologische Klassifikation</h3>
+                <ul>
+                    <li>Die histopathologische Beurteilung der KZT soll auf Grundlage der WHO Klassifikation von 2016 erfolgen.</li>
+                </ul>
+                <h3>Histologische Typen</h3>
+                <ul>
+                    <li><strong>Keimzelltumoren (95%):</strong></li>
+                    <li>Seminom (ca. 50%)</li>
+                    <li>Nicht-seminomatöse Keimzelltumoren (NSGCT): Embryonalkarzinom, Dottersacktumor, Chorionkarzinom, Teratom</li>
+                    <li><strong>Nicht-Keimzelltumoren (5%):</strong> Leydig-Zell-Tumor, Sertoli-Zell-Tumor</li>
+                </ul>`
+            },
+            {
+                title: "Chirurgische Diagnostik",
+                html: `<h3>Inguinale Hodenfreilegung und Ablatio testis</h3>
                 <ul>
                     <li>Bei Verdacht auf einen KZT sollen eine inguinale Hodenfreilegung und bei Nachweis eines malignen Tumors eine Ablatio testis erfolgen.</li>
                     <li>Bei Vorliegen eines gesunden kontralateralen Hodens soll keine organerhaltende Exzision bei Vorliegen eines malignen KZT durchgeführt werden.</li>
                     <li>Bei Patienten mit bilateralem KZT, Tumor im Einzelhoden oder anderen benignen Tumoren soll eine organerhaltende Tumorexzision in Betracht gezogen werden.</li>
                 </ul>
-                <h3>Fertilitätserhalt</h3>
+                <h3>Residualtumorresektion</h3>
                 <ul>
-                    <li>Bei Verdacht auf einen KZT soll vor Therapiebeginn dem Patienten eine Kryokonservierung von Spermatozoen angeboten werden.</li>
-                    <li>Patienten mit einer Azoospermie zum Zeitpunkt der geplanten Kryokonservierung soll eine bilaterale testikuläre Spermienextraktion (TESE) angeboten werden.</li>
+                    <li>Nach Abschluss der primären Chemotherapie und dem Erreichen einer Markernormalisierung bei Patienten mit einem nichtseminomatösen KZT sollen Residualtumore > 1cm im Retroperitoneum und der Lunge reseziert werden.</li>
+                    <li>Residualmetastasen in der Lunge mit der Größe über 1 cm sollen operativ entfernt werden.</li>
+                    <li>Eine RTR soll an Zentren mit ausgewiesener Erfahrung durchgeführt werden.</li>
+                    <li>Die retroperitoneale RTR sollte vorzugsweise als nervschonende Operation durchgeführt werden.</li>
+                    <li>Die alleinige Resektion des Tumors (sogenannte Lumpektomie) sollte <strong>nicht</strong> durchgeführt werden.</li>
                 </ul>`
             },
             {
-                title: "Stadieneinteilung und Prognose",
+                title: "Fertilitätserhalt",
+                html: `<h3>Kryokonservierung</h3>
+                <ul>
+                    <li>Bei Verdacht auf einen KZT soll vor Therapiebeginn dem Patienten eine Kryokonservierung von Spermatozoen angeboten werden.</li>
+                    <li>Patienten mit einer Azoospermie zum Zeitpunkt der geplanten Kryokonservierung soll eine bilaterale testikuläre Spermienextraktion (TESE) angeboten werden.</li>
+                </ul>
+                <h3>Auswirkungen auf die Fertilität</h3>
+                <ul>
+                    <li>Einschränkungen der Fertilität sind bei KZT-Patienten nach Strahlen- oder Chemotherapie im Vergleich zur normalen männlichen Bevölkerung häufig.</li>
+                    <li>Das Risiko für einen klinisch relevanten Hypogonadismus ist beim Patienten mit KZT vorhanden.</li>
+                    <li>Die Strahlentherapie bei GCNIS führt zur Sterilität.</li>
+                </ul>`
+            },
+            {
+                title: "Stadieneinteilung & Prognose",
                 html: `<h3>TNM-Klassifikation</h3>
                 <ul>
                     <li>Für die Bestimmung der anatomischen Ausbreitung des KZT soll die aktuelle TNM-Klassifikation verwendet werden.</li>
@@ -90,7 +136,7 @@
                         <tbody>
                             <tr>
                                 <td><strong>Gut</strong></td>
-                                <td>Alle Metastasen nur lymphatisch oder pulmonal + alle Tumormarker normal oder轻度 erhöht</td>
+                                <td>Alle Metastasen nur lymphatisch oder pulmonal + alle Tumormarker normal oder leicht erhöht</td>
                                 <td>AFP < 1000 ng/ml, HCG < 5000 IU/l, LDH < 1,5x Normal</td>
                             </tr>
                             <tr>
@@ -205,22 +251,7 @@
             },
             {
                 title: "Restaging und Residualtumortherapie",
-                html: `<h3>Restaging nach Chemotherapie</h3>
-                <ul>
-                    <li>Die FDG-PET/CT kann bei Seminom-Patienten mit Residualtumoren > 3 cm nach Chemotherapie eingesetzt werden.</li>
-                    <li>Der Zeitpunkt der FDG-PET/CT soll frühestens sechs Wochen nach dem Ende des letzten Zyklus der Chemotherapie liegen.</li>
-                    <li>Eine RTR nach Abschluss der Primärtherapie eines metastasierten Seminoms sollte <strong>nicht</strong> durchgeführt werden.</li>
-                    <li>Die FDG-PET/CT sollte bei Patienten mit einem nichtseminomatösen KZT <strong>nicht</strong> eingesetzt werden.</li>
-                </ul>
-                <h3>Residualtumorresektion beim NSGCT</h3>
-                <ul>
-                    <li>Nach Abschluss der primären Chemotherapie und dem Erreichen einer Markernormalisierung bei Patienten mit einem nichtseminomatösen KZT sollen Residualtumore > 1cm im Retroperitoneum und der Lunge reseziert werden.</li>
-                    <li>Residualmetastasen in der Lunge mit der Größe über 1 cm sollen operativ entfernt werden.</li>
-                    <li>Eine RTR soll an Zentren mit ausgewiesener Erfahrung durchgeführt werden.</li>
-                    <li>Die retroperitoneale RTR sollte vorzugsweise als nervschonende Operation durchgeführt werden.</li>
-                    <li>Die alleinige Resektion des Tumors (sogenannte Lumpektomie) sollte <strong>nicht</strong> durchgeführt werden.</li>
-                </ul>
-                <h3>Besondere Situationen</h3>
+                html: `<h3>Besondere Situationen</h3>
                 <ul>
                     <li>Bei tumorbedingter Hydronephrose soll vor Einleitung der Chemotherapie eine Entlastung erfolgen.</li>
                     <li>Bei Patienten mit eingeschränkter Nierenfunktion soll Cisplatin nicht generell durch Carboplatin ersetzt werden.</li>

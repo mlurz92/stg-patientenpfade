@@ -19,7 +19,99 @@
                     <li>Median bei Diagnose: ca. 70 Jahre</li>
                     <li>5-Jahres-Überleben: ca. 17% (Männer), ca. 22% (Frauen)</li>
                 </ul>
-                <h3>Histologische Typen</h3>
+                <h3>Risikofaktoren</h3>
+                <ul>
+                    <li><strong>Rauchen:</strong> Verantwortlich für ca. 85% der Fälle (Dosis-Wirkungs-Beziehung).</li>
+                    <li><strong>Passivrauchen:</strong> Erhöhtes Risiko bei Exposition.</li>
+                    <li><strong>Asbest:</strong> Synergismus mit Rauchen.</li>
+                    <li><strong>Radon:</strong> Natürliche Strahlenbelastung.</li>
+                    <li><strong>Genetik:</strong> Familiäre Häufung, EGFR-Mutationen bei Adenokarzinomen.</li>
+                    <li><strong>Luftverschmutzung:</strong> Feinstaub (PM2,5).</li>
+                    <li><strong>Berufliche Exposition:</strong> Asbest, Dieselmotoremissionen, polyzyklische aromatische Kohlenwasserstoffe (PAK), Chromate, Arsen, Nickel.</li>
+                </ul>`
+            },
+            {
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Thorax-Computertomographie (CT)</h3>
+                <ul>
+                    <li><strong>Standard-CT Thorax:</strong> Charakterisierung des Primärtumors, Beurteilung der Lymphknoten, Grundlage für Staging.</li>
+                    <li><strong>Kontrastmittel-CT:</strong> Verbesserte Gefäßdarstellung, insbesondere für mediastinale Lymphknoten.</li>
+                </ul>
+                <h3>Positronenemissionstomographie (PET-CT)</h3>
+                <ul>
+                    <li><strong>PET-CT Ganzkörper:</strong> Standard für Staging und Metastasensuche, Kombination von Stoffwechselinformationen (FDG) mit anatomischer Bildgebung.</li>
+                    <li><strong>Indikationen:</strong> Differenzierung benign/maligne, Lymphknotenstaging, Fernmetastasen-Suche, Rezidivdiagnostik.</li>
+                </ul>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <ul>
+                    <li><strong>MRT Thorax:</strong> Weniger eingesetzt als CT, gute Weichteildifferenzierung.</li>
+                    <li><strong>MRT Schädel:</strong> Zum Ausschluss von Hirnmetastasen, insbesondere bei SCLC und symptomatischen Patienten.</li>
+                </ul>
+                <h3>Sonographie</h3>
+                <ul>
+                    <li><strong>Abdomensonographie:</strong> Zum Ausschluss von Lebermetastasen und Nebennierenläsionen.</li>
+                    <li><strong>Ultraschall-gesteuerte Biopsie:</strong> Für perkutane Tumorbiopsien.</li>
+                </ul>
+                <h3>Skelettdiagnostik</h3>
+                <ul>
+                    <li><strong>Skelettszintigraphie:</strong> Zum Nachweis von Knochenmetastasen.</li>
+                    <li><strong>PET-CT:</strong> Zunehmend替代 für Skelettszintigraphie.</li>
+                    <li><strong>MRT:</strong> Bei Verdacht auf osteoblastische Herde oder spinale Metastasen.</li>
+                </ul>
+                <h3>Bronchoskopie</h3>
+                <ul>
+                    <li><strong>Flexible Bronchoskopie:</strong> Diagnostik bei zentralen Tumoren, Bronchialkarzinom.</li>
+                    <li><strong>Starre Bronchoskopie:</strong> Für interventionelle Eingriffe und Blutungen.</li>
+                    <li><strong>Endobronchialer Ultraschall (EBUS):</strong> Kombination von Bronchoskopie und Ultraschall für Lymphknoten- und Tumorbiopsie.</li>
+                    <li><strong>Navigationsbronchoskopie:</strong> Für periphere Läsionen.</li>
+                </ul>
+                <h3>CT-gesteuerte Biopsie</h3>
+                <ul>
+                    <li><strong>Perkutane Biopsie:</strong> Bei peripheren Tumoren, die bronchoskopisch nicht erreichbar sind.</li>
+                    <li><strong>Coil-Markierung:</strong> Für präoperative Tumorlokalisation.</li>
+                </ul>
+                <h3>Mediastinoskopie</h3>
+                <ul>
+                    <li><strong>Mediastinoskopie:</strong> Chirurgische Lymphknotenentnahme bei unklarem Lymphknotenstatus.</li>
+                    <li><strong>EBUS-TBNA:</strong> Minimalinvasive Alternative zur Mediastinoskopie.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild und Chemie</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium, Calcium.</li>
+                    <li><strong>LDH:</strong> Laktatdehydrogenase, Prognoseparameter bei SCLC.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li><strong>CEA (Carcinoembryonales Antigen):</strong> Unspezifischer Marker, Verlaufskontrolle bei Adenokarzinom.</li>
+                    <li><strong>CYFRA 21-1:</strong> Zytokeratin-Fragmente, Marker für NSCLC.</li>
+                    <li><strong>NSE (Neuronenspezifische Enolase):</strong> Marker für SCLC.</li>
+                    <li><strong>ProGRP (Pro-Gastrin-Releasing Peptide):</strong> SCLC-Marker.</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li><strong>CRP, BSG:</strong> Bei Verdacht auf Entzündung oder Tumorprogress.</li>
+                </ul>
+                <h3>Gerinnungsparameter</h3>
+                <ul>
+                    <li><strong>TPZ, aPTT, Fibrinogen:</strong> Bei Verdacht auf tumorassoziierte Koagulopathie.</li>
+                    <li><strong>D-Dimer:</strong> Bei Verdacht auf Thrombose (Punktrose).</li>
+                </ul>
+                <h3>Paraneoplastische Syndrome - Labor</h3>
+                <ul>
+                    <li><strong>Kalzium:</strong> Hyperkalzämie bei Plattenepithelkarzinom (PTHrP).</li>
+                    <li><strong>Natrium:</strong> Hyponatriämie bei SIADH (SCLC).</li>
+                    <li><strong>AKH (Adrenokortikotropes Hormon):</strong> Cushing-Syndrom.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Histologische Typen</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -53,49 +145,76 @@
                         </tbody>
                     </table>
                 </div>
-                <h3>Risikofaktoren</h3>
+                <h3>Biopsie-Verfahren</h3>
                 <ul>
-                    <li><strong>Rauchen:</strong> Verantwortlich für ca. 85% der Fälle (Dosis-Wirkungs-Beziehung).</li>
-                    <li><strong>Passivrauchen:</strong> Erhöhtes Risiko bei Exposition.</li>
-                    <li><strong>Asbest:</strong> Synergismus mit Rauchen.</li>
-                    <li><strong>Radon:</strong> Natürliche Strahlenbelastung.</li>
-                    <li><strong>Genetik:</strong> Familiäre Häufung, EGFR-Mutationen bei Adenokarzinomen.</li>
-                    <li><strong>Luftverschmutzung:</strong> Feinstaub (PM2,5).</li>
-                    <li><strong>Berufliche Exposition:</strong> Asbest, Dieselmotoremissionen, polyzyklische aromatische Kohlenwasserstoffe (PAK), Chromate, Arsen, Nickel.</li>
+                    <li><strong>Bronchoskopische Biopsie:</strong> Zange, Bürste, Nadel für zentrale Tumoren.</li>
+                    <li><strong>CT-gesteuerte Feinnadelbiopsie:</strong> Für periphere Tumoren.</li>
+                    <li><strong>EBUS-TBNA:</strong> Endobronchialer Ultraschall mit transbronchialer Nadel aspiration.</li>
+                    <li><strong>Mediastinoskopie:</strong> Chirurgische Biopsie.</li>
+                    <li><strong>Pleura-Punktion:</strong> Bei Pleuraerguss.</li>
+                    <li><strong>Zytologie:</strong> Sputum, Pleuraerguss, bronchoalveoläre Lavage.</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Tumorart und -typ:</strong> Histologische Klassifikation nach WHO.</li>
+                    <li><strong>Differenzierungsgrad:</strong> G1 (gut), G2 (mäßig), G3 (schlecht) differenziert.</li>
+                    <li><strong>Immunhistochemie:</strong> TTF-1, Napsin A (Adenokarzinom), p40, p63 (Plattenepithel), Synaptophysin, Chromogranin (Neuroendokrin).</li>
+                    <li><strong>Ki-67:</strong> Proliferationsindex, wichtig für SCLC.</li>
+                </ul>
+                <h3>Zytologische Diagnostik</h3>
+                <ul>
+                    <li><strong>Sputumzytologie:</strong> Wenig invasiv, geringe Sensitivität.</li>
+                    <li><strong>Bronchialsekretzytologie:</strong> Bei Bronchoskopie.</li>
+                    <li><strong>Pleuraerguss-Zytologie:</strong> Bei malignem Pleuraerguss.</li>
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Symptome</h3>
-                <ul>
-                    <li><strong>Lokal:</strong> Husten, Hämoptysen, Dyspnoe, Thoraxschmerzen.</li>
-                    <li><strong>Paraneoplastisch:</strong> Hyperkalzämie, SIADH, Lambert-Eaton-Syndrom.</li>
-                    <li><strong>Metastasen:</strong> Knochenschmerzen, neurologische Ausfälle.</li>
-                </ul>
-                <h3>Primärdiagnostik</h3>
-                <ul>
-                    <li><strong>Thorax-CT:</strong> Charakterisierung des Tumors, Lymphknoten.</li>
-                    <li><strong>Bronchoskopie:</strong> Biopsie bei zentralen Tumoren.</li>
-                    <li><strong>CT-gesteuerte Biopsie:</strong> Bei peripheren Tumoren.</li>
-                    <li><strong>Mediastinoskopie:</strong> Bei unklarem Lymphknotenstatus.</li>
-                    <li><strong>PET-CT:</strong> Für Staging und Metastasensuche.</li>
-                </ul>
-                <h3>Molekulare Testung (NSCLC)</h3>
+                title: "Molekulare Diagnostik",
+                html: `<h3>Standard-molekulare Testung (NSCLC)</h3>
                 <p>Standardmäßige molekulare Diagnostik bei allen fortgeschrittenen Nicht-Plattenepithelkarzinomen:</p>
+                <h4>Treibermutationen</h4>
                 <ul>
-                    <li><strong>EGFR-Mutation:</strong> Exon 19-Deletion, L858R (ca. 10-15% bei Kaukasiern).</li>
+                    <li><strong>EGFR-Mutation:</strong> Exon 19-Deletion, L858R (ca. 10-15% bei Kaukasiern, 50% bei Asiaten).</li>
                     <li><strong>ALK-Translokation:</strong> EML4-ALK (ca. 3-5%).</li>
                     <li><strong>ROS1-Translokation:</strong> (ca. 1-2%).</li>
                     <li><strong>BRAF V600E-Mutation:</strong> (ca. 1-3%).</li>
-                    <li><strong>KRAS-G12C-Mutation</strong></li>
-                    <ul>
-                        <li>Sotorasib, Adagrasib</li>
-                    </ul>
-                    <li><strong>PD-L1-Expression:</strong> Immunhistochemie für Immuntherapie-Entscheidung.</li>
+                    <li><strong>KRAS-G12C-Mutation:</strong> Häufigste Mutation bei Rauchern.</li>
+                </ul>
+                <h4>Weitere Mutationen</h4>
+                <ul>
                     <li><strong>NTRK-Translokation:</strong> Selten, zielgerichtete Therapie möglich.</li>
                     <li><strong>MET-Exon-14-Skipping:</strong> (ca. 2-4%).</li>
                     <li><strong>RET-Translokation:</strong> (ca. 1-2%).</li>
                     <li><strong>HER2-Mutation:</strong> (ca. 1-2%).</li>
+                </ul>
+                <h3>Immunbiomarker</h3>
+                <ul>
+                    <li><strong>PD-L1-Expression:</strong> Immunhistochemie für Immuntherapie-Entscheidung (TPS - Tumor Proportion Score).</li>
+                    <li><strong>TPS ≥50%:</strong> Hohe Wahrscheinlichkeit für Ansprechen auf Immuntherapie.</li>
+                    <li><strong>TPS 1-49%:</strong> Entscheidung nach Therapielinie und Kombination.</li>
+                    <li><strong>TPS <1%:</strong> Niedriges Ansprechen auf Immunmonotherapie.</li>
+                </ul>
+                <h3>Testmethoden</h3>
+                <ul>
+                    <li><strong>PCR:</strong> Mutationsanalyse (EGFR, KRAS, BRAF).</li>
+                    <li><strong>NGS (Next-Generation Sequencing):</strong> Panel-Testung für multiple Gene.</li>
+                    <li><strong>FISH:</strong> Translokationsnachweis (ALK, ROS1, RET, NTRK).</li>
+                    <li><strong>IHC:</strong> Immunhistochemie als Screening (ALK, ROS1, PD-L1).</li>
+                </ul>
+                <h3>Molekulare Resistenzmechanismen</h3>
+                <ul>
+                    <li><strong>EGFR T790M:</strong> Resistenz gegen Erlotinib, Gefitinib, Afatinib.</li>
+                    <li><strong>EGFR C797S:</strong> Resistenz gegen Osimertinib.</li>
+                    <li><strong>ALK G1202R:</strong> Resistenz gegen ALK-Inhibitoren.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinische Symptome</h3>
+                <ul>
+                    <li><strong>Lokal:</strong> Husten, Hämoptysen, Dyspnoe, Thoraxschmerzen, Stridor.</li>
+                    <li><strong>Paraneoplastisch:</strong> Hyperkalzämie, SIADH, Lambert-Eaton-Syndrom.</li>
+                    <li><strong>Metastasen:</strong> Knochenschmerzen, neurologische Ausfälle, Ikterus.</li>
                 </ul>
                 <h3>TNM-Stadien (NSCLC, 8. Edition)</h3>
                 <div class="table-wrap">
@@ -156,11 +275,75 @@
                         </tbody>
                     </table>
                 </div>
+                <h3>T-Kategorie (Tumor)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>T-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>T1</td><td>≤3 cm, umgeben von Lungengewebe/Bvisceral</td></tr>
+                            <tr><td>T1a</td><td>≤1 cm</td></tr>
+                            <tr><td>T1b</td><td>>1-2 cm</td></tr>
+                            <tr><td>T1c</td><td>>2-3 cm</td></tr>
+                            <tr><td>T2</td><td>>3-5 cm oder Infiltration Hauptbronchus/viszerale Pleura</td></tr>
+                            <tr><td>T2a</td><td>>3-4 cm</td></tr>
+                            <tr><td>T2b</td><td>>4-5 cm</td></tr>
+                            <tr><td>T3</td><td>>5-7 cm oder Infiltration Brustwand/Perikard/Phrenikus</td></tr>
+                            <tr><td>T4</td><td>>7 cm oder Infiltration Mediastinum/Diaphragma/Herz</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>N-Kategorie (Lymphknoten)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>N0</td><td>Keine regionären Lymphknotenmetastasen</td></tr>
+                            <tr><td>N1</td><td>Peribronchiale/Lymphknoten ipsilateral hilär/intrapulmonal</td></tr>
+                            <tr><td>N2</td><td>ipsilaterale Mediastinal-LK</td></tr>
+                            <tr><td>N3</td><td>kontralaterale Mediastinal-LK/Supraklavikular-LK</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>M-Kategorie (Metastasen)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>M-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>M0</td><td>Keine Fernmetastasen</td></tr>
+                            <tr><td>M1a</td><td>Kontralaterale Lungenknoten/Pleuraerguss/Perikarderguss</td></tr>
+                            <tr><td>M1b</td><td>Einzelne Fernmetastase</td></tr>
+                            <tr><td>M1c</td><td>Multiple Fernmetastasen</td></tr>
+                        </tbody>
+                    </table>
+                </div>
                 <h3>SCLC-Stadien</h3>
                 <ul>
                     <li><strong>Very Limited Disease (VLD):</strong> Auf einen Hemithorax beschränkt ohne Lymphknotenbefall im Mediastinum, inkl. ipsilaterale Pleuraerguss.</li>
                     <li><strong>Limited Disease:</strong> Auf einen Hemithorax beschränkt, inkl. kontralaterale Mediastinal-LK und ipsilaterale Pleuraerguss.</li>
                     <li><strong>Extensive Disease:</strong> Ausgedehnte Erkrankung außerhalb des Hemithorax.</li>
+                </ul>
+                <h3>Metastasenlokalisation</h3>
+                <ul>
+                    <li><strong>Gehirn:</strong> Häufig bei SCLC und Adenokarzinom.</li>
+                    <li><strong>Knochen:</strong> Osteolytische und osteoblastische Metastasen.</li>
+                    <li><strong>Leber:</strong> Häufig bei SCLC.</li>
+                    <li><strong>Nebennieren:</strong> Häufige Metastasenstelle.</li>
+                    <li><strong>Lunge:</strong> Interpulmonale Metastasen.</li>
                 </ul>`
             },
             {

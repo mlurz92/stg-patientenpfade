@@ -46,18 +46,14 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
+                title: "Bildgebende Diagnostik",
                 html: `<h3>Klinische Symptome</h3>
                 <ul>
                     <li>Bei allen Patienten mit <strong>Heiserkeit über mehr als 4 Wochen</strong> soll der Kehlkopf endoskopisch untersucht werden.</li>
                     <li>Die Symptome des Larynxkarzinoms sind abhängig von der Lokalisation des Tumors und gehen nicht immer mit einer Stimmveränderung einher.</li>
                     <li>Bei über mehrere Wochen anhaltenden oder gar zunehmenden <strong>Schluckstörungen</strong> soll eine endoskopische Kehlkopfuntersuchung erfolgen.</li>
                 </ul>
-                <h3>Interdisziplinäres Tumorboard</h3>
-                <ul>
-                    <li>Die Behandlung des Larynxkarzinoms soll <strong>interdisziplinär nach Abstimmung jedes individuellen Falls innerhalb von Tumorboards</strong> unter Beteiligung der Fachdisziplinen Hals-Nasen-Ohrenheilkunde, Strahlentherapie, medizinische Onkologie, Pathologie und Radiologie durchgeführt werden.</li>
-                </ul>
-                <h3>Bildgebung</h3>
+                <h3>Computertomographie (CT)</h3>
                 <p>Bei folgenden Patienten mit Larynxkarzinom soll eine Bildgebung durchgeführt werden:</p>
                 <ul>
                     <li>Karzinome der Stimmlippen mit Bewegungseinschränkung oder Fixation</li>
@@ -65,19 +61,148 @@
                     <li>Karzinome der Supraglottis außer bei Lokalisation am freien Rand der Epiglottis</li>
                     <li>Karzinome mit subglottischer Ausdehnung</li>
                 </ul>
-                <p>Zur Festlegung der lokalen Ausdehnung sollen eine <strong>kontrastverstärkte CT</strong> und/oder eine <strong>MRT</strong> durchgeführt werden.</p>
-                <p>Zur Feststellung der N-Kategorie soll gleichzeitig die gesamte Region von der Schädelbasis bis zur oberen Thoraxapertur mit der CT oder MRT untersucht werden.</p>
-                <h3>Panendoskopie</h3>
-                <p>Die <strong>Panendoskopie soll bei Patienten mit Larynxkarzinom durchgeführt werden</strong> zum Ausschluss von Zweittumoren.</p>
-                <h3>Biopsie</h3>
+                <p>Zur Festlegung der lokalen Ausdehnung sollen eine <strong>kontrastverstärkte CT</strong> durchgeführt werden.</p>
+                <p>Zur Feststellung der N-Kategorie soll gleichzeitig die gesamte Region von der Schädelbasis bis zur oberen Thoraxapertur mit der CT untersucht werden.</p>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <p>Alternativ oder ergänzend zur CT kann eine <strong>MRT</strong> durchgeführt werden:</p>
                 <ul>
-                    <li>Kleine, umschriebene malignomsuspekte Schleimhautveränderungen (z.B. der Stimmlippen) sollen zur Diagnosesicherung vollständig entfernt werden (Exzisionsbiopsie).</li>
-                    <li>Bei größeren Tumoren sollen lediglich Biopsien durchgeführt werden.</li>
-                    <li>Bei Biopsien soll die Probeentnahme aus dem <strong>Randbereich des Tumors</strong> und wenn möglich zentral aus dem Tumorgrund erfolgen.</li>
+                    <li>Bei Kontraindikationen gegen jodhaltiges Kontrastmittel</li>
+                    <li>Bessere Weichteildarstellung für bestimmte Fragestellungen</li>
                 </ul>
-                <h3>Wächterlymphknoten</h3>
+                <h3>Endoskopische Diagnostik</h3>
                 <ul>
-                    <li>Es kann <strong>keine Empfehlung</strong> für die Eignung der SLN-Biopsie als Methode zur Vermeidung einer elektiven Halslymphknotenausräumung beim Larynxkarzinom ausgesprochen werden.</li>
+                    <li><strong>Panendoskopie:</strong> Soll bei Patienten mit Larynxkarzinom durchgeführt werden zum Ausschluss von Zweittumoren.</li>
+                    <li><strong>Laryngoskopie:</strong> Direkte oder indirekte Kehlkopfuntersuchung zur Beurteilung des Tumors.</li>
+                    <li><strong>Videolaryngostroboskopie:</strong> Zur Beurteilung der Stimmbandbeweglichkeit.</li>
+                </ul>
+                <h3>Halssonographie</h3>
+                <ul>
+                    <li>Die Sonographie des Halses dient zur Beurteilung der Lymphknotenstatus.</li>
+                    <li>Standard in der Nachsorge.</li>
+                </ul>
+                <h3>PET-CT</h3>
+                <ul>
+                    <li>Die FDG-PET/CT hat keinen routinemäßigen Stellenwert in der Primärdiagnostik des Larynxkarzinoms.</li>
+                    <li>Kann bei Verdacht auf Fernmetastasen oder bei unklarem Befund eingesetzt werden.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Standard-Laborparameter</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium.</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li><strong>CRP, BSG:</strong> Bei Verdacht auf Entzündung oder Tumorprogress.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li>Es existieren <strong>keine etablierten Tumormarker</strong> für die Diagnostik oder Nachsorge des Larynxkarzinoms.</li>
+                    <li>Eine routinemäßige Bestimmung von Tumormarkern wird <strong>nicht empfohlen</strong>.</li>
+                </ul>
+                <h3>Infektionsserologie</h3>
+                <ul>
+                    <li><strong>HIV-Serologie:</strong> Bei Risikopatienten.</li>
+                    <li><strong>Hepatitis-Serologie:</strong> Bei geplanter Chemotherapie.</li>
+                </ul>
+                <h3>weitere Laborparameter</h3>
+                <ul>
+                    <li><strong>Gerinnungsparameter:</strong> Quick, PTT, Thrombozyten vor interventionellen Eingriffen.</li>
+                    <li><strong>Blutgruppe und Antikörpersuchtest:</strong> Vor operativen Eingriffen.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li>Kleine, umschriebene malignomsuspekte Schleimhautveränderungen (z.B. der Stimmlippen) sollen zur Diagnosesicherung vollständig entfernt werden (<strong>Exzisionsbiopsie</strong>).</li>
+                    <li>Bei größeren Tumoren sollen lediglich <strong>Inzisionsbiopsien</strong> durchgeführt werden.</li>
+                    <li>Bei Biopsien soll die Probeentnahme aus dem <strong>Randbereich des Tumors</strong> und wenn möglich zentral aus dem Tumorgrund erfolgen.</li>
+                    <li>Die Biopsie kann im Rahmen der Panendoskopie in Narkose erfolgen.</li>
+                </ul>
+                <h3>Histopathologischer Befund</h3>
+                <p>Folgende Parameter sollen im histopathologischen Befund angegeben werden:</p>
+                <ul>
+                    <li><strong>Tumorlokalisation und -größe</strong></li>
+                    <li><strong>Histologischer Tumortyp</strong> nach aktueller WHO-Klassifikation</li>
+                    <li><strong>Lokale Tumorausdehnung</strong>, infiltrierte Strukturen</li>
+                    <li><strong>Lymphknotenmetastasen</strong> nach Level und Seite getrennt (Anzahl untersuchte/befallene LK, größter Durchmesser, kapselüberschreitendes Wachstum)</li>
+                    <li><strong>Lymphgefäß-/Veneninvasion</strong> und <strong>perineurale Invasion</strong></li>
+                    <li>Vorhandensein einer <strong>in situ</strong> Komponente</li>
+                    <li><strong>Differenzierungsgrad</strong> (G1-G3)</li>
+                    <li><strong>Abstand zu den lateralen und basalen Resektaträndern</strong></li>
+                </ul>
+                <h3>Tumortypen</h3>
+                <ul>
+                    <li><strong>Plattenepithelkarzinom:</strong> Häufigster Typ (> 90%)</li>
+                    <li><strong>Verruköses Karzinom:</strong> Seltene, niedrig-maligne Variante</li>
+                    <li><strong>Adenokarzinom:</strong> Selten</li>
+                    <li><strong>Neuroendokrine Tumoren:</strong> Sehr selten</li>
+                </ul>
+                <h3>Differenzierungsgrade</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grad</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>G1</strong></td>
+                                <td>Gut differenziert</td>
+                            </tr>
+                            <tr>
+                                <td><strong>G2</strong></td>
+                                <td>Mäßig differenziert</td>
+                            </tr>
+                            <tr>
+                                <td><strong>G3</strong></td>
+                                <td>Schlecht differenziert</td>
+                            </tr>
+                            <tr>
+                                <td><strong>G4</strong></td>
+                                <td>Undifferenziert</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>HPV-Status</h3>
+                <ul>
+                    <li>Der <strong>HPV-Status hat beim Larynxkarzinom keinen prognostischen Wert</strong>.</li>
+                    <li>Eine routinemäßige p16-Immunhistochemie oder HPV-Testung wird <strong>nicht empfohlen</strong>.</li>
+                    <li>Dies unterscheidet das Larynxkarzinom vom Oropharynxkarzinom, wo der HPV-Status ein wichtiger prognostischer Faktor ist.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li>Es existieren <strong>keine etablierten molekularen Tumermarker</strong> für das Larynxkarzinom.</li>
+                    <li>Weder in der Primärdiagnostik noch in der Nachsorge haben sich molekulare Marker etabliert.</li>
+                </ul>
+                <h3>Genetische Alterationen</h3>
+                <ul>
+                    <li>Die molekulare Pathologie des Larynxkarzinoms ist weniger charakterisiert als bei anderen Kopf-Hals-Tumoren.</li>
+                    <li>Häufige Alterationen umfassen TP53-Mutationen, CDKN2A-Deletionen und EGFR-Überexpression.</li>
+                    <li>Diese haben derzeit keinen Einfluss auf die Therapieentscheidung.</li>
+                </ul>
+                <h3>Zukünftige Perspektiven</h3>
+                <ul>
+                    <li>Die Forschung zu molekularen Markern beim Larynxkarzinom ist Gegenstand aktiver Studien.</li>
+                    <li>Potenzielle Targets für zukünftige Therapien werden untersucht.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Interdisziplinäres Tumorboard</h3>
+                <ul>
+                    <li>Die Behandlung des Larynxkarzinoms soll <strong>interdisziplinär nach Abstimmung jedes individuellen Falls innerhalb von Tumorboards</strong> unter Beteiligung der Fachdisziplinen Hals-Nasen-Ohrenheilkunde, Strahlentherapie, medizinische Onkologie, Pathologie und Radiologie durchgeführt werden.</li>
                 </ul>
                 <h3>TNM-Klassifikation</h3>
                 <div class="table-wrap">
@@ -112,6 +237,56 @@
                         </tbody>
                     </table>
                 </div>
+                <h3>N-Kategorie (Lymphknoten)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N-Kategorie</th>
+                                <th>Beschreibung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>N0</strong></td>
+                                <td>Keine Lymphknotenmetastasen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N1</strong></td>
+                                <td>Einzelner ipsilateraler Lymphknoten ≤ 3 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N2</strong></td>
+                                <td>Einzelner ipsilateraler Lymphknoten > 3-6 cm oder multiple Lymphknoten</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N3</strong></td>
+                                <td>Lymphknoten > 6 cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>M-Kategorie (Fernmetastasen)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>M-Kategorie</th>
+                                <th>Beschreibung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>M0</strong></td>
+                                <td>Keine Fernmetastasen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>M1</strong></td>
+                                <td>Fernmetastasen vorhanden</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <h3>R-Klassifikation</h3>
                 <ul>
                     <li><strong>R0</strong>: Tumor in sano reseziert, der exakte Abstand von Tumorverbänden zum Resektionsrand spielt keine Rolle, solange der unmittelbare Rand tumorfrei ist.</li>
@@ -119,17 +294,78 @@
                     <li><strong>R2</strong>: Makroskopisch Tumor im Patienten verblieben.</li>
                     <li><strong>RX</strong>: Resektionsrand histomorphologisch nicht sicher beurteilbar.</li>
                 </ul>
-                <h3>Histopathologischer Befund</h3>
-                <p>Folgende Parameter sollen angegeben werden:</p>
+                <h3>Stadiengruppierung</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>T</th>
+                                <th>N</th>
+                                <th>M</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>0</strong></td>
+                                <td>Tis</td>
+                                <td>N0</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>I</strong></td>
+                                <td>T1</td>
+                                <td>N0</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>II</strong></td>
+                                <td>T2</td>
+                                <td>N0</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>III</strong></td>
+                                <td>T1-2</td>
+                                <td>N1</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>III</strong></td>
+                                <td>T3</td>
+                                <td>N0-1</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVA</strong></td>
+                                <td>T4a</td>
+                                <td>N0-1</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVA</strong></td>
+                                <td>T1-4a</td>
+                                <td>N2</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVB</strong></td>
+                                <td>jedes T</td>
+                                <td>N3</td>
+                                <td>M0</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IVC</strong></td>
+                                <td>jedes T</td>
+                                <td>jedes N</td>
+                                <td>M1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Wächterlymphknoten-Biopsie</h3>
                 <ul>
-                    <li>Tumorlokalisation und -größe</li>
-                    <li>Histologischer Tumortyp nach aktueller WHO-Klassifikation</li>
-                    <li>Lokale Tumorausdehnung, infiltrierte Strukturen</li>
-                    <li>Lymphknotenmetastasen nach Level und Seite getrennt (Anzahl untersuchte/befallene LK, größter Durchmesser, kapselüberschreitendes Wachstum)</li>
-                    <li>Lymphgefäß-/Veneninvasion und perineurale Invasion</li>
-                    <li>Vorhandensein einer in situ Komponente</li>
-                    <li>Differenzierungsgrad</li>
-                    <li>Abstand zu den lateralen und basalen Resektaträndern</li>
+                    <li>Es kann <strong>keine Empfehlung</strong> für die Eignung der SLN-Biopsie als Methode zur Vermeidung einer elektiven Halslymphknotenausräumung beim Larynxkarzinom ausgesprochen werden.</li>
                 </ul>`
             },
             {

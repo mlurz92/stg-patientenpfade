@@ -18,6 +18,82 @@
                     <li>Männer : Frauen = 1,3 : 1</li>
                     <li>5-Jahres-Überleben: ca. 90% (frühe Stadien >95%)</li>
                 </ul>
+                <h3>Risikofaktoren</h3>
+                <ul>
+                    <li><strong>EBV-Infektion:</strong> Assoziation mit ca. 30-40% der Fälle.</li>
+                    <li><strong>Immunodefizienz:</strong> HIV, Post-Transplantation.</li>
+                    <li><strong>Familiäre Häufung:</strong> Erhöhtes Risiko bei Verwandten.</li>
+                </ul>`
+            },
+            {
+                title: "Bildgebende Diagnostik",
+                html: `<h3>PET/CT</h3>
+                <ul>
+                    <li>Die PET/CT soll im Rahmen des initialen Stagings zur Stadienbestimmung durchgeführt werden.</li>
+                    <li>Die initiale PET/CT sollte zur Bestrahlungsplanung verwendet werden.</li>
+                    <li>Die PET/CT hat eine hohe Sensitivität und Spezifität in Bezug auf einen Knochenmarksbefall.</li>
+                    <li>Bei keinem Hinweis auf einen Knochenmarkbefall in der PET/CT, soll auf eine Knochenmarkbiopsie verzichtet werden.</li>
+                </ul>
+                <h3>Computertomographie (CT)</h3>
+                <ul>
+                    <li>CT (mit Kontrastmittel) des Halses, Thorax und Abdomen als Standard-Bildgebung.</li>
+                    <li>Bei schwerer Kontrastmittel-Unverträglichkeit/Allergie soll statt einer CT mit Kontrastmittel eine alternative Bildgebung (z.B. MRT) angestrebt werden.</li>
+                    <li>Die kontrastmittel-verstärkte CT kann im Rahmen der Ganzkörper-PET/CT als eine Untersuchung durchgeführt werden.</li>
+                </ul>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <ul>
+                    <li>Sonographie und MRT sollten bei Bedarf ergänzend eingesetzt werden.</li>
+                    <li>Bei Verdacht auf Knochenmarkbefall kann die MRT zur weiteren Abklärung eingesetzt werden.</li>
+                </ul>
+                <h3>Sonographie</h3>
+                <ul>
+                    <li>Sonographie des Abdomens als Standard-Untersuchung.</li>
+                    <li>Zur ergänzenden Abklärung bei Verdacht auf Organbefall.</li>
+                </ul>
+                <h3>Röntgen</h3>
+                <ul>
+                    <li>Röntgen-Thorax im initialen Staging.</li>
+                    <li>Konventionelles Röntgen bei Verdacht auf ossäre Befälle der Extremitäten.</li>
+                </ul>
+                <h3>Weitere Bildgebung</h3>
+                <ul>
+                    <li>Klinisch verdächtige extranodale Befälle oder Organbefälle sollen mit den adäquaten Methoden (z.B. Sonographie, CT, MRT oder Biopsie, Röntgen) abgeklärt werden.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild</h3>
+                <ul>
+                    <li>Differentialblutbild ist Teil der initialen Labordiagnostik.</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li>Blutsenkungsgeschwindigkeit (BSG) als wichtiger Prognosefaktor.</li>
+                    <li>Hohe BSG (≥50mm/h ohne B-Symptome, ≥30mm/h mit B-Symptomen) als Risikofaktor.</li>
+                </ul>
+                <h3>Leberwerte</h3>
+                <ul>
+                    <li>Gamma-GT, GOT, GPT, Bilirubin.</li>
+                </ul>
+                <h3>Nierenfunktion</h3>
+                <ul>
+                    <li>Kreatinin, Harnstoff.</li>
+                </ul>
+                <h3>Tumormarker/Weitere Parameter</h3>
+                <ul>
+                    <li>Laktatdehydrogenase (LDH) als Prognosefaktor.</li>
+                    <li>Alkalische Phosphatase (AP) - bei Erhöhung Hinweis auf Knochenbeteiligung.</li>
+                    <li>Harnsäure.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Histologische Diagnostik</h3>
+                <ul>
+                    <li>Die histopathologische Diagnostik soll an der Biopsie eines Lymphknotens oder gegebenenfalls an der Biopsie eines anderen primär befallenen Organs gestellt werden.</li>
+                    <li>Die histologische Diagnose soll nicht alleinig durch eine Feinnadelaspiration gestellt werden.</li>
+                    <li>Bei der histologischen Diagnose eines klassischen Hodgkin Lymphoms soll eine Beurteilung durch einen Referenzpathologen angestrebt werden.</li>
+                </ul>
                 <h3>Histologische Subtypen (WHO)</h3>
                 <div class="table-wrap">
                     <table>
@@ -62,43 +138,33 @@
                         </tbody>
                     </table>
                 </div>
-                <h3>Risikofaktoren</h3>
+                <h3>Immunhistochemie</h3>
                 <ul>
-                    <li><strong>EBV-Infektion:</strong> Assoziation mit ca. 30-40% der Fälle.</li>
-                    <li><strong>Immunodefizienz:</strong> HIV, Post-Transplantation.</li>
-                    <li><strong>Familiäre Häufung:</strong> Erhöhtes Risiko bei Verwandten.</li>
+                    <li>CD30, CD15 als typische Marker des klassischen HL.</li>
+                    <li>CD20 beim nodulären lymphozyten-predominanten HL (NLPHL).</li>
+                    <li>EBV-Asssoziation in ca. 30-40% der Fälle.</li>
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Typische Symptome</h3>
+                title: "Molekulare Diagnostik",
+                html: `<h3>Allgemeines</h3>
                 <ul>
-                    <li><strong>Schmerzlose Lymphknotenschwellungen:</strong> In ca. 70% der Fälle, zervikal (70%), axillär (30%), inguinal (10%).</li>
-                    <li><strong>B-Symptomatik:</strong> Bei ca. 40% der Patienten:
-                        <ul>
-                            <li>Fieber > 38°C</li>
-                            <li>Nachtschweiß</li>
-                            <li>Gewichtsverlust > 10% in 6 Monaten</li>
-                        </ul>
-                    </li>
-                    <li><strong>Unspezifische Symptome:</strong> Leistungsminderung, Pruritus, Alkoholschmerz.</li>
-                    <li><strong>Bei ausgedehntem Befall:</strong> Dyspnoe, Vena-cava-superior-Syndrom, abdominelle Schwellung.</li>
+                    <li>Die molekulare Diagnostik hat beim Hodgkin-Lymphom im Vergleich zu anderen Lymphomen einen geringeren Stellenwert.</li>
+                    <li>Die klassische Histologie mit Immunphänotypisierung ist diagnostisch in der Regel ausreichend.</li>
                 </ul>
-                <h3>Histologische Diagnostik</h3>
+                <h3>Mögliche molekulare Untersuchungen</h3>
                 <ul>
-                    <li>Die histologische Diagnose soll an der Biopsie eines ganzen Lymphknotens gestellt werden.</li>
-                    <li>Die histologische Diagnose soll nicht alleinig durch eine Feinnadelaspiration gestellt werden.</li>
-                    <li>Bei der histologischen Diagnose eines klassischen Hodgkin Lymphoms soll eine Beurteilung durch einen Referenzpathologen angestrebt werden.</li>
+                    <li>EBV-DNA-Nachweis bei Verdacht auf EBV-assoziiertes Hodgkin-Lymphom.</li>
+                    <li>Bei refraktärem/rezidiviertem Krankheitsverlauf können molekulare Verfahren zur MRD-Bestimmung eingesetzt werden.</li>
                 </ul>
-                <h3>Anforderungen an die Diagnostik</h3>
+                <h3>Keimbahnmutationen</h3>
                 <ul>
-                    <li>Die Ausbreitungsdiagnostik und Organfunktionsdiagnostik sollen innerhalb von 4 Wochen abgeschlossen sein.</li>
-                    <li>Initialen Diagnostik-Untersuchungen: Anamnese, körperliche Untersuchung, Labor, Bildgebung (CT, Röntgen-Thorax, Sonografie, PET/CT).</li>
-                    <li>Bei keinem Hinweis auf Knochenmarkbefall in der PET/CT, soll auf eine Knochenmarkbiopsie verzichtet werden.</li>
-                    <li>Untersuchungen zur Toxizitätsbeurteilung (EKG, Echokardiogramm, Lungenfunktion, TSH, Gonadenfunktion) sollen vor Therapiebeginn durchgeführt werden.</li>
-                    <li>Bei nicht abgeschlossener Familienplanung soll auf Möglichkeiten fertilitätserhaltender Maßnahmen hingewiesen werden.</li>
-                </ul>
-                <h3>Ann-Arbor-Staging (Cotswold-modifiziert)</h3>
+                    <li>Eine genetische Testung ist bei familiärer Häufung oder jungem Erkrankungsalter erwägenswert.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Ann-Arbor-Staging (Cotswold-modifiziert)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -130,6 +196,7 @@
                 <ul>
                     <li><strong>A:</strong> Ohne B-Symptome</li>
                     <li><strong>B:</strong> Mit B-Symptomen (Fieber >38°C, Nachtschweiß, Gewichtsverlust)</li>
+                    <li><strong>E:</strong> Befall eines einzigen extralymphatischen Organs</li>
                 </ul>
                 <h3>Risikofaktoren (GHSG)</h3>
                 <ul>
@@ -144,10 +211,25 @@
                     <li><strong>Intermediäre Stadien:</strong> Stadium I-II mit Risikofaktoren oder Stadium IIB mit hoher BSG/≥3 Arealen</li>
                     <li><strong>Fortgeschrittene Stadien:</strong> Stadium IIB mit E-Befall/großem Mediastinaltumor, Stadium III-IV</li>
                 </ul>
-                <h3>Stellenwert der PET/CT</h3>
+                <h3>Typische Symptome</h3>
                 <ul>
-                    <li>Die PET/CT soll im Rahmen des initialen Stagings zur Stadienbestimmung durchgeführt werden.</li>
-                    <li>Die initiale PET/CT sollte zur Bestrahlungsplanung verwendet werden.</li>
+                    <li><strong>Schmerzlose Lymphknotenschwellungen:</strong> In ca. 70% der Fälle, zervikal (70%), axillär (30%), inguinal (10%).</li>
+                    <li><strong>B-Symptomatik:</strong> Bei ca. 40% der Patienten:
+                        <ul>
+                            <li>Fieber > 38°C</li>
+                            <li>Nachtschweiß</li>
+                            <li>Gewichtsverlust > 10% in 6 Monaten</li>
+                        </ul>
+                    </li>
+                    <li><strong>Unspezifische Symptome:</strong> Leistungsminderung, Pruritus, Alkoholschmerz.</li>
+                    <li><strong>Bei ausgedehntem Befall:</strong> Dyspnoe, Vena-cava-superior-Syndrom, abdominelle Schwellung.</li>
+                </ul>
+                <h3>Anforderungen an die Diagnostik</h3>
+                <ul>
+                    <li>Die Ausbreitungsdiagnostik und Organfunktionsdiagnostik sollen innerhalb von 4 Wochen abgeschlossen sein.</li>
+                    <li>Initialen Diagnostik-Untersuchungen: Anamnese, körperliche Untersuchung, Labor, Bildgebung (CT, Röntgen-Thorax, Sonografie, PET/CT).</li>
+                    <li>Untersuchungen zur Toxizitätsbeurteilung (EKG, Echokardiogramm, Lungenfunktion, TSH, Gonadenfunktion) sollen vor Therapiebeginn durchgeführt werden.</li>
+                    <li>Bei nicht abgeschlossener Familienplanung soll auf Möglichkeiten fertilitätserhaltender Maßnahmen hingewiesen werden.</li>
                 </ul>`
             },
             {

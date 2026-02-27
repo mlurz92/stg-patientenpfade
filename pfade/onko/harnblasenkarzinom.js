@@ -19,12 +19,6 @@
                     <li>Das Harnblasenkarzinom ist der zweithäufigste Tumor im Fachgebiet der Urologie</li>
                     <li>Nicht-invasive Tumoren (pTa und CIS) machen ca. 70% der primär diagnostizierten Urothelkarzinome aus</li>
                 </ul>
-                <h3>Histologische Typen</h3>
-                <ul>
-                    <li><strong>Urothelkarzinom:</strong> Ca. 90% aller Blasenkarzinome.</li>
-                    <li><strong>Plattenepithelkarzinom:</strong> Ca. 5%, assoziiert mit chronischer Entzündung/Bilharziose.</li>
-                    <li><strong>Adenokarzinom:</strong> Selten, ca. 2%.</li>
-                </ul>
                 <h3>Risikofaktoren</h3>
                 <div class="table-wrap">
                     <table>
@@ -64,26 +58,102 @@
                 </div>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>CT-Urogramm</h3>
                 <ul>
-                    <li><strong>Zystoskopie:</strong> Goldstandard zur Beurteilung der Blasenschleimhaut und Biopsieentnahme.</li>
-                    <li><strong>Urinzytologie:</strong> Detektion von Tumorzellen im Urin. Neue Paris-Klassifikation seit Version 3.0.</li>
-                    <li><strong>Urinmarker:</strong> NMP22, UroVysion (FISH), BTA (Blasentumor-assoziiertes Antigen) als Ergänzung.</li>
+                    <li>Standard für Ausschluss oberer Harnwege und Fernmetastasen.</li>
+                    <li>Kontrastmittel verstärkte CT des Abdomens und Beckens.</li>
                 </ul>
-                <h3>Bildgebung</h3>
+                <h3>Multiparametrisches MRT (mpMRT)</h3>
                 <ul>
-                    <li><strong>CT-Urogramm:</strong> Standard für Ausschluss oberer Harnwege und Fernmetastasen.</li>
-                    <li><strong>Multiparametrisches MRT (mpMRT):</strong> Seit Version 3.0 als diagnostische Option bei Verdachts- und Erstdiagnose empfohlen.</li>
-                    <li><strong>Sonographie:</strong> Ergänzend für Nieren und Harnblase.</li>
+                    <li>Seit Version 3.0 als diagnostische Option bei Verdachts- und Erstdiagnose empfohlen.</li>
+                    <li>Hohe Auflösung für T-Staging und Detektion von Lymphknoten.</li>
+                </ul>
+                <h3>Sonographie</h3>
+                <ul>
+                    <li>Ergänzend für Nieren und Harnblase.</li>
+                    <li>Zur Beurteilung von Harnstau.</li>
+                </ul>
+                <h3>Weitere Bildgebung</h3>
+                <ul>
+                    <li>PET-CT: Optional bei Verdacht auf Fernmetastasen.</li>
+                    <li>Bone Scan: Bei Verdacht auf Knochenmetastasen.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik & Urindiagnostik",
+                html: `<h3>Urinzytologie</h3>
+                <ul>
+                    <li>Detektion von Tumorzellen im Urin.</li>
+                    <li>Neue Paris-Klassifikation seit Version 3.0.</li>
+                    <li>Sensitivität für high-grade Tumoren höher als für low-grade.</li>
+                </ul>
+                <h3>Urinmarker</h3>
+                <ul>
+                    <li><strong>NMP22:</strong> Nukleäres Mitoseprotein, Marker für urotheliale Tumoren.</li>
+                    <li><strong>UroVysion (FISH):</strong> Fluoreszenz-in-situ-Hybridisierung zum Nachweis chromosomaler Aberrationen.</li>
+                    <li><strong>BTA (Blasentumor-assoziiertes Antigen):</strong> Als Ergänzung zur Zytologie.</li>
+                    <li><strong>UroMaker:</strong> Moderne Urinmarker-Kombinationen.</li>
+                </ul>
+                <h3>Blutlabor</h3>
+                <ul>
+                    <li>Blutbild, Leberwerte, Nierenwerte.</li>
+                    <li>Tumormarker: CEA, CA 19-9 (limitierte Relevanz).</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Zystoskopie</h3>
+                <ul>
+                    <li>Goldstandard zur Beurteilung der Blasenschleimhaut und Biopsieentnahme.</li>
+                    <li>Fluoreszenzzystoskopie (PDD) kann die Detektionsrate verbessern.</li>
+                    <li>Biopsie verdächtiger Läsionen.</li>
                 </ul>
                 <h3>Transurethrale Resektion (TUR-B)</h3>
                 <ul>
-                    <li>Diagnostisch und therapeutisch</li>
-                    <li>Komplette Abtragung des Tumors erforderlich</li>
-                    <li>Nachresektion bei high-risk Tumoren innerhalb von 4-6 Wochen empfohlen</li>
+                    <li>Diagnostisch und therapeutisch.</li>
+                    <li>Komplette Abtragung des Tumors erforderlich.</li>
+                    <li>Nachresektion bei high-risk Tumoren innerhalb von 4-6 Wochen empfohlen.</li>
+                    <li>En-bloc-Resektion wird bevorzugt.</li>
                 </ul>
-                <h3>Staging</h3>
+                <h3>Histologische Typen</h3>
+                <ul>
+                    <li><strong>Urothelkarzinom:</strong> Ca. 90% aller Blasenkarzinome.</li>
+                    <li><strong>Plattenepithelkarzinom:</strong> Ca. 5%, assoziiert mit chronischer Entzündung/Bilharziose.</li>
+                    <li><strong>Adenokarzinom:</strong> Selten, ca. 2%.</li>
+                </ul>
+                <h3>Grading</h3>
+                <ul>
+                    <li>Low-grade vs. High-grade nach WHO-Klassifikation.</li>
+                    <li> Carcinoma in situ (CIS): High-grade, flache Läsion.</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>FGFR3-Mutation</h3>
+                <ul>
+                    <li>Bei nicht-muskelinvasivem Urothelkarzinom häufig (ca. 50% der low-grade Tumoren).</li>
+                    <li>Therapeutische Relevanz: FGFR-Inhibitoren (Erdafitinib) bei Fortschreiten.</li>
+                </ul>
+                <h3>PD-L1</h3>
+                <ul>
+                    <li>Für Immuntherapie bei fortgeschrittenem Stadium relevant.</li>
+                    <li>Immunhistochemische Färbung als Prädiktor.</li>
+                </ul>
+                <h3>TMB (Tumormutationslast)</h3>
+                <ul>
+                    <li>Für Immuntherapie-Prädiktion.</li>
+                    <li>High TMB zeigt besseres Ansprechen auf Checkpoint-Inhibitoren.</li>
+                </ul>
+                <h3>weitere molekulare Marker</h3>
+                <ul>
+                    <li>MSI-Status (Mikrosatelliteninstabilität) für Immuntherapie.</li>
+                    <li>TERT-Promotor-Mutationen.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinisches Staging</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -108,11 +178,17 @@
                         </tbody>
                     </table>
                 </div>
-                <h3>Molekulare Diagnostik</h3>
+                <h3>TNM-Klassifikation</h3>
                 <ul>
-                    <li><strong>FGFR3-Mutation:</strong> Bei nicht-muskelinvasivem Urothelkarzinom häufig (ca. 50% der low-grade Tumoren).</li>
-                    <li><strong>PD-L1:</strong> Für Immuntherapie bei fortgeschrittenem Stadium relevant.</li>
-                    <li><strong>TMB (Tumormutationslast):</strong> Für Immuntherapie-Prädiktion.</li>
+                    <li><strong>T (Tumor):</strong> Ta (nicht-invasiv), T1 (Submukosa), T2 (Muscularis propria), T3 (Perivesikales Gewebe), T4 (Nachbarorgane).</li>
+                    <li><strong>N (Lymphknoten):</strong> N0 (keine LK), N1 (Regionäre LK), N2 (Pelvine LK), N3 (Iliakal-LK).</li>
+                    <li><strong>M (Metastasen):</strong> M0 (keine), M1 (Fernmetastasen).</li>
+                </ul>
+                <h3>Risikogruppen (EORTC)</h3>
+                <ul>
+                    <li>Niedriges Risiko: Solitär, pTa low-grade, <3cm, kein CIS.</li>
+                    <li>Intermediäres Risiko: Alle Tumoren zwischen low- und high-risk.</li>
+                    <li>Hohes Risiko: T1 high-grade, CIS, multiple Rezidive, >3cm.</li>
                 </ul>`
             },
             {

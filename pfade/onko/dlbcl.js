@@ -65,7 +65,7 @@
                 </ul>`
             },
             {
-                title: "Diagnostik",
+                title: "Pathologie & Histologie",
                 html: `<h3>Biopsie und histopathologische Diagnose</h3>
                 <ul>
                     <li>Bei guter Durchführbarkeit sollte eine Lymphknotenexzision oder offene Biopsie angestrebt werden.</li>
@@ -73,24 +73,123 @@
                     <li>Ein zytologisches Aspirat soll für die Diagnosestellung NICHT verwendet werden.</li>
                     <li>Die histologische Diagnose sollte durch eine Pathologie erfolgen, die gemäß WHO-Klassifikation diagnostizieren kann.</li>
                 </ul>
-                <h3>Immunhistochemie und Molekulare Diagnostik</h3>
+                <h3>WHO-Klassifikation (5th ed. 2022)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subtyp</th>
+                                <th>Häufigkeit</th>
+                                <th>Besonderheiten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>GCB (Germinal Center B-cell-like)</strong></td>
+                                <td>Ca. 50%</td>
+                                <td>Bessere Prognose, CD10+ oder BCL6+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ABC (Activated B-cell-like)</strong></td>
+                                <td>Ca. 30%</td>
+                                <td>Schlechtere Prognose, NF-κB-Aktivierung</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Double/Triple Hit</strong></td>
+                                <td>Ca. 5-10%</td>
+                                <td>MYC + BCL2 und/oder BCL6 Rearrangement, sehr aggressiv</td>
+                            </tr>
+                            <tr>
+                                <td><strong>High-grade B-Zell-Lymphom mit 11q Aberration</strong></td>
+                                <td>Selten</td>
+                                <td>Aggressives Verhalten</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Immunhistochemie</h3>
                 <ul>
                     <li>Die histomorphologische Diagnose soll durch immunhistochemische Zusatzuntersuchungen abgesichert werden.</li>
+                    <li>Standard-IHC: CD20, CD79a, PAX5, CD3, CD10, BCL6, MUM1, Ki-67</li>
                     <li>Zur Abgrenzung von High-grade B-Zell-Lymphom mit MYC/BCL2 und Burkitt-Lymphom sollten ergänzende zytogenetische Untersuchungen durchgeführt werden.</li>
-                    <li>Eine molekulare Risikostratifizierung über die Routinediagnostik hinaus sollte mangels therapeutischer Konsequenzen NICHT durchgeführt werden.</li>
+                </ul>`
+            },
+            {
+                title: "Bildgebende Diagnostik",
+                html: `<h3>PET-CT</h3>
+                <ul>
+                    <li>Bei kurativem Therapiekonzept soll eine PET/CT zur Festlegung des Ausbreitungsstadiums durchgeführt werden.</li>
+                    <li>Nach Abschluss der geplanten Immunchemotherapiezyklen soll eine Remissionskontrolle mittels PET/CT durchgeführt werden.</li>
+                    <li>Nach der Hälfte der geplanten Immunchemotherapiezyklen soll eine Remissionskontrolle mittels bildgebender Verfahren angeboten werden (Interim-PET).</li>
                 </ul>
-                <h3>Staging und prätherapeutische Maßnahmen</h3>
+                <h3>CT und MRT</h3>
+                <ul>
+                    <li>Bei Verzicht auf PET/CT soll das Staging durch Ganzkörper-MRT oder Kontrastmittel-CT erfolgen.</li>
+                    <li>Zur Detektion lokoregionärer Lymphknotenmetastasen soll eine MRT des Beckens durchgeführt werden.</li>
+                    <li>Eine CT des Thorax und des Abdomens dient der Detektion von Fernmetastasen.</li>
+                </ul>
+                <h3>Knochenmarkdiagnostik</h3>
+                <ul>
+                    <li>Eine Knochenmarkbiopsie ist in folgenden Situationen nicht erforderlich:</li>
+                    <ul>
+                        <li>Nachweis einer Knochenmarkbeteiligung durch PET/CT</li>
+                        <li>Fortgeschrittenes Stadium (Ann Arbor III/IV)</li>
+                        <li>Limitiertes Stadium mit bulky disease und/oder ≥1 ungünstigem IPI-Faktor</li>
+                    </ul>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild und Chemie</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>LDH (Laktatdehydrogenase):</strong> Wichtiger Prognosefaktor, erhöht bei hohem Tumorstoffwechsel.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Harnsäure:</strong> Bei Verdacht auf Tumorlysesyndrom.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium, Calcium.</li>
+                </ul>
+                <h3>Infektionsdiagnostik</h3>
+                <ul>
+                    <li>Bei unbekanntem HIV-Status soll Patient*innen mit DLBCL die Durchführung eines HIV-Tests empfohlen werden.</li>
+                    <li>Serologie für Hepatitis B und C vor Therapiebeginn.</li>
+                </ul>
+                <h3>Zusätzliche Laborparameter</h3>
+                <ul>
+                    <li><strong>Beta-2-Mikroglobulin:</strong> Prognostischer Marker.</li>
+                    <li><strong>Immunglobuline:</strong> IgG, IgA, IgM zur Beurteilung der Immunoglobulinproduktion.</li>
+                    <li><strong>CRP:</strong> Entzündungsparameter.</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>Zytogenetische Untersuchungen</h3>
+                <ul>
+                    <li>Zur Abgrenzung von High-grade B-Zell-Lymphom mit MYC/BCL2 und Burkitt-Lymphom sollten ergänzende zytogenetische Untersuchungen durchgeführt werden.</li>
+                    <li><strong>FISH (Fluoreszenz-in-situ-Hybridisierung):</strong> Zum Nachweis von MYC-, BCL2- und BCL6-Rearrangements.</li>
+                </ul>
+                <h3>Molekulare Subtypisierung</h3>
+                <ul>
+                    <li>Die Bestimmung des GCB- und ABC-Subtyps kann mittels Genexpressionsprofilierung (z.B. Lymph2Cx) erfolgen.</li>
+                    <li>Alternativ kann die Subtypisierung immunhistochemisch erfolgen (Hans-Algorithmus):</li>
+                    <ul>
+                        <li><strong>GCB:</strong> CD10+ oder (BCL6+ und MUM1-)</li>
+                        <li><strong>Non-GCB:</strong> CD10- und BCL6- und/oder MUM1+</li>
+                    </ul>
+                </ul>
+                <h3>Next-Generation Sequencing (NGS)</h3>
+                <ul>
+                    <li>Eine molekulare Risikostratifizierung über die Routinediagnostik hinaus sollte mangels therapeutischer Konsequenzen NICHT durchgeführt werden.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Prätherapeutische Diagnostik</h3>
                 <ul>
                     <li>Nach Vorliegen der histologischen Diagnose sollen diagnostische Maßnahmen zur Festlegung des Ausbreitungsstadiums, Erkennung von Risikofaktoren und Beurteilung wichtiger Organfunktionen durchgeführt werden.</li>
                     <li>Die Ausbreitungsdiagnostik, Risikobeurteilung und Organfunktionsdiagnostik sollte innerhalb von 2 Wochen abgeschlossen sein.</li>
                     <li>Bei nicht abgeschlossener Familienplanung sollten fertilitätserhaltende Maßnahmen angeboten werden.</li>
                     <li>Bei älteren Patient*innen sollte vor Therapiebeginn ein geriatrisches Assessment durchgeführt werden (Fit, Unfit, Frail).</li>
-                </ul>
-                <h3>Bildgebende Verfahren</h3>
-                <ul>
-                    <li>Bei kurativem Therapiekonzept soll eine PET/CT zur Festlegung des Ausbreitungsstadiums durchgeführt werden.</li>
-                    <li>Bei Verzicht auf PET/CT soll das Staging durch Ganzkörper-MRT oder Kontrastmittel-CT erfolgen.</li>
-                    <li>Eine Knochenmarkbiopsie ist in folgenden Situationen nicht erforderlich: Nachweis einer Knochenmarkbeteiligung durch PET/CT, fortgeschrittenes Stadium (Ann Arbor III/IV), limitiertes Stadium mit bulky disease und/oder ≥1 ungünstigem IPI-Faktor.</li>
                 </ul>
                 <h3>WHO-Performance-Status</h3>
                 <div class="table-wrap">
@@ -164,14 +263,80 @@
                         </tbody>
                     </table>
                 </div>
-                <p><em>Modifikation: Extranodaler Befall wird als Stadium I-II gewertet; Bulk definiert als ≥7,5 cm (deutsche Definition).</em></p>
-                <h3>Prognostische Faktoren</h3>
+                <p><em>Modifikation: Extranodaler Befall wird als Stadium I-II gewertet; Bulk definiert als ≥7,5 cm (deutsche Definition).</em></p>`
+            },
+            {
+                title: "Prognostische Faktoren",
+                html: `<h3>Internationaler Prognostischer Index (IPI)</h3>
                 <ul>
                     <li>Zur Vorhersage des Krankheitsverlaufs soll der Internationale Prognostische Index (IPI) herangezogen werden.</li>
                     <li>Zusammen mit bulky disease soll der altersadjustierte IPI zur Therapiesteuerung verwendet werden.</li>
+                </ul>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risikofaktor</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alter</td>
+                                <td>> 60 Jahre</td>
+                            </tr>
+                            <tr>
+                                <td>LDH</td>
+                                <td>Erhöht</td>
+                            </tr>
+                            <tr>
+                                <td>Performance-Status</td>
+                                <td>ECOG ≥ 2 oder Karnofsky < 80%</td>
+                            </tr>
+                            <tr>
+                                <td>Stadium</td>
+                                <td>Ann Arbor III oder IV</td>
+                            </tr>
+                            <tr>
+                                <td>Extranodaler Befall</td>
+                                <td>≥ 2 extranodale Manifestationen</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>IPI-Risikogruppen</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Risikogruppe</th>
+                                <th>Risikofaktoren</th>
+                                <th>5-Jahres-Überleben</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Niedrig</td>
+                                <td>0-1 Risikofaktoren</td>
+                                <td>Ca. 80-90%</td>
+                            </tr>
+                            <tr>
+                                <td>Intermediär</td>
+                                <td>2 Risikofaktoren</td>
+                                <td>Ca. 50-60%</td>
+                            </tr>
+                            <tr>
+                                <td>Hoch</td>
+                                <td>3-5 Risikofaktoren</td>
+                                <td>Ca. 20-30%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>ZNS-IPI (Zentralnervöser Prognostischer Index)</h3>
+                <ul>
                     <li>Der ZNS-IPI sollte zur Abschätzung des Risikos eines ZNS-Rückfalls verwendet werden.</li>
                 </ul>
-                <h3>ZNS-IPI (Zentralnervöser Prognostischer Index)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>

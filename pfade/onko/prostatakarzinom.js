@@ -54,20 +54,75 @@
             },
             {
                 title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                html: `<h3>Diagnostik</h3>
+                <p>Die Diagnostik des Prostatakarzinoms umfasst mehrere Teilbereiche, die nachfolgend strukturiert dargestellt werden.</p>
+                <h4>Labordiagnostik</h4>
                 <ul>
-                    <li><strong>PSA (Prostataspezifisches Antigen):</strong> Wichtigster Tumormarker.</li>
-                    <li><strong>MRT der Prostata (mpMRT):</strong> Vor Biopsie zur Lokalisation empfohlen.</li>
-                    <li><strong>Prostatabiopsie:</strong> Systematisch (10-12 Stanzen) oder MRT-gezielt (Fusion).</li>
-                    <li><strong>PI-RADS-Klassifikation:</strong> Bei PI-RADS 1 und 2 keine Biopsie empfohlen.</li>
+                    <li><strong>PSA (Prostataspezifisches Antigen):</strong> Wichtigster Tumormarker zur Früherkennung und Verlaufsbeurteilung</li>
+                    <li><strong>PSA-Dichte:</strong> Verhältnis von PSA zu Prostatavolumen</li>
+                    <li><strong>Freies/totales PSA:</strong> Verbessert die Spezifität bei grenzwertigen Werten</li>
+                    <li><strong>PHI (Prostate Health Index):</strong> Kombinationsparameter aus totalem PSA, freiem PSA und [-2]proPSA</li>
+                    <li><strong>Urinanalyse:</strong> Zur Differentialdiagnose</li>
+                    <li><strong>Blutbild, Kreatinin, Leberwerte:</strong> Basisparameter vor Therapie</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h4>Bildgebende Diagnostik</h4>
                 <ul>
-                    <li><strong>CT Abdomen/Becken:</strong> Bei ungünstigem intermediärem oder hohem/sehr hohem Risiko.</li>
-                    <li><strong>PSMA-PET/CT:</strong> Hochsensitiv für Lymphknoten- und Fernmetastasen.</li>
-                    <li><strong>Skelettszintigraphie:</strong> Bei Symptomen oder erhöhtem Risiko.</li>
+                    <li><strong>mpMRT (multiparametrische MRT der Prostata):</strong> Vor Biopsie zur Lokalisation und PI-RADS-Klassifikation empfohlen</li>
+                    <li><strong>TRUS (Transrektaler Ultraschall):</strong> Zur Biopsieführung</li>
+                    <li><strong>CT Abdomen/Becken:</strong> Bei ungünstigem intermediärem oder hohem/sehr hohem Risiko</li>
+                    <li><strong>PSMA-PET/CT:</strong> Hochsensitiv für Lymphknoten- und Fernmetastasen, Standard-Staging bei intermediärem bis hohem Risiko</li>
+                    <li><strong>Skelettszintigraphie:</strong> Bei Symptomen oder erhöhtem Risiko (PSA >20 ng/ml, ISUP Grad 4-5)</li>
+                    <li><strong>PET/MRT:</strong> In ausgewählten Fällen verfügbar</li>
                 </ul>
-                <h3>Risikogruppen (NCCN Klassifikation, Version 8.1)</h3>
+                <h4>Pathologie/Histologie</h4>
+                <ul>
+                    <li><strong>Prostatabiopsie:</strong> Systematisch (10-12 Stanzen) oder MRT-gezielt (Fusionbiospie)</li>
+                    <li><strong>Transperineale vs. transrektale Biopsie:</strong> Transperineale bevorzugt wegen geringerer Infektionsrate</li>
+                    <li><strong>PI-RADS-Klassifikation:</strong> Bei PI-RADS 1 und 2 keine Biopsie empfohlen</li>
+                    <li><strong>ISUP Graduierung:</strong> International Society of Urological Pathology Grad</li>
+                    <li><strong>Gleason-Score/Grade Group:</strong> Histopathologische Klassifikation (ISUP Grad 1-5)</li>
+                    <li><strong>Cribriforme Tumorkomponenten:</strong> Sollten bei Gleason ≥7 dokumentiert werden</li>
+                    <li><strong>Perineurale Invasion:</strong> Dokumentation empfohlen</li>
+                    <li><strong>Ki-67-Index:</strong> In ausgewählten Fällen</li>
+                </ul>
+                <h4>Molekulare Diagnostik</h4>
+                <ul>
+                    <li><strong>Humangenetische Beratung:</strong> Bei metastasierter Erkrankung empfohlen</li>
+                    <li><strong>Genetische Testung:</strong> Bei Verdacht auf Tumorrisikosyndrom (BRCA1/2, DNA-Mismatch-Repair)</li>
+                    <li><strong>MSI-Testing:</strong> Bei Verdacht auf Lynch-Syndrom</li>
+                    <li><strong>CTC (Circulating Tumor Cells):</strong> Für Forschungszwecke verfügbar</li>
+                    <li><strong>Liquid Biopsy:</strong> Für Therapie-Monitoring in Evaluation</li>
+                </ul>
+                <h4>Staging</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Staging-Untersuchung</th>
+                                <th>Indikation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>CT Abdomen/Becken</td>
+                                <td>Bei ungünstigem intermediärem oder hohem/sehr hohem Risiko</td>
+                            </tr>
+                            <tr>
+                                <td>PSMA-PET/CT</td>
+                                <td>Bei intermediärem bis hohem Risiko, nodal positiv oder metastasiert</td>
+                            </tr>
+                            <tr>
+                                <td>Skelettszintigraphie</td>
+                                <td>Bei Knochenbeschwerden oder PSA >20 ng/ml</td>
+                            </tr>
+                            <tr>
+                                <td>MRT Becken</td>
+                                <td>Lokales Staging bei Verdacht auf Kapselüberschreitung</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>Risikogruppen (NCCN Klassifikation, Version 8.1)</h4>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -95,12 +150,7 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>
-                <h3>Molekulare Diagnostik</h3>
-                <ul>
-                    <li>Bei metastasierter Erkrankung: Humangenetische Beratung empfohlen</li>
-                    <li>Bei Verdacht auf Tumorrisikosyndrom: Genetische Testung</li>
-                </ul>`
+                </div>`
             },
             {
                 title: "Therapie",
@@ -200,6 +250,6 @@
                 </ul>`
             }
         ],
-        sources: "<p>S3-Leitlinie Prostatakarzinom. AWMF-Registernummer: 043-022OL. Version 8.1 - August 2025. Leitlinienprogramm Onkologie.</p>"
+        sources: `<p>S3-Leitlinie Prostatakarzinom. AWMF-Registernummer: 043-022OL. Version 8.1 - August 2025. Leitlinienprogramm Onkologie.</p>`
     });
 })();

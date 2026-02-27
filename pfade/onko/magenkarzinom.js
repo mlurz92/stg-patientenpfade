@@ -1,7 +1,7 @@
 (function() {
     'use strict';
-    if (!window.PFADE_DATA) window.PFADE_DATA = [];
-    window.PFADE_DATA.push({
+    if (!window.SOP_DATA) window.SOP_DATA = [];
+    window.SOP_DATA.push({
         id: "magenkarzinom",
         module: "onko",
         title: "Magenkarzinom",
@@ -107,37 +107,125 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Computertomographie (CT)</h3>
                 <ul>
-                    <li><strong>Ösophagogastroduodenoskopie (ÖGD):</strong> Goldstandard mit Biopsieentnahme</li>
-                    <li><strong>Hochauflösende Videoendoskopie</strong> soll eingesetzt werden</li>
-                    <li><strong>Magnifikation und virtuelle Chromoendoskopie (NBI, BLI, i-Scan)</strong> zur Verbesserung der Detektionsrate empfohlen</li>
-                    <li><strong>Alarmsymptome</strong> erfordern zeitnahe ÖGD: Dysphagie, rezidivierendes Erbrechen, Inappetenz, Gewichtsverlust, GI-Blutung, Eisenmangelanämie, Vitamin B12-Mangel</li>
+                    <li><strong>CT Thorax/Abdomen/Becken mit Kontrastmittel:</strong> Standard für Fernmetastasen-Ausschluss.</li>
+                    <li>Mit Hydro-CT (Magen-Distension) für bessere Beurteilung der Magenwand.</li>
+                </ul>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <ul>
+                    <li>Ergänzend zur CT einsetzbar.</li>
+                    <li>Besonders geeignet für Lebermetastasen.</li>
+                </ul>
+                <h3>Positronenemissionsgraphie (PET-CT)</h3>
+                <ul>
+                    <li>Optional bei Verdacht auf Fernmetastasen.</li>
+                    <li>Zur Differenzierung von benignen und malignen Befunden.</li>
+                </ul>
+                <h3>Laparoskopie</h3>
+                <ul>
+                    <li>Vor neoadjuvanter Therapie zum Ausschluss einer Peritonealkarzinose empfohlen.</li>
+                    <li>Diagnostische Laparoskopie als Standard vor kurativer Therapie.</li>
+                </ul>
+                <h3>Peritoneallavage</h3>
+                <ul>
+                    <li>Zytologie zum Nachweis freier Tumorzellen.</li>
+                    <li>Bei positivem Befund: Peritonealkarzinose.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild und Chemie</h3>
+                <ul>
+                    <li>Blutbild: Anämie, Leukozytose, Thrombopenie.</li>
+                    <li>Leberwerte: GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li>Nierenwerte: Kreatinin, Harnstoff.</li>
+                    <li>Elektrolyte: Natrium, Kalium, Calcium.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li><strong>CEA:</strong> Carcinoembryonales Antigen, unspezifischer Marker.</li>
+                    <li><strong>CA 19-9:</strong> Carbohydrate Antigen, bei Magenkarzinom erhöht.</li>
+                    <li><strong>CA 72-4:</strong> Magenkarzinom-assoziierter Marker.</li>
+                    <li>Routinemäßige Bestimmung in der Nachsorge nicht empfohlen.</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li>CRP, BSG: Bei Verdacht auf Entzündung oder Tumorprogress.</li>
+                </ul>
+                <h3>Infektionsdiagnostik</h3>
+                <ul>
+                    <li><strong>Helicobacter pylori:</strong> Testung bei erhöhtem Magenkarzinomrisiko.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Ösophagogastroduodenoskopie (ÖGD)</h3>
+                <ul>
+                    <li>Goldstandard mit Biopsieentnahme.</li>
+                    <li><strong>Hochauflösende Videoendoskopie</strong> soll eingesetzt werden.</li>
+                    <li><strong>Magnifikation und virtuelle Chromoendoskopie (NBI, BLI, i-Scan)</strong> zur Verbesserung der Detektionsrate empfohlen.</li>
+                    <li><strong>Alarmsymptome</strong> erfordern zeitnahe ÖGD: Dysphagie, rezidivierendes Erbrechen, Inappetenz, Gewichtsverlust, GI-Blutung, Eisenmangelanämie, Vitamin B12-Mangel.</li>
                 </ul>
                 <h3>Biopsie</h3>
                 <ul>
-                    <li>Mindestens 6-8 Biopsien aus verdächtigen Arealen</li>
-                    <li><strong>Biopsien aus nicht vom Tumor befallener Schleimhaut</strong> zur H. pylori-Diagnostik und Risikostratifizierung empfohlen</li>
-                    <li>Bei Verdacht auf Malignom: mindestens 8 Biopsien, bei großen Läsionen mindestens 10</li>
-                    <li>4-Augen-Prinzip: Pathologische Zweitmeinung bei jeder Dysplasie</li>
-                    <li>Bei negativem Biopsiebefund aber Tumorverdacht: Erneute Biopsien oder diagnostische Resektion</li>
+                    <li>Mindestens 6-8 Biopsien aus verdächtigen Arealen.</li>
+                    <li><strong>Biopsien aus nicht vom Tumor befallener Schleimhaut</strong> zur H. pylori-Diagnostik und Risikostratifizierung empfohlen.</li>
+                    <li>Bei Verdacht auf Malignom: mindestens 8 Biopsien, bei großen Läsionen mindestens 10.</li>
+                    <li>4-Augen-Prinzip: Pathologische Zweitmeinung bei jeder Dysplasie.</li>
+                    <li>Bei negativem Biopsiebefund aber Tumorverdacht: Erneute Biopsien oder diagnostische Resektion.</li>
                 </ul>
                 <h3>Endosonographie (EUS)</h3>
                 <ul>
-                    <li>Bestandteil des Stagings bei kurativer Therapieintention</li>
-                    <li>T-Staging: Sensitivität 88% (T1), 82% (T2), 90% (T3), 99% (T4)</li>
-                    <li>N-Staging: Sensitivität 83%, Spezifität 67% (begrenzt)</li>
-                    <li>Nachweis von Aszites als Prognosefaktor für Peritonealkarzinose</li>
+                    <li>Bestandteil des Stagings bei kurativer Therapieintention.</li>
+                    <li>T-Staging: Sensitivität 88% (T1), 82% (T2), 90% (T3), 99% (T4).</li>
+                    <li>N-Staging: Sensitivität 83%, Spezifität 67% (begrenzt).</li>
+                    <li>Nachweis von Aszites als Prognosefaktor für Peritonealkarzinose.</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Histologische Klassifikation</h3>
                 <ul>
-                    <li><strong>CT Thorax/Abdomen/Becken mit Kontrastmittel:</strong> Fernmetastasen-Ausschluss, mitension (Hydro-CT)</li>
-                    Magen-Dist <li><strong>Laparoskopie:</strong> Vor neoadjuvanter Therapie zum Ausschluss einer Peritonealkarzinose empfohlen</li>
-                    <li><strong>Peritoneallavage:</strong> Zytologie zum Nachweis freier Tumorzellen</li>
-                    <li><strong>PET-CT:</strong> Optional bei Verdacht auf Fernmetastasen</li>
+                    <li>Adenokarzinom ( intestinaler oder diffuser Typ nach Lauren).</li>
+                    <li>Andere seltene Typen: Plattenepithelkarzinom, neuroendokrine Tumoren.</li>
                 </ul>
-                <h3>TNM-Klassifikation (UICC 8. Auflage)</h3>
+                <h3>Grading</h3>
+                <ul>
+                    <li>G1 (gut differenziert), G2 (mäßig differenziert), G3 (schlecht differenziert).</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>HER2</h3>
+                <ul>
+                    <li>Immunhistochemie (IHC): 0, 1+, 2+, 3+.</li>
+                    <li>Bei IHC 2+: FISH-Bestätigung.</li>
+                    <li>Therapie: Trastuzumab-Therapie bei HER2-positiv.</li>
+                </ul>
+                <h3>MSI-H/dMMR</h3>
+                <ul>
+                    <li>Mikrosatelliteninstabilität.</li>
+                    <li>Nachweis mittels IHC oder PCR.</li>
+                    <li>Therapie: Immuntherapie (Pembrolizumab, Nivolumab).</li>
+                </ul>
+                <h3>PD-L1</h3>
+                <ul>
+                    <li>Combined Positive Score (CPS).</li>
+                    <li>Therapie: Checkpoint-Inhibitoren (Pembrolizumab, Nivolumab).</li>
+                </ul>
+                <h3>Claudin 18.2</h3>
+                <ul>
+                    <li>Immunhistochemische Färbung.</li>
+                    <li>Therapie: Zolbetuximab (zugelassen).</li>
+                </ul>
+                <h3>Weitere molekulare Marker</h3>
+                <ul>
+                    <li>NTRK-Fusionen (selten).</li>
+                    <li>ROS1, ALK (selten).</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>TNM-Klassifikation (UICC 8. Auflage)</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -159,40 +247,14 @@
                         </tbody>
                     </table>
                 </div>
-                <h3>Molekulare Diagnostik</h3>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Marker</th>
-                                <th>Methode</th>
-                                <th>Therapeutische Relevanz</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HER2</td>
-                                <td>IHC und ggf. FISH</td>
-                                <td>Trastuzumab-Therapie</td>
-                            </tr>
-                            <tr>
-                                <td>MSI-H/dMMR</td>
-                                <td>IHC oder PCR</td>
-                                <td>Immuntherapie (Pembrolizumab, Nivolumab)</td>
-                            </tr>
-                            <tr>
-                                <td>PD-L1</td>
-                                <td>CPS (Combined Positive Score)</td>
-                                <td>Checkpoint-Inhibitoren (Pembrolizumab, Nivolumab)</td>
-                            </tr>
-                            <tr>
-                                <td>Claudin 18.2</td>
-                                <td>IHC</td>
-                                <td>Zolbetuximab (zugelassen)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <h3>Stadieneinteilung</h3>
+                <ul>
+                    <li><strong>Stadium 0:</strong> Tis, N0, M0 (Carcinoma in situ)</li>
+                    <li><strong>Stadium I:</strong> T1, N0, M0</li>
+                    <li><strong>Stadium II:</strong> T1-2, N1-2, M0</li>
+                    <li><strong>Stadium III:</strong> T3-4, jedes N, M0</li>
+                    <li><strong>Stadium IV:</strong> Jedes T, jedes N, M1</li>
+                </ul>
                 <h3>Prognostische Faktoren</h3>
                 <ul>
                     <li>TNM-Stadium (wichtigster Prognosefaktor)</li>
@@ -418,10 +480,10 @@
                 </ul>`
             }
         ],
-        sources: "<p><strong>Quellen:</strong></p>
+        sources: `<p><strong>Quellen:</strong></p>
         <p>S3-Leitlinie Magenkarzinom. AWMF-Registernummer: 032-009OL. Version 3.1 - Oktober 2025. Leitlinienprogramm Onkologie (Deutsche Krebsgesellschaft, Deutsche Krebshilfe, AWMF).</p>
         <p>Federführende Fachgesellschaft: Deutsche Gesellschaft für Gastroenterologie, Verdauungs- und Stoffwechselkrankheiten (DGVS).</p>
         <p>Gültigkeitsdauer: 3 Jahre bis 31. Dezember 2027.</p>
-        <p>Weitere Informationen: <a href='https://www.leitlinienprogramm-onkologie.de/leitlinien/magenkarzinom/' target='_blank'>Leitlinienprogramm Onkologie</a></p>"
+        <p>Weitere Informationen: <a href='https://www.leitlinienprogramm-onkologie.de/leitlinien/magenkarzinom/' target='_blank'>Leitlinienprogramm Onkologie</a></p>`
     });
 })();

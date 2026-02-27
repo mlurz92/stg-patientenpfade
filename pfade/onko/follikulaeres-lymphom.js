@@ -66,24 +66,175 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Symptome</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Sonographie</h3>
                 <ul>
-                    <li>Oft asymptomatisch, Zufallsbefund.</li>
-                    <li>Langsam progressive Lymphadenopathie.</li>
-                    <li>B-Symptome bei ca. 20%.</li>
-                    <li>Splenomegalie.</li>
-                    <li>Knochenmarkbefall häufig (ca. 50-70%).</li>
+                    <li><strong>Abdomensonographie:</strong> Beurteilung von Leber, Milz, Lymphknoten und intraabdominellen Organen.</li>
+                    <li><strong>Lymphknotensonographie:</strong> Beurteilung vergrößerter Lymphknoten.</li>
                 </ul>
-                <h3>Diagnostik</h3>
+                <h3>Computertomographie (CT)</h3>
                 <ul>
-                    <li><strong>Biopsie:</strong> Exzisionsbiopsie eines Lymphknotens.</li>
-                    <li><strong>Histologie:</strong> Follikuläres Wachstumsmuster.</li>
-                    <li><strong>Immunhistochemie:</strong> CD20+, CD10+, BCL2+, BCL6+.</li>
-                    <li><strong>Knochenmarkbiopsie:</strong> Staging.</li>
-                    <li><strong>CT/PET-CT:</strong> Staging.</li>
-                    <li><strong>Labor:</strong> LDH, Beta-2-Mikroglobulin, Blutbild.</li>
+                    <li><strong>CT Thorax/Abdomen:</strong> Standard-Staging bei fortgeschrittener Erkrankung.</li>
+                    <li><strong>CT Becken:</strong> Bei Verdacht auf Beckenlymphknotenbefall.</li>
                 </ul>
+                <h3>Positronenemissionstomographie (PET-CT)</h3>
+                <ul>
+                    <li><strong>PET-CT:</strong> Zur Beurteilung des gesamten Körpers, insbesondere bei Verdacht auf Transformation zu DLBCL oder zur Identifikation von Hochtransformationsrisiko.</li>
+                    <li><strong>FDG-PET:</strong> Hat sich als wertvoll für das Staging und die Response-Beurteilung erwiesen.</li>
+                </ul>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <ul>
+                    <li><strong>MRT:</strong> Bei speziellen Fragestellungen, insbesondere bei Knochenmarkbeteiligung.</li>
+                </ul>
+                <h3>Röntgen-Thorax</h3>
+                <ul>
+                    <li><strong>Röntgen-Thorax:</strong> Basisuntersuchung zum Ausschluss von Thoraxpathologien.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild</h3>
+                <ul>
+                    <li><strong>Differenzialblutbild:</strong> Erfassung von Lymphozytose, Anämie, Thrombozytopenie.</li>
+                    <li><strong>Blutausstrich:</strong> Morphologische Beurteilung der Lymphozyten.</li>
+                </ul>
+                <h3>Serumchemie</h3>
+                <ul>
+                    <li><strong>LDH (Laktatdehydrogenase):</strong> Wichtigster Prognosefaktor, erhöht bei hoher Tumorlast.</li>
+                    <li><strong>Beta-2-Mikroglobulin:</strong> Unabhängiger Prognosefaktor.</li>
+                    <li><strong>Harnsäure:</strong> Bei Verdacht auf Tumorlyse-Syndrom.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium, Calcium.</li>
+                </ul>
+                <h3>Infektionsserologie</h3>
+                <ul>
+                    <li><strong>HIV-Test:</strong> Bei Risikopatienten.</li>
+                    <li><strong>Hepatitis B und C:</strong> Vor Therapiebeginn.</li>
+                </ul>
+                <h3>Immunelektrophorese</h3>
+                <ul>
+                    <li><strong>Serumproteinelektrophorese:</strong> Zum Ausschluss eines Plasmozytoms/Multiplen Myeloms.</li>
+                    <li><strong>Immunglobuline:</strong> Quantifizierung von IgG, IgA, IgM.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li><strong>Exzisionsbiopsie:</strong> Vollständige Entfernung eines Lymphknotens, Goldstandard für die Diagnosesicherung.</li>
+                    <li><strong>Inzisionsbiopsie:</strong> Bei inoperablen Tumoren.</li>
+                    <li><strong>Knochenmarkbiopsie:</strong> Zur Beurteilung des Knochenmarkbefalls (ca. 50-70% bei Diagnose).</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Follikuläres Wachstumsmuster:</strong> Nodulär, follikulär, diffuse Areale.</li>
+                    <li><strong>Zentrozyten und Zentroblasten:</strong> Charakteristische Zelltypen.</li>
+                </ul>
+                <h3>Grading (WHO)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Grad</th>
+                                <th>Zentroblasten/HPF</th>
+                                <th>Klinisches Verhalten</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1</strong></td>
+                                <td>0-5</td>
+                                <td>Indolent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2</strong></td>
+                                <td>6-15</td>
+                                <td>Indolent</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3A</strong></td>
+                                <td>>15 (mit Zentrozyten)</td>
+                                <td>Aggressiver</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3B</strong></td>
+                                <td>Solide Zentroblasten</td>
+                                <td>Aggressiv, wie DLBCL behandeln</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Immunhistochemie</h3>
+                <ul>
+                    <li><strong>CD20+:</strong> B-Zell-Marker.</li>
+                    <li><strong>CD10+:</strong> Follikulärer Marker.</li>
+                    <li><strong>BCL2+:</strong> Apoptose-Inhibitor, Überexpression durch t(14;18).</li>
+                    <li><strong>BCL6+:</strong> Follikulärer Marker.</li>
+                    <li><strong>CD23:</strong> Variabel positiv.</li>
+                    <li><strong>CD5-:</strong> Negativ (wichtig für Abgrenzung zu CLL/MCL).</li>
+                    <li><strong>Ki-67:</strong> Proliferationsindex.</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>Zytogenetik</h3>
+                <ul>
+                    <li><strong>t(14;18)(q32;q21):</strong> BCL2-IGH-Translokation in ca. 85% der Fälle.</li>
+                    <li><strong>FISH-Analyse:</strong> Zum Nachweis der Translokation.</li>
+                </ul>
+                <h3>Molekulargenetik</h3>
+                <ul>
+                    <li><strong>PCR:</strong> Nachweis der BCL2-IGH-Fusion.</li>
+                    <li><strong>Sequenzierung:</strong> Zur Identifikation von Mutationen (z.B. EZH2, CREBBP, EP300).</li>
+                </ul>
+                <h3>Flow-Zytometrie</h3>
+                <ul>
+                    <li><strong>Immunphänotypisierung:</strong> Bestätigung des B-Zell-Charakters.</li>
+                    <li><strong>Klonalitätsnachweis:</strong> Bestimmung der Klonalität der B-Zellen.</li>
+                </ul>
+                <h3>Prognostische Molekularmarker</h3>
+                <ul>
+                    <li><strong>EZH2-Mutation:</strong> Prognostisch ungünstig, Therapieoption mit Tazemetostat.</li>
+                    <li><strong>CREBBP/EP300-Mutationen:</strong> Häufig, beeinflussen Histon-Acetylierung.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinisches Staging</h3>
+                <ul>
+                    <li><strong>Körperliche Untersuchung:</strong> Erfassung von Lymphadenopathie, Splenomegalie, Hepatomegalie.</li>
+                    <li><strong>B-Symptome:</strong> Fieber >38°C, Nachtschweiß, Gewichtsverlust >10%.</li>
+                </ul>
+                <h3>Ann-Arbor-Stadium</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>I</strong></td>
+                                <td>Befall einer Lymphknotenregion</td>
+                            </tr>
+                            <tr>
+                                <td><strong>II</strong></td>
+                                <td>Befall von ≥2 Lymphknotenregionen auf einer Seite des Zwerchfells</td>
+                            </tr>
+                            <tr>
+                                <td><strong>III</strong></td>
+                                <td>Befall von Lymphknotenregionen auf beiden Seiten des Zwerchfells</td>
+                            </tr>
+                            <tr>
+                                <td><strong>IV</strong></td>
+                                <td>Diffuser oder disseminierter Befall extranodaler Organe (Knochenmark, Leber, etc.)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <h3>FLIPI (Follicular Lymphoma International Prognostic Index)</h3>
                 <div class="table-wrap">
                     <table>
@@ -118,11 +269,42 @@
                     </table>
                 </div>
                 <ul>
-                    <li>Low (0-1), Intermediate (2), High (3-5).</li>
+                    <li>Low (0-1 Punkte): Gute Prognose</li>
+                    <li>Intermediate (2 Punkte): Intermediäre Prognose</li>
+                    <li>High (3-5 Punkte): Ungünstige Prognose</li>
+                </ul>
+                <h3>FLIPI2 (für progressierte Erkrankung)</h3>
+                <ul>
+                    <li>Alter >60 Jahre</li>
+                    <li>Knochenmarkbeteiligung</li>
+                    <li>Hämoglobin <12 g/dl</li>
+                    <li>Beta-2-Mikroglobulin erhöht</li>
+                    <li>LDH erhöht</li>
                 </ul>
                 <h3>Geriatrisches Screening</h3>
                 <ul>
-                    <li>Assessment vor Therapieeinleitung bei älteren Patienten.</li>
+                    <li><strong>Comprehensive Geriatric Assessment (CGA):</strong> Vor Therapieeinleitung bei älteren Patienten zur Beurteilung der Fitness.</li>
+                    <li><strong>ADL (Activities of Daily Living):</strong> Selbstständigkeit im Alltag.</li>
+                    <li><strong>iADL (instrumental ADL):</strong> Instrumentelle Alltagsaktivitäten.</li>
+                    <li><strong>Charlson-Comorbidity-Index:</strong> Komorbiditäten.</li>
+                </ul>`
+            },
+            {
+                title: "Klinische Präsentation",
+                html: `<h3>Symptome</h3>
+                <ul>
+                    <li><strong>Oft asymptomatisch:</strong> Zufallsbefund bei routinemäßiger Untersuchung.</li>
+                    <li><strong>Langsam progressive Lymphadenopathie:</strong> Schmerzlos, häufig zervikal oder axillär.</li>
+                    <li><strong>B-Symptome:</strong> Bei ca. 20% der Patienten (Fieber, Nachtschweiß, Gewichtsverlust).</li>
+                    <li><strong>Splenomegalie:</strong> Häufig, kann asymptomatisch sein.</li>
+                    <li><strong>Hepatomegalie:</strong> Bei fortgeschrittener Erkrankung.</li>
+                    <li><strong>Knochenmarkbefall:</strong> Häufig (ca. 50-70%), oft asymptomatisch.</li>
+                </ul>
+                <h3>Laborbefunde</h3>
+                <ul>
+                    <li><strong>Lymphozytose:</strong> Mild bis moderat.</li>
+                    <li><strong>Anämie:</strong> Normozytär, normochrom.</li>
+                    <li><strong>Thrombozytopenie:</strong> Bei Knochenmarkinfiltration.</li>
                 </ul>`
             },
             {

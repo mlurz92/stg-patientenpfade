@@ -69,7 +69,7 @@
                 </div>`
             },
             {
-                title: "Diagnostik & Staging",
+                title: "Diagnostik - Labordiagnostik",
                 html: `<h3>SLiM-CRAB-Kriterien</h3>
                 <ul>
                     <li><strong>CRAB-Kriterien:</strong></li>
@@ -82,24 +82,140 @@
                     <li><strong>L</strong>ight chains: Freie Leichtketten-Ratio >100 und Absolutwert >100mg/L</li>
                     <li><strong>M</strong>RI: >1 fokale Läsion (>5mm) in der Ganzkörper-MRT</li>
                 </ul>
-                <h3>Diagnostik bei Erstdiagnose</h3>
+                <h3>Serumchemie</h3>
                 <ul>
-                    <li><strong>Blut:</strong> Blutbild, Kreatinin, Kalzium, LDH, Beta-2-Mikroglobulin, Albumin</li>
-                    <li><strong>Serumprotein-Elektrophorese (SPE):</strong> M-Protein-Nachweis</li>
-                    <li><strong>Immunfixation (IFE):</strong> Typisierung (IgG, IgA, IgM, Leichtketten)</li>
-                    <li><strong>Freie Leichtketten (FLC):</strong> Serum, Ratio kappa/lambda</li>
-                    <li><strong>24h-Sammelurin:</strong> Protein, Immunfixation</li>
-                    <li><strong>Knochenmarkbiopsie:</strong> Plasmazellanteil, Histologie, Zytogenetik/FISH</li>
-                    <li><strong>Ganzkörper-CT:</strong> Osteolysen, extramedullärer Befall</li>
-                    <li><strong>Ganzkörper-MRT oder PET-CT:</strong> Knochenmarkinfiltration, fokale Läsionen</li>
+                    <li><strong>Blutbild:</strong>Hb, Leukozyten, Thrombozyten</li>
+                    <li><strong>Nierenfunktion:</strong> Kreatinin, eGFR, Harnstoff</li>
+                    <li><strong>Elektrolyte:</strong> Kalzium, Natrium, Kalium</li>
+                    <li><strong>Leberwerte:</strong> AST, ALT, Bilirubin</li>
+                    <li><strong>LDH:</strong> Laktatdehydrogenase</li>
+                    <li><strong>Beta-2-Mikroglobulin (β2MG):</strong> Prognoseparameter</li>
+                    <li><strong>Albumin:</strong> Prognoseparameter</li>
+                    <li><strong>CRP:</strong> Entzündungsparameter</li>
                 </ul>
-                <h3>Zytogenetik/FISH (vor Therapiebeginn)</h3>
+                <h3>Serumprotein-Diagnostik</h3>
                 <ul>
-                    <li><strong>Standard-Risiko:</strong> t(11;14), 13q-Deletion</li>
-                    <li><strong>High-Risk:</strong> del(17p), t(4;14), t(14;16), t(14;20)</li>
+                    <li><strong>Serumprotein-Elektrophorese (SPE):</strong> M-Protein-Nachweis und Quantifizierung</li>
+                    <li><strong>Immunfixation (IFE):</strong> Typisierung (IgG, IgA, IgM, Leichtketten Kappa/Lambda)</li>
+                    <li><strong>Freie Leichtketten (FLC):</strong> Serum, Ratio kappa/lambda</li>
+                </ul>
+                <h3>Urin-Diagnostik</h3>
+                <ul>
+                    <li><strong>24h-Sammelurin:</strong> Gesamtprotein, Bence-Jones-Protein</li>
+                    <li><strong>Urin-Immunfixation:</strong> Typisierung des Paraproteins</li>
+                </ul>`
+            },
+            {
+                title: "Diagnostik - Pathologie & Histologie",
+                html: `<h3>Knochenmarkdiagnostik</h3>
+                <ul>
+                    <li><strong>Knochenmarkaspiration:</strong> Zytologische Beurteilung, Plasmazellanteil</li>
+                    <li><strong>Knochenmarkbiopsie (Trepanat):</strong> Histologische Untersuchung, Plasmazellinfiltration</li>
+                    <li><strong>Durchflusszytometrie:</strong> Immunphänotypisierung der Plasmazellen</li>
+                </ul>
+                <h3>Immunhistochemie</h3>
+                <ul>
+                    <li><strong>Plasmazellmarker:</strong> CD138, CD38, MUM1</li>
+                    <li><strong>Leichtkettenrestriktion:</strong> Kappa/Lambda</li>
+                    <li><strong>Aberrante Marker:</strong> CD56, Cyclin D1</li>
+                    <li><strong>Proliferationsmarker:</strong> Ki-67</li>
+                </ul>
+                <h3>Klassifikation der Plasmazellneoplasien (WHO)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Entität</th>
+                                <th>Merkmale</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>MGUS</strong></td>
+                                <td>M-Protein &lt;30g/L, Plasmazellen &lt;10%, keine CRAB-Kriterien</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Smoldering Myelom</strong></td>
+                                <td>M-Protein &ge;30g/L oder Plasmazellen 10-60%, keine Organschäden</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Multiples Myelom</strong></td>
+                                <td>>10% Plasmazellen oder Plasmozytom + SLiM-CRAB-Kriterien</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Plasmazellleukämie</strong></td>
+                                <td>>20% Plasmazellen im peripheren Blut</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Solitäres Plasmozytom</strong></td>
+                                <td>Solitäre Knochen- oder Weichteilläsion</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>`
+            },
+            {
+                title: "Diagnostik - Molekulare Diagnostik",
+                html: `<h3>Zytogenetik (FISH)</h3>
+                <ul>
+                    <li><strong>Durchführung:</strong> FISH an CD138-positiven Plasmazellen (magnetische Zellsortierung)</li>
+                    <li><strong>Standard-Risiko:</strong></li>
+                    <li>t(11;14) - CCND1/IGH-Fusion</li>
+                    <li>13q-Deletion</li>
+                    <li><strong>High-Risk:</strong></li>
+                    <li>del(17p) - TP53-Deletion</li>
+                    <li>t(4;14) - FGFR3/IGH-Fusion</li>
+                    <li>t(14;16) - IGH/MAF-Fusion</li>
+                    <li>t(14;20) - IGH/MAFB-Fusion</li>
                     <li><strong>1q-Zugewinn:</strong> Assoziiert mit schlechterer Prognose</li>
                 </ul>
-                <h3>ISS und R-ISS-Staging</h3>
+                <h3>Molekulargenetik</h3>
+                <ul>
+                    <li><strong>Durchflusszytometrie:</strong> Identifizierung der aberranten Plasmazellpopulation</li>
+                    <li><strong>Immunphänotypisierung:</strong> Oberflächenantigene (CD56, CD19, CD27, CD81)</li>
+                    <li><strong>Intrazelluläre Leichtkettenfärbung:</strong> Nachweis der klonalen Restriktion</li>
+                    <li><strong>Next-Generation Sequencing (NGS):</strong> Mutationsanalyse (optional)</li>
+                </ul>
+                <h3>Minimal Residual Disease (MRD)</h3>
+                <ul>
+                    <li><strong>Methoden:</strong> Durchflusszytometrie, NGS</li>
+                    <li><strong>Prognostischer Stellenwert:</strong> MRD-Negativität = längeres PFS</li>
+                    <li><strong>Bildgebung:</strong> PET-CT oder Ganzkörper-MRT</li>
+                    <li><strong>Hinweis:</strong> Routinemäßige Bestimmung nicht empfohlen, im Kontext klinischer Studien</li>
+                </ul>`
+            },
+            {
+                title: "Diagnostik - Bildgebung",
+                html: `<h3>Ganzkörper-CT</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Erfassung des Ausmaßes der Skelettschädigung bei Erstdiagnose</li>
+                    <li><strong>Befund:</strong> Osteolysen, extramedullärer Befall, Frakturen</li>
+                    <li><strong>Standard:</strong> Ersetzt konventionellen Röntgen-Skelettstatus</li>
+                </ul>
+                <h3>Ganzkörper-MRT</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Beurteilung des Knochenmarkbefalls, fokale Läsionen</li>
+                    <li><strong>Vorteil:</strong> Detektion von Läsionen ohne Knochenmatrix-Destruktion</li>
+                    <li><strong>Sequenzen:</strong> T1, T2, diffusionsgewichtete Bildgebung (DWI)</li>
+                    <li><strong>SLiM-Kriterium:</strong> >1 fokale Läsion >5mm</li>
+                </ul>
+                <h3>PET/CT (FDG-PET)</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Extramedullärer Befall, Therapieansprechen, Rezidiv</li>
+                    <li><strong>FDG-Avidität:</strong> metabolische Aktivität der Myelomherde</li>
+                    <li><strong>Deauville-Score:</strong> Bewertung des Therapieansprechens</li>
+                    <li><strong>CT-Komponente:</strong> in diagnostischer Qualität</li>
+                </ul>
+                <h3>Röntgen</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Lokale Abklärung bei Schmerzen, Frakturverdacht</li>
+                    <li><strong>Wirbelsäule:</strong> Konventionelle Aufnahmen</li>
+                    <li><strong>Extremitäten:</strong> Projektionsradiographie</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>ISS-Staging</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -125,19 +241,46 @@
                                 <td>β2MG &ge;5,5 mg/L</td>
                                 <td>29 Monate</td>
                             </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>R-ISS-Staging (Revised)</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>Kriterien</th>
+                                <th>5-Jahres-ÜLR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
                             <tr>
                                 <td><strong>R-ISS I</strong></td>
                                 <td>ISS I + Standardrisiko-Zytogenetik + LDH normal</td>
-                                <td>5-J-ÜLR 82%</td>
+                                <td>82%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>R-ISS II</strong></td>
+                                <td>Weder R-ISS I noch III</td>
+                                <td>62%</td>
                             </tr>
                             <tr>
                                 <td><strong>R-ISS III</strong></td>
                                 <td>ISS III + Hochrisiko-Zytogenetik oder LDH erhöht</td>
-                                <td>5-J-ÜLR 40%</td>
+                                <td>40%</td>
                             </tr>
                         </tbody>
                     </table>
-                </div>`
+                </div>
+                <h3>Prognosefaktoren</h3>
+                <ul>
+                    <li><strong>β2-Mikroglobulin:</strong> Wichtigster Prognoseparameter</li>
+                    <li><strong>Albumin:</strong> Invers korreliert mit Tumorlast</li>
+                    <li><strong>LDH:</strong> Erhöht bei aggressiver Erkrankung</li>
+                    <li><strong>Kreatinin:</strong> Nierenfunktion beeinflusst Prognose</li>
+                    <li><strong>Zytogenetik:</strong> High-Risk-Zytogenetik verschlechtert Prognose</li>
+                </ul>`
             },
             {
                 title: "Therapie",

@@ -69,59 +69,156 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Primärdiagnostik - Klinische Untersuchung</h3>
                 <ul>
-                    <li><strong>Klinische Untersuchung:</strong> Palpation des Abdomens und gynäkologische Untersuchung (bimanuelle Palpation)</li>
-                    <li><strong>Transvaginaler Ultraschall:</strong> Goldstandard für die Beurteilung von Ovarialtumoren (Größe, Morphologie, Gefäßversorgung)</li>
-                    <li><strong>Tumormarker:</strong> CA-125 (erhöht bei ca. 80% der high-grade serösen Karzinome), HE4</li>
-                    <li><strong>ROMA-Score:</strong> Risikoabschätzung für Ovarialkarzinom basierend auf CA-125 und HE4 (besseres Sensitivität/Spezifität als einzelne Marker)</li>
-                    <li><strong>Biopsie:</strong> Nur bei suspektem Befund oder inoperabler Erkrankung (z. B. Zytologie bei Aszites)</li>
+                    <li><strong>Gynäkologische Untersuchung:</strong> Bimanuelle Palpation zur Beurteilung von Ovarien, Adnexen und Beckenorganen</li>
+                    <li><strong>Palpation des Abdomens:</strong> Zur Erfassung von Aszites, Resistenzen oder Organomegalie</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Ultraschall</h3>
                 <ul>
-                    <li><strong>CT Abdomen/Becken:</strong> Standard für die Ausbreitungsdiagnostik (Peritonealkarzinose, Lymphknotenbefall)</li>
-                    <li><strong>CT Thorax:</strong> Metastasen-Ausschluss (Lunge, Mediastinum)</li>
-                    <li><strong>MRT Becken:</strong> Alternative bei Kontraindikationen zur CT (z. B. Schwangerschaft)</li>
-                    <li><strong>Parazentese:</strong> Bei Aszites zur Zytologie und Entlastung der Patientin</li>
+                    <li><strong>Transvaginaler Ultraschall (TVS):</strong> Goldstandard für die Beurteilung von Ovarialtumoren</li>
+                    <li>Beurteilung von: Tumorgröße, Morphologie (zystisch, solid, gemischt), Gefäßversorgung (Doppler), Wanddicke bei Zysten</li>
+                    <li><strong>Abdomensonographie:</strong> Ergänzend zur Beurteilung von Leber, Milz, Nieren und Aszites</li>
+                </ul>
+                <h3>Computertomographie (CT)</h3>
+                <ul>
+                    <li><strong>CT Abdomen/Becken:</strong> Standard für die Ausbreitungsdiagnostik</li>
+                    <li>Detektion von: Peritonealkarzinose, Lymphknotenbefall, Organmetastasen (Leber, Milz), Tumorausdehnung</li>
+                    <li><strong>CT Thorax:</strong> Zum Ausschluss von Lungenmetastasen und mediastinalem Lymphknotenbefall</li>
+                </ul>
+                <h3>Magnetresonanztomographie (MRT)</h3>
+                <ul>
+                    <li><strong>MRT Becken:</strong> Alternative bei Kontraindikationen zur CT (z.B. Schwangerschaft, Kontrastmittelallergie)</li>
+                    <li>Überlegene Weichteildifferenzierung, besonders nützlich bei komplexen Ovarialmassen</li>
+                </ul>
+                <h3>Positronenemissionstomographie (PET-CT)</h3>
+                <ul>
                     <li><strong>PET-CT:</strong> Optional bei unklaren Befunden oder Verdacht auf extraperitoneale Metastasen</li>
-                </ul>
-                <h3>Molekulare Diagnostik</h3>
+                    <li>Kombination von Stoffwechselinformationen (FDG) mit anatomischer Bildgebung</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Tumormarker</h3>
                 <ul>
-                    <li><strong>BRCA1/2-Testung:</strong> Empfohlen bei allen high-grade serösen Karzinomen (keimbahn- und somatische Mutationen)</li>
-                    <li><strong>HRD-Status (Homologous Recombination Deficiency):</strong> Für die Selektion von PARP-Inhibitor-Therapie</li>
-                    <li><strong>MSI-Status:</strong> Bei Verdacht auf Lynch-Syndrom oder klarzelligem Karzinom</li>
-                    <li><strong>HRR-Gen-Panel:</strong> Optional für die Identifikation weiterer HRD-assoziierter Mutationen</li>
+                    <li><strong>CA-125:</strong> Wichtigster Tumormarker für Ovarialkarzinom</li>
+                    <li>Erhöht bei ca. 80% der high-grade serösen Karzinome</li>
+                    <li>Sensitivität: 80-90%, Spezifität: 70-80% (bei postmenopausal)</li>
+                    <li><strong>HE4 (Human Epididymis Protein 4):</strong> Ergänzender Marker</li>
+                    <li>Höhere Spezifität als CA-125 bei Endometriose</li>
+                    <li><strong>ROMA-Score (Risk of Ovarian Malignancy Algorithm):</strong> Kombination aus CA-125 und HE4</li>
+                    <li>Besseres Sensitivität/Spezifität-Profil als einzelne Marker</li>
+                    <li>Berechnung basierend auf Menopausenstatus und Markerwerten</li>
                 </ul>
-                <h3>Stadieneinteilung (FIGO 2018)</h3>
-                <div class="table-wrap">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Stadium</th>
-                                <th>Beschreibung</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>I</td>
-                                <td>Tumor begrenzt auf Ovarien oder Eileiter</td>
-                            </tr>
-                            <tr>
-                                <td>II</td>
-                                <td>Tumor mit Ausbreitung auf Beckenorgane</td>
-                            </tr>
-                            <tr>
-                                <td>III</td>
-                                <td>Tumor mit Peritonealkarzinose über dem kleinen Becken</td>
-                            </tr>
-                            <tr>
-                                <td>IV</td>
-                                <td>Distante Metastasen (z. B. Lunge, Leberparenchym)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>`
+                <h3>Weitere Laborparameter</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Anämie, Leukozytose</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff</li>
+                    <li><strong>LDH:</strong> Laktatdehydrogenase, Prognoseparameter</li>
+                    <li><strong>Entzündungsparameter:</strong> CRP, BSG</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li><strong>Primärtumorbiopsie:</strong> In der Regel nicht vor Operation erforderlich</li>
+                    <li><strong>Zielbiopsie:</strong> Nur bei suspektem Befund oder inoperabler Erkrankung</li>
+                    <li><strong>Zytologie bei Aszites:</strong> Bei Vorliegen von Aszites kann zytologische Untersuchung erfolgen</li>
+                    <li><strong>Peritonealkarzinose-Biopsie:</strong> CT-gesteuerte Biopsie bei Verdacht auf Peritonealkarzinose</li>
+                </ul>
+                <h3>Histologische Typen</h3>
+                <ul>
+                    <li><strong>Hochgradiges seröses Karzinom:</strong> Ca. 70%, häufig BRCA-assoziiert, aggressiver Verlauf</li>
+                    <li><strong>Endometrioides Karzinom:</strong> Ca. 10-15%, häufig mit endometrialer Karzinomassoziation</li>
+                    <li><strong>Klarzelliges Karzinom:</strong> Ca. 5-10%, schlechte Prognose, assoziiert mit Lynch-Syndrom</li>
+                    <li><strong>Muzinöses Karzinom:</strong> Ca. 3-5%, langsamer wachsend</li>
+                    <li><strong>Niedriggradiges seröses Karzinom (LGSOC):</strong> Selten (ca. 5%), indolenter Verlauf</li>
+                    <li><strong>Borderlinetumoren (BOT):</strong> Nicht-invasive Tumoren mit günstiger Prognose</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Tumorart und -typ:</strong> Histologische Klassifikation nach WHO</li>
+                    <li><strong>Differenzierungsgrad:</strong> G1 (gut), G2 (mäßig), G3 (schlecht) differenziert</li>
+                    <li><strong>Tumorgröße:</strong> Maximaler Durchmesser in mm</li>
+                    <li><strong>Lymphknotenstatus:</strong> Zahl befallener Lymphknoten / untersuchte Lymphknoten</li>
+                    <li><strong>Lymphgefäßinvasion (LVI):</strong> Nachweis von Tumorzellen in Lymphgefäßen</li>
+                    <li><strong>Resektionsränder:</strong> R0 (mikroskopisch tumorfrei), R1 (mikroskopisch Tumorzellen), R2 (makroskopisch Tumor)</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>BRCA-Testung</h3>
+                <ul>
+                    <li><strong>BRCA1/2-Testung:</strong> Empfohlen bei allen high-grade serösen Karzinomen</li>
+                    <li>Testung auf Keimbahn- und somatische Mutationen</li>
+                    <li>Therapeutische Relevanz: PARP-Inhibitoren bei nachgewiesener Mutation</li>
+                </ul>
+                <h3>HRD-Status (Homologous Recombination Deficiency)</h3>
+                <ul>
+                    <li><strong>HRD-Score:</strong> Für die Selektion von PARP-Inhibitor-Therapie</li>
+                    <li>HRD-positiv: Besseres Ansprechen auf platinbasierte Chemotherapie und PARP-Inhibitoren</li>
+                </ul>
+                <h3>MSI-Status / MMR-Proteine</h3>
+                <ul>
+                    <li><strong>MSI-Status:</strong> Bei Verdacht auf Lynch-Syndrom oder klarzelligem Karzinom</li>
+                    <li>Immunhistochemie für MLH1, PMS2, MSH2, MSH6</li>
+                    <li>PCR-Analyse zur Bestätigung bei Verlust in der IHC</li>
+                </ul>
+                <h3>HRR-Gen-Panel</h3>
+                <ul>
+                    <li><strong>HRR-Gen-Panel:</strong> Optional für die Identifikation weiterer HRD-assoziierter Mutationen</li>
+                    <li>Gene: RAD51C, RAD51D, BRIP1, PALB2, ATM, CHEK2</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinisches Staging</h3>
+                <ul>
+                    <li><strong>Anamnese und körperliche Untersuchung:</strong> Erfassung von Symptomen, Gewichtsverlust, Leistungsminderung</li>
+                    <li><strong>Gynäkologische Untersuchung:</strong> Bimanuelle Palpation, Beurteilung von Adnexen und Beckenorganen</li>
+                    <li><strong>Aszitesbeurteilung:</strong> Klinisch und sonographisch</li>
+                </ul>
+                <h3>Bildgebendes Staging</h3>
+                <ul>
+                    <li><strong>CT Abdomen/Becken:</strong> Standard für die Ausbreitungsdiagnostik</li>
+                    <li><strong>CT Thorax:</strong> Metastasen-Ausschluss</li>
+                    <li><strong>MRT Becken:</strong> Alternative bei Kontraindikationen zur CT</li>
+                    <li><strong>PET-CT:</strong> Optional bei Verdacht auf extraperitoneale Metastasen</li>
+                </ul>
+                <h3>FIGO-Stadieneinteilung (2018)</h3>
+                <h4>Stadium I - Tumor begrenzt auf Ovarien oder Eileiter</h4>
+                <ul>
+                    <li>IA: Tumor auf ein Ovarium/Eileiter begrenzt, Kapsel intakt</li>
+                    <li>IB: Tumor auf beide Ovarien/Eileiter begrenzt, Kapseln intakt</li>
+                    <li>IC: Tumor auf ein oder beide Ovarien/Eileiter mit Kapselruptur oder Tumor an Ovarialoberfläche</li>
+                </ul>
+                <h4>Stadium II - Tumor mit Ausbreitung auf Beckenorgane</h4>
+                <ul>
+                    <li>IIA: Ausbreitung auf Uterus und/oder Eileiter</li>
+                    <li>IIB: Ausbreitung auf andere Beckenorgane</li>
+                </ul>
+                <h4>Stadium III - Tumor mit Peritonealkarzinose</h4>
+                <ul>
+                    <li>IIIA: Mikroskopische Peritonealkarzinose</li>
+                    <li>IIIB: Makroskopische Peritonealkarzinose ≤2 cm</li>
+                    <li>IIIC: Peritonealkarzinose >2 cm und/oder regionäre Lymphknotenmetastasen</li>
+                </ul>
+                <h4>Stadium IV - Distante Metastasen</h4>
+                <ul>
+                    <li>IVA: Pleuraerguss mit positiver Zytologie</li>
+                    <li>IVB: Parenchymatöse Leber- oder Lungenmetastasen</li>
+                </ul>
+                <h3>Metastasenlokalisation</h3>
+                <ul>
+                    <li><strong>Peritoneum:</strong> Häufigste Lokalisation bei fortgeschrittener Erkrankung</li>
+                    <li><strong>Lymphknoten:</strong> Pelvine und paraaortale Lymphknoten</li>
+                    <li><strong>Leber:</strong> Leberparenchymmetastasen</li>
+                    <li><strong>Lunge:</strong> Lungenmetastasen</li>
+                    <li><strong>Gehirn:</strong> Selten</li>
+                </ul>`
             },
             {
                 title: "Therapie",

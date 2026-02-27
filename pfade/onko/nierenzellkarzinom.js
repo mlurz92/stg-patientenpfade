@@ -22,28 +22,78 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Prognose",
-                html: `<h3>Bildgebende Diagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>CT-Abdomen (Multiphasisch)</h3>
                 <ul>
-                    <li><strong>CT-Abdomen (Multiphasisch):</strong> Nativ, früharteriell und venös. Standard zur Planung bei V.a. RCC.</li>
-                    <li><strong>CT-Thorax:</strong> Bei Tumoren > 3 cm zum Staging obligat.</li>
-                    <li><strong>MRT-Abdomen:</strong> Bei Unklarheiten im CT, KM-Allergie oder V.a. Venenthrombus (Vena cava).</li>
-                    <li><strong>Knochenszintigraphie / MRT-Ganzkörper:</strong> Nur bei klinischem Verdacht (Knochenschmerzen) oder erhöhter alkalischer Phosphatase.</li>
-                    <li><strong>cMRT:</strong> Nur bei klinischem Verdacht auf Hirnmetastasen.</li>
-                    <li><strong>PET-CT:</strong> Kein Stellenwert in der Routine-Diagnostik.</li>
+                    <li><strong>Standard:</strong> Nativ, früharteriell und venös. Standard zur Planung bei V.a. RCC.</li>
+                    <li><strong>Indikation:</strong> Erstliniendiagnostik bei Verdacht auf Nierenzellkarzinom.</li>
                 </ul>
-                <h3>Biopsie-Indikation</h3>
+                <h3>CT-Thorax</h3>
                 <ul>
-                    <li><strong>Nicht empfohlen:</strong> Bei resektablen Tumoren mit eindeutiger Bildgebung (da keine Konsequenzänderung).</li>
-                    <li><strong>Empfohlen:</strong>
-                        <ul>
-                            <li>Vor ablativer Therapie (RFA/Kryo).</li>
-                            <li>Bei metastasierter Erkrankung vor Systemtherapie (wenn keine Nephrektomie erfolgt).</li>
-                            <li>Bei Unklarheit zur DD (z.B. Lymphom, Abszess, Metastase eines anderen Primarius).</li>
-                            <li>Vor aktiver Überwachung (Active Surveillance).</li>
-                        </ul>
-                    </li>
-                    <li><strong>Kontraindiziert:</strong> Zystische Raumforderungen (Bosniak).</li>
+                    <li><strong>Indikation:</strong> Bei Tumoren > 3 cm zum Staging obligat.</li>
+                    <li><strong>Ziel:</strong> Detektion von Lungenmetastasen.</li>
+                </ul>
+                <h3>MRT-Abdomen</h3>
+                <ul>
+                    <li><strong>Indikationen:</strong> Bei Unklarheiten im CT, KM-Allergie oder Verdacht auf Venenthrombus (Vena cava).</li>
+                    <li><strong>Vorteil:</strong> Bessere Weichteildifferenzierung, kein Strahlenrisiko.</li>
+                </ul>
+                <h3>Knochenszintigraphie / MRT-Ganzkörper</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Nur bei klinischem Verdacht (Knochenschmerzen) oder erhöhter alkalischer Phosphatase.</li>
+                </ul>
+                <h3>cMRT (Craniale MRT)</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Nur bei klinischem Verdacht auf Hirnmetastasen.</li>
+                </ul>
+                <h3>PET-CT</h3>
+                <ul>
+                    <li><strong>Stellenwert:</strong> Kein Stellenwert in der Routine-Diagnostik.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild</h3>
+                <ul>
+                    <li><strong>Hämoglobin:</strong> Anämie ist prognostisch relevant (IMDC-Score).</li>
+                    <li><strong>Thrombozyten:</strong> Thrombozytose kann bei RCC auftreten.</li>
+                </ul>
+                <h3>Serumchemie</h3>
+                <ul>
+                    <li><strong>Kalzium:</strong> Hyperkalzämie ist Risikofaktor im IMDC-Score.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT zum Ausschluss von Lebermetastasen.</li>
+                    <li><strong>Nierenfunktion:</strong> Kreatinin, Harnstoff zur Beurteilung der Nierenfunktion vor Therapie.</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li><strong>Neutrophile:</strong> Erhöhte Neutrophile sind Risikofaktor im IMDC-Score.</li>
+                    <li><strong>CRP:</strong> Bei Verdacht auf Entzündung oder Tumorprogress.</li>
+                </ul>
+                <h3>Urinanalyse</h3>
+                <ul>
+                    <li><strong>Urinstatus:</strong> Zum Ausschluss einer Hämaturie (kann asymptomatisch sein).</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Nierenbiopsie</h3>
+                <div class="callout callout-hinweis">
+                    <p>Die Biopsie wird in der Leitlinie kontrovers diskutiert. Die unten genannten Empfehlungen basieren auf Expertenkonsens.</p>
+                </div>
+                <h4>Nicht empfohlen</h4>
+                <ul>
+                    <li>Bei resektablen Tumoren mit eindeutiger Bildgebung (da keine Konsequenzänderung).</li>
+                </ul>
+                <h4>Empfohlen</h4>
+                <ul>
+                    <li>Vor ablativer Therapie (RFA/Kryoablation).</li>
+                    <li>Bei metastasierter Erkrankung vor Systemtherapie (wenn keine Nephrektomie erfolgt).</li>
+                    <li>Bei Unklarheit zur Differenzialdiagnose (z.B. Lymphom, Abszess, Metastase eines anderen Primarius).</li>
+                    <li>Vor aktiver Überwachung (Active Surveillance).</li>
+                </ul>
+                <h4>Kontraindiziert</h4>
+                <ul>
+                    <li>Zystische Raumforderungen (Bosniak-Klassifikation).</li>
                 </ul>
                 <h3>Histologische Klassifikation (WHO)</h3>
                 <div class="table-wrap">
@@ -72,13 +122,135 @@
                                 <td>Günstige Prognose, selten Metastasen</td>
                             </tr>
                             <tr>
-                                <td><strong>Ductus-Bellini</strong></td>
+                                <td><strong>Ductus-Bellini-Karzinom</strong></td>
                                 <td>1 %</td>
                                 <td>Sehr aggressiv, schlechte Prognose</td>
                             </tr>
+                            <tr>
+                                <td><strong>Onkozytom</strong></td>
+                                <td>3-5 %</td>
+                                <td>Benigne, aber schwer von RCC abgrenzbar</td>
+                            </tr>
                         </tbody>
                     </table>
-                </div>`
+                </div>
+                <h3>Grading</h3>
+                <ul>
+                    <li><strong>ISUP-Grading:</strong> International Society of Urological Pathology Grade 1-4.</li>
+                    <li><strong>Fuhrman-Grading:</strong> Wird zunehmend durch ISUP ersetzt.</li>
+                </ul>
+                <h3>Sarkomatoide Differenzierung</h3>
+                <ul>
+                    <li>Ungünstiger Prognosefaktor, tritt bei verschiedenen Subtypen auf.</li>
+                    <li>Bei Nachweis: Höheres Rezidivrisiko, adjuvante Therapie mit Pembrolizumab erwägen.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>TNM-Klassifikation (AJCC 8. Edition)</h3>
+                <h4>T (Tumor)</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>T1</td><td>≤ 7 cm, auf Niere begrenzt</td></tr>
+                            <tr><td>T1a</td><td>≤ 4 cm</td></tr>
+                            <tr><td>T1b</td><td>> 4 bis ≤ 7 cm</td></tr>
+                            <tr><td>T2</td><td>> 7 cm, auf Niere begrenzt</td></tr>
+                            <tr><td>T2a</td><td>> 7 bis ≤ 10 cm</td></tr>
+                            <tr><td>T2b</td><td>> 10 cm</td></tr>
+                            <tr><td>T3</td><td>Infiltriert in Nierenvene(n) oder perirenales Gewebe</td></tr>
+                            <tr><td>T3a</td><td>Infiltriert Nierenvene oder Segmentäste oder perirenales Gewebe</td></tr>
+                            <tr><td>T3b</td><td>Infiltriert Vena cava unterhalb Zwerchfell</td></tr>
+                            <tr><td>T3c</td><td>Infiltriert Vena cava oberhalb Zwerchfell oder Wand</td></tr>
+                            <tr><td>T4</td><td>Infiltriert Nachbarorgane (außer Nierenvene)</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>N (Lymphknoten)</h4>
+                <ul>
+                    <li><strong>N0:</strong> Keine Lymphknotenmetastasen.</li>
+                    <li><strong>N1:</strong> regionäre Lymphknotenmetastasen.</li>
+                </ul>
+                <h4>M (Metastasen)</h4>
+                <ul>
+                    <li><strong>M0:</strong> Keine Fernmetastasen.</li>
+                    <li><strong>M1:</strong> Fernmetastasen vorhanden.</li>
+                </ul>
+                <h3>Stadieneinteilung</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>T</th>
+                                <th>N</th>
+                                <th>M</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>I</td><td>T1</td><td>N0</td><td>M0</td></tr>
+                            <tr><td>II</td><td>T2</td><td>N0</td><td>M0</td></tr>
+                            <tr><td>III</td><td>T3</td><td>N0/N1</td><td>M0</td></tr>
+                            <tr><td>IV</td><td>T4</td><td>jedes N</td><td>M0</td></tr>
+                            <tr><td>IV</td><td>jedes T</td><td>jedes N</td><td>M1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Risikostratifizierung (IMDC-Score)</h3>
+                <p>Der IMDC-Score (International Metastatic RCC Database Consortium) bestimmt die Prognose bei metastasiertem RCC:</p>
+                <h4>Risikofaktoren</h4>
+                <ul>
+                    <li>Karnofsky Performance Status < 80%</li>
+                    <li>Zeit von Diagnose bis Therapiebeginn < 1 Jahr</li>
+                    <li>Hämoglobin unter Normalwert</li>
+                    <li>Serumkalzium über Normalwert</li>
+                    <li>Neutrophile über Normalwert</li>
+                    <li>Thrombozyten über Normalwert</li>
+                </ul>
+                <h4>Risikogruppen</h4>
+                <ul>
+                    <li><strong>Günstiges Risiko:</strong> 0 Faktoren.</li>
+                    <li><strong>Intermediäres Risiko:</strong> 1-2 Faktoren.</li>
+                    <li><strong>Ungünstiges Risiko:</strong> ≥ 3 Faktoren.</li>
+                </ul>
+                <h3>Lokalisationsseite der Metastasen</h3>
+                <ul>
+                    <li><strong>Lunge:</strong> Häufigste Lokalisation (50-60%).</li>
+                    <li><strong>Lymphknoten:</strong> Zweithäufigste Lokalisation.</li>
+                    <li><strong>Knochen:</strong> Häufig bei fortgeschrittenen Stadien.</li>
+                    <li><strong>Leber:</strong> Bei fortgeschrittenem RCC.</li>
+                    <li><strong>Gehirn:</strong> Bei aggressivem Tumorwachstum.</li>
+                </ul>`
+            },
+            {
+                title: "Prognose & Risikofaktoren",
+                html: `<h3>Prognosefaktoren</h3>
+                <ul>
+                    <li><strong>Tumorstadium:</strong> Wichtigster Prognosefaktor.</li>
+                    <li><strong>Histologischer Subtyp:</strong> Klarzellig schlechtere Prognose als chromophob.</li>
+                    <li><strong>Tumorgrading:</strong> Höherer Grad = schlechtere Prognose.</li>
+                    <li><strong>Sarkomatoide Differenzierung:</strong> Ungünstiger Prognosefaktor.</li>
+                    <li><strong>Metastasen:</strong> Anzahl und Lokalisation beeinflussen Prognose.</li>
+                </ul>
+                <h3>Prognose-Scores</h3>
+                <ul>
+                    <li><strong>Leibovich-Score:</strong> Für nicht-metastasierte Tumoren zur Rezidivrisiko-Bestimmung.</li>
+                    <li><strong>UCLA-Score (SSIGN):</strong> Für klarzelliges RCC.</li>
+                    <li><strong>IMDC-Score:</strong> Für metastasierte Tumoren (s. Staging).</li>
+                </ul>
+                <h3>Modifizierbare Risikofaktoren</h3>
+                <ul>
+                    <li><strong>Rauchen:</strong> Erhöhtes Risiko, Dosis-Wirkungs-Beziehung.</li>
+                    <li><strong>Übergewicht/Adipositas:</strong> Linearer Anstieg des Risikos mit dem BMI.</li>
+                    <li><strong>Arterielle Hypertonie:</strong> Unabhängiger Risikofaktor; adäquate Einstellung kann Risiko senken.</li>
+                    <li><strong>Trichlorethen:</strong> Sehr hohe berufliche Exposition (Lösungsmittel) ist als Risikofaktor und Berufskrankheit anerkannt.</li>
+                </ul>`
             },
             {
                 title: "Therapie: Nicht-metastasiert & Lokal",

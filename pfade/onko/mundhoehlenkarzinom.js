@@ -69,8 +69,8 @@
                 </ul>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Symptome</h3>
+                title: "Klinische Symptome",
+                html: `<h3>Typische Symptome</h3>
                 <ul>
                     <li>Nicht heilende Ulzeration oder Wunde.</li>
                     <li>Schmerzen, Dysphagie, Odynophagie.</li>
@@ -78,18 +78,126 @@
                     <li>Blutung, Foetor ex ore.</li>
                     <li>Zahnlockerung ohne dentale Ursache.</li>
                 </ul>
-                <h3>Primärdiagnostik</h3>
+                <h3>Klinische Untersuchung</h3>
                 <ul>
-                    <li><strong>Klinische Untersuchung:</strong> Inspektion und Palpation der gesamten Mundhöhle.</li>
-                    <li><strong>Biopsie:</strong> Inzisionsbiopsie zur histologischen Sicherung.</li>
-                    <li><strong>Panendoskopie:</strong> Ausschluss Zweittumor (Pharynx, Larynx, Ösophagus).</li>
+                    <li><strong>Inspektion:</strong> Systematische Untersuchung der gesamten Mundhöhle, des Gaumens, der Zunge und des Mundbodens.</li>
+                    <li><strong>Palpation:</strong> Beurteilung von Raumforderungen, Konsistenz und Ausbreitung.</li>
+                    <li><strong>Halslymphknoten:</strong> Palpation der zervikalen Lymphknotenstationen.</li>
+                </ul>`
+            },
+            {
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Primärtumor</h3>
+                <ul>
+                    <li><strong>MRT der Mundhöhle und des Halses:</strong> Goldstandard für Beurteilung der lokalen Tumorausbreitung, Infiltrationstiefe und Knochenbeteiligung.</li>
+                    <li><strong>CT mit Kontrastmittel:</strong> Alternative zur MRT, gute Knochenbeurteilung.</li>
+                    <li><strong>Ultrasonographie:</strong> Ergänzende Beurteilung des Primärtumors und der Weichteilstrukturen.</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Lymphknoten</h3>
                 <ul>
-                    <li><strong>MRT/CT:</strong> Ausbreitung, Infiltrationstiefe, Lymphknoten.</li>
-                    <li><strong>Ultraschall Hals:</strong> Lymphknotenbeurteilung.</li>
-                    <li><strong>CT Thorax:</strong> Metastasenausschluss.</li>
-                    <li><strong>PET-CT:</strong> Bei fortgeschrittenem Stadium.</li>
+                    <li><strong>Halsultraschall:</strong> Standardmethode zur Lymphknotenbeurteilung.</li>
+                    <li><strong>MRT/CT:</strong> Detaillierte Beurteilung von Lymphknotengröße und -morphologie.</li>
+                </ul>
+                <h3>Fernmetastasen</h3>
+                <ul>
+                    <li><strong>CT Thorax:</strong> Standarduntersuchung zum Ausschluss von Lungenmetastasen.</li>
+                    <li><strong>PET-CT:</strong> Bei fortgeschrittenem Stadium (cT3/T4, N+), zum Nachweis von Fernmetastasen und okkulten Tumoren.</li>
+                    <li><strong>Abdomenultraschall:</strong> Beurteilung der Leber und anderer Abdominalorgane.</li>
+                    <li><strong>Skelettszintigraphie:</strong> Bei Verdacht auf Knochenmetastasen.</li>
+                </ul>
+                <h3>Zahnärztliche Bildgebung</h3>
+                <ul>
+                    <li><strong>Orthopantomogramm (OPG):</strong> Beurteilung des Kieferknochens.</li>
+                    <li><strong>DVT (Digitale Volumentomographie):</strong> Dreidimensionale Knochenbeurteilung bei Tumorinfiltration des Kiefers.</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild und Chemie</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium, Calcium.</li>
+                    <li><strong>Entzündungsparameter:</strong> CRP, BSG.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li><strong>SCC (Squamous Cell Carcinoma Antigen):</strong> Tumormarker für Plattenepithelkarzinome, Verlaufskontrolle.</li>
+                    <li><strong>CEA (Carcinoembryonales Antigen):</strong> Unspezifischer Marker.</li>
+                    <li><strong>Cyfra 21-1:</strong> Zytokeratin-Fragmente, optional.</li>
+                </ul>
+                <h3>Infektionsserologie</h3>
+                <ul>
+                    <li><strong>HIV-Test:</strong> Bei Risikopatienten.</li>
+                    <li><strong>Hepatitis-Screening:</strong> Bei geplanter Therapie.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li><strong>Inzisionsbiopsie:</strong> Standardmethode zur histologischen Diagnosesicherung.</li>
+                    <li><strong>Exzisionsbiopsie:</strong> Bei kleinen, gut zugänglichen Läsionen.</li>
+                    <li><strong>Feinnadelpunktion (FNP):</strong> Für zytologische Untersuchung bei vergrößerten Lymphknoten.</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Histologischer Typ:</strong> Plattenepithelkarzinom (>90%), Verruköses Karzinom, Adenokarzinom, etc.</li>
+                    <li><strong>Grading:</strong> G1 (gut differenziert), G2 (mäßig differenziert), G3 (schlecht differenziert).</li>
+                    <li><strong>Infiltrationstiefe (Depth of Invasion):</strong> Gemessen in mm, wichtiger Prognosefaktor.</li>
+                    <li><strong>Tumordicke (Tumor thickness):</strong> Optional.</li>
+                    <li><strong>Perineurale Invasion (PNI):</strong> Nachweis von Tumorzellen in Nervenscheiden.</li>
+                    <li><strong>Lymphgefäßinvasion (LVI):</strong> Nachweis von Tumorzellen in Lymphgefäßen.</li>
+                    <li><strong>Gefäßinvasion:</strong> Venöse/arterielle Invasion.</li>
+                </ul>
+                <h3>Immunhistochemie</h3>
+                <ul>
+                    <li><strong>p63/p40:</strong> Marker für Plattenepitheldifferenzierung.</li>
+                    <li><strong>CK5/6:</strong> Basal-/Plattenepithelmarker.</li>
+                    <li><strong>Ki-67:</strong> Proliferationsindex.</li>
+                    <li><strong>EGFR:</strong> Epidermal Growth Factor Receptor, Therapierelevanz.</li>
+                    <li><strong>p16:</strong> Surrogatmarker für HPV-Infektion.</li>
+                </ul>
+                <h3>Resektionspräparat</h3>
+                <ul>
+                    <li><strong>Resektionsränder:</strong> R0 (mikroskopisch tumorfrei &ge;5 mm), R1 (mikroskopisch Tumorzellen &lt;5 mm), R2 (makroskopisch Tumor).</li>
+                    <li><strong>Lymphknotenbefall:</strong> Zahl befallener Lymphknoten / untersuchte Lymphknoten, Extrakapsuläre Ausbreitung (ECE).</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>HPV-Status</h3>
+                <ul>
+                    <li><strong>p16-Immunhistochemie:</strong> Standard-Screening für HPV-Assoziation.</li>
+                    <li><strong>PCR oder ISH:</strong> Bestätigungstest für HPV-DNA.</li>
+                    <li><strong>Therapeutische Relevanz:</strong> HPV-positive Tumoren haben bessere Prognose, ggf. Deeskalationstherapie.</li>
+                </ul>
+                <h3>Molekulare Marker</h3>
+                <ul>
+                    <li><strong>EGFR:</strong> Überexpression bei ca. 80-90%, Therapieoption mit Cetuximab.</li>
+                    <li><strong>KRAS/NRAS:</strong> Mutationsanalyse bei metastasierter Erkrankung.</li>
+                    <li><strong>BRAF:</strong> Optional bei klinischer Relevanz.</li>
+                    <li><strong>PD-L1:</strong> Immuntherapie-Prädiktion (optional).</li>
+                </ul>
+                <h3>Genexpressionsprofile</h3>
+                <ul>
+                    <li><strong>Merlin Score:</strong> Experimentell, Prognoseeinschätzung.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinisches Staging</h3>
+                <ul>
+                    <li><strong>cT (klinisches T):</strong> Klinische Beurteilung des Primärtumors durch Untersuchung und Bildgebung.</li>
+                    <li><strong>cN (klinisches N):</strong> Klinische Beurteilung der Lymphknoten durch Palpation und Bildgebung.</li>
+                    <li><strong>cM (klinisches M):</strong> Klinischer Ausschluss von Fernmetastasen.</li>
+                </ul>
+                <h3>Panendoskopie</h3>
+                <ul>
+                    <li><strong>Ösophagogastroduodenoskopie (ÖGD):</strong> Ausschluss von Zweittumoren im oberen GI-Trakt.</li>
+                    <li><strong>Laryngoskopie/Pharyngoskopie:</strong> Beurteilung von Pharynx und Larynx.</li>
+                    <li><strong>Bronchoskopie:</strong> Bei V.a. Bronchusbeteiligung oder Zweittumor.</li>
                 </ul>
                 <h3>TNM-Klassifikation</h3>
                 <div class="table-wrap">
@@ -115,7 +223,7 @@
                             </tr>
                             <tr>
                                 <td><strong>T4a</strong></td>
-                                <td>Infiltration von Knochen, Haut, Muskeln</td>
+                                <td>Infiltration von Knochen (Mandelengaumen, Oberkiefer), Haut, Muskeln</td>
                             </tr>
                             <tr>
                                 <td><strong>T4b</strong></td>
@@ -124,11 +232,55 @@
                         </tbody>
                     </table>
                 </div>
-                <h3>Histologie</h3>
-                <ul>
-                    <li><strong>Plattenepithelkarzinom:</strong> >90% der Fälle.</li>
-                    <li>Grading: G1 (gut differenziert) bis G3 (schlecht differenziert).</li>
-                </ul>`
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N-Kategorie</th>
+                                <th>Beschreibung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>N0</strong></td>
+                                <td>Keine Lymphknotenmetastasen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N1</strong></td>
+                                <td>Einzelner ipsilateral Lymphknoten, &le;3 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N2</strong></td>
+                                <td>Einzelner ipsilateral Lymphknoten >3-6 cm oder multiple Lymphknoten &le;6 cm</td>
+                            </tr>
+                            <tr>
+                                <td><strong>N3</strong></td>
+                                <td>Lymphknoten >6 cm</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>Stadieneinteilung</h3>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Stadium</th>
+                                <th>T</th>
+                                <th>N</th>
+                                <th>M</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>I</td><td>T1</td><td>N0</td><td>M0</td></tr>
+                            <tr><td>II</td><td>T2</td><td>N0</td><td>M0</td></tr>
+                            <tr><td>III</td><td>T3, T4a</td><td>N0</td><td>M0</td></tr>
+                            <tr><td>IVA</td><td>jedes T</td><td>N1-2</td><td>M0</td></tr>
+                            <tr><td>IVB</td><td>jedes T</td><td>N3</td><td>M0</td></tr>
+                            <tr><td>IVC</td><td>jedes T</td><td>jedes N</td><td>M1</td></tr>
+                        </tbody>
+                    </table>
+                </div>`
             },
             {
                 title: "Therapie",

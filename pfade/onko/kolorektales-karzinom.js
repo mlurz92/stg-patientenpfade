@@ -105,33 +105,194 @@
                 </div>`
             },
             {
-                title: "Diagnostik & Staging",
-                html: `<h3>Primärdiagnostik</h3>
+                title: "Bildgebende Diagnostik",
+                html: `<h3>Endoskopie</h3>
                 <ul>
                     <li><strong>Koloskopie:</strong> Goldstandard zur Diagnosesicherung mit Biopsieentnahme. Vollständige Koloskopie mit Intubation des Zökums anzustreben.</li>
-                    <li><strong>Biopsie:</strong> Multi-Biopsien aus dem Tumor. Gezielte Biopsie aus suspekten Läsionen.</li>
-                    <li><strong>Histopathologie:</strong> Standardisierte pathologische Aufarbeitung gemäß aktueller WHO-Klassifikation.</li>
+                    <li><strong>Rektosigmoidoskopie:</strong> Für Tumoren im Rektum und Sigma.</li>
+                    <li><strong>Endosonographie (Rektum):</strong> Ergänzend zur MRT für uT- und uN-Staging bei Rektumkarzinom.</li>
                 </ul>
-                <h3>Staging-Untersuchungen</h3>
+                <h3>Computertomographie (CT)</h3>
                 <ul>
                     <li><strong>Abdomen-CT (mit Kontrastmittel):</strong> Lebermetastasen, Lymphknotenbefall, lokale Infiltration.</li>
                     <li><strong>Thorax-CT (mit Kontrastmittel):</strong> Lungenmetastasen.</li>
-                    <li><strong>MRT Becken:</strong> Bei Rektumkarzinom obligat zur Beurteilung der lokalen Ausbreitung, CRM (Circumferential Resection Margin), mesorektaler Faszie und Extramurale Veneninvasion (EMVI).</li>
-                    <li><strong>Endosonographie (Rektum):</strong> Ergänzend zur MRT für uT- und uN-Staging.</li>
-                    <li><strong>CEA:</strong> Tumormarker für Verlaufskontrolle und Nachsorge. Nicht geeignet für Primärdiagnostik.</li>
-                    <li><strong>PET-CT:</strong> Nicht routinemäßig, bei V.a. Fernmetastasierung oder unklaren Befunden.</li>
+                    <li><strong>CT-Kolonographie:</strong> Alternative zur Koloskopie bei inkompletter Koloskopie oder Ablehnung. Sensitivität für Polypen ≥10mm >90%.</li>
                 </ul>
-                <h3>Molekularpathologische Diagnostik</h3>
+                <h3>Magnetresonanztomographie (MRT)</h3>
                 <ul>
-                    <li><strong>MSI-Status/dMMR:</strong> Bestimmung bei allen erstdiagnostizierten KRK (universelles Screening auf Lynch-Syndrom). Immunhistochemie für MLH1, PMS2, MSH2, MSH6. PCR-Analyse bei Verlust.</li>
-                    <li><strong>RAS-Mutationsstatus:</strong> KRAS (Exon 2, 3, 4) und NRAS (Exon 2, 3, 4) für Therapieentscheidung (Anti-EGFR-Therapie).</li>
-                    <li><strong>BRAF-V600E-Mutation:</strong> Zur Unterscheidung sporadisch vs. hereditär (Lynch-Syndrom), Prognosefaktor.</li>
-                    <li><strong>HER2-Status:</strong> Bei metastasiertem KRAS-Wildtyp. IHC 3+ oder ISH positiv: Trastuzumab oder Pertuzumab möglich.</li>
-                    <li><strong>Liquid Biopsy (ctDNA):</strong> Zur Molekularprofiling bei metastasierter Erkrankung, wenn Gewebebiopsie nicht möglich. Zur Verlaufsbeurteilung unter Therapie (MRD-Detektion) in Studien.</li>
-                    <li><strong>NTRK-Fusion:</strong> Bei Vorliegen einer NTRK-Fusion: Larotrectinib oder Entrectinib.</li>
+                    <li><strong>MRT Becken:</strong> Bei Rektumkarzinom obligat zur Beurteilung der lokalen Ausbreitung, CRM (Circumferential Resection Margin), mesorektaler Faszie und Extramuraler Veneninvasion (EMVI).</li>
+                    <li><strong>MR-Kolonographie:</strong> Keine Strahlenbelastung, jedoch eingeschränkte Verfügbarkeit.</li>
                 </ul>
-                <h3>UICC-Klassifikation</h3>
-                <p>Die UICC-Klassifikation des Kolorektalen Karzinoms erfolgt nach dem aktuellen TNM-System (8. Edition).</p>
+                <h3>Sonographie</h3>
+                <ul>
+                    <li><strong>Abdomensonographie:</strong> Erstliniendiagnostik für Lebermetastasen.</li>
+                    <li><strong>Endosonographie:</strong> Zur Beurteilung der Tiefeninfiltration bei Rektumkarzinom.</li>
+                </ul>
+                <h3>PET-CT</h3>
+                <ul>
+                    <li><strong>PET-CT:</strong> Nicht routinemäßig, bei Verdacht auf Fernmetastasierung oder unklaren Befunden. Kombination von Stoffwechselinformationen (FDG) mit anatomischer Bildgebung.</li>
+                </ul>
+                <h3>Szintigraphie</h3>
+                <ul>
+                    <li><strong>Skelettszintigraphie:</strong> Bei Verdacht auf Knochenmetastasen (insbesondere bei hohen Tumoren oder Knochenschmerzen).</li>
+                </ul>`
+            },
+            {
+                title: "Labordiagnostik",
+                html: `<h3>Blutbild und Chemie</h3>
+                <ul>
+                    <li><strong>Blutbild:</strong> Differenzierung von Anämie, Leukozytose, Thrombopenie.</li>
+                    <li><strong>Leberwerte:</strong> GOT, GPT, Gamma-GT, Bilirubin.</li>
+                    <li><strong>Nierenwerte:</strong> Kreatinin, Harnstoff.</li>
+                    <li><strong>Elektrolyte:</strong> Natrium, Kalium, Calcium.</li>
+                    <li><strong>LDH:</strong> Laktatdehydrogenase, Prognoseparameter.</li>
+                </ul>
+                <h3>Tumormarker</h3>
+                <ul>
+                    <li><strong>CEA (Carcinoembryonales Antigen):</strong> Wichtigster Tumormarker für Kolorektales Karzinom. Verlaufskontrolle und Nachsorge. Nicht geeignet für Primärdiagnostik.</li>
+                    <li><strong>CA 19-9:</strong> Ergänzender Marker, insbesondere bei Pankreasbeteiligung.</li>
+                    <li><strong>CA 125:</strong> Bei Verdacht auf Ovarialbeteiligung (insbesondere bei Frauen).</li>
+                </ul>
+                <h3>Entzündungsparameter</h3>
+                <ul>
+                    <li><strong>CRP, BSG:</strong> Bei Verdacht auf Entzündung oder Tumorprogress.</li>
+                </ul>
+                <h3>Stuhluntersuchungen</h3>
+                <ul>
+                    <li><strong>iFOBT (immunologischer fäkaler Okkultbluttest):</strong> Zur Früherkennung, nicht für Diagnostik geeignet.</li>
+                    <li><strong>Fäkale DNA-Tests (z.B. Cologuard®):</strong> Kombination aus iFOBT und DNA-Markern. Nicht als Kassenleistung in Deutschland.</li>
+                </ul>`
+            },
+            {
+                title: "Pathologie & Histologie",
+                html: `<h3>Biopsie-Verfahren</h3>
+                <ul>
+                    <li><strong>Koloskopische Biopsie:</strong> Multi-Biopsien aus dem Tumor. Gezielte Biopsie aus suspekten Läsionen.</li>
+                    <li><strong>Endosonographisch-gesteuerte Biopsie:</strong> Für tiefergelegene Rektumkarzinome.</li>
+                    <li><strong>Zytologie:</strong> Zytologische Untersuchung von Aszites oder Pleuraerguss bei metastasierter Erkrankung.</li>
+                </ul>
+                <h3>Histopathologische Begutachtung</h3>
+                <ul>
+                    <li><strong>Tumorart und -typ:</strong> Standardisierte pathologische Aufarbeitung gemäß aktueller WHO-Klassifikation. Adenokarzinom, muzinöses Adenokarzinom, Siegelringzellkarzinom, plattenepitheliales Karzinom, neuroendokrine Tumoren.</li>
+                    <li><strong>Differenzierungsgrad:</strong> G1 (gut), G2 (mäßig), G3 (schlecht) differenziert.</li>
+                    <li><strong>Tumorgröße:</strong> Maximaler Durchmesser in mm.</li>
+                    <li><strong>Tiefeninvasion:</strong> pT-Stadium (Tis, T1-T4).</li>
+                    <li><strong>Lymphknotenstatus:</strong> Zahl befallener Lymphknoten / untersuchte Lymphknoten (mindestens 12 Lymphknoten).</li>
+                    <li><strong>Lymphgefäßinvasion (LVI):</strong> Nachweis von Tumorzellen in Lymphgefäßen.</li>
+                    <li><strong>Perineurale Invasion (PNI):</strong> Nachweis von Tumorzellen in Nervenscheiden.</li>
+                    <li><strong>Resektionsränder:</strong> R0 (mikroskopisch tumorfrei), R1 (mikroskopisch Tumorzellen), R2 (makroskopisch Tumor).</li>
+                </ul>
+                <h3>Immunhistochemie</h3>
+                <ul>
+                    <li><strong>CK20, CDX2:</strong> Marker für kolorektale Differenzierung.</li>
+                    <li><strong>CK7:</strong> Differenzierung kolorektal vs. andere Primärtumoren.</li>
+                    <li><strong>MSI/MMR-Proteine:</strong> MLH1, PMS2, MSH2, MSH6 (s. Molekulare Diagnostik).</li>
+                </ul>
+                <h3>Rektumkarzinom-spezifische Pathologie</h3>
+                <ul>
+                    <li><strong>CRM (Circumferential Resection Margin):</strong> ≤ 1 mm: R1-Resektion.</li>
+                    <li><strong>EMVI (Extramurale Veneninvasion):</strong> Prognosefaktor.</li>
+                    <li><strong>pCR (pathologische komplette Remission):</strong> Keine vitalen Tumorzellen im Präparat nach neoadjuvanter Therapie. Prognostisch günstig.</li>
+                </ul>`
+            },
+            {
+                title: "Molekulare Diagnostik",
+                html: `<h3>MMR-Status / MSI</h3>
+                <ul>
+                    <li><strong>MSI-Status/dMMR:</strong> Bestimmung bei allen erstdiagnostizierten KRK (universelles Screening auf Lynch-Syndrom).</li>
+                    <li><strong>Immunhistochemie:</strong> Für MLH1, PMS2, MSH2, MSH6. Verlust zeigt MMR-Defizienz.</li>
+                    <li><strong>PCR-Analyse:</strong> Bei Verlust in der IHC zur Bestätigung (Microsatellite Instability Testing).</li>
+                    <li><strong>Bedeutung:</strong> Prognosefaktor, prädiktiv für Immuntherapie (Pembrolizumab/Nivolumab).</li>
+                </ul>
+                <h3>RAS-Mutationsstatus</h3>
+                <ul>
+                    <li><strong>KRAS-Mutation:</strong> Exon 2 (Codons 12, 13), Exon 3 (Codons 59, 61), Exon 4 (Codons 117, 146). Ausschluss für Anti-EGFR-Therapie.</li>
+                    <li><strong>NRAS-Mutation:</strong> Exon 2, 3, 4. Ausschluss für Anti-EGFR-Therapie.</li>
+                    <li><strong>Testmethode:</strong> PCR, NGS, pyrosequencing.</li>
+                </ul>
+                <h3>BRAF-Mutation</h3>
+                <ul>
+                    <li><strong>BRAF V600E-Mutation:</strong> Zur Unterscheidung sporadisch vs. hereditär (Lynch-Syndrom). Prognosefaktor (schlechtere Prognose).</li>
+                    <li><strong>Testmethode:</strong> PCR, NGS, Immunhistochemie als Screening.</li>
+                </ul>
+                <h3>HER2-Status</h3>
+                <ul>
+                    <li><strong>Indikation:</strong> Bei metastasiertem KRAS-Wildtyp.</li>
+                    <li><strong>Immunhistochemie (IHC):</strong> 0, 1+, 2+, 3+.</li>
+                    <li><strong>ISH/FISH:</strong> Bei IHC 2+ zur Bestätigung.</li>
+                    <li><strong>HER2-positiv:</strong> IHC 3+ oder ISH positiv: Trastuzumab oder Pertuzumab möglich.</li>
+                </ul>
+                <h3>Weitere molekulare Marker</h3>
+                <ul>
+                    <li><strong>Liquid Biopsy (ctDNA):</strong> Zur Molekularprofiling bei metastasierter Erkrankung, wenn Gewebebiopsie nicht möglich. Zur Verlaufsbeurteilung unter Therapie (MRD-Detektion) in Studien.</li>
+                    <li><strong>NTRK-Fusion:</strong> Bei Vorliegen: Larotrectinib oder Entrectinib.</li>
+                    <li><strong>POLE-Mutation:</strong> Im Stadium II: günstige Prognose, möglicher Verzicht auf Chemotherapie.</li>
+                </ul>
+                <h3>Genetische Tests</h3>
+                <ul>
+                    <li><strong>Keimbahnmutationstestung:</strong> Bei Verdacht auf hereditäres KRK (Lynch-Syndrom, FAP, MAP).</li>
+                    <li><strong>Multigene Panels:</strong> NGS-basierte Panel-Testung bei familiärer Belastung.</li>
+                </ul>`
+            },
+            {
+                title: "Staging",
+                html: `<h3>Klinisches Staging</h3>
+                <ul>
+                    <li><strong>Anamnese und körperliche Untersuchung:</strong> Erfassung von Symptomen, Gewichtsverlust, Leistungsminderung.</li>
+                    <li><strong>Digital-rektale Untersuchung:</strong> Bei Rektumkarzinom zur Beurteilung der Tumorlage und -ausbreitung.</li>
+                </ul>
+                <h3>TNM-Klassifikation (8. Edition)</h3>
+                <h4>T-Kategorie (Tumor)</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>T-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Tis</td><td>Carcinoma in situ</td></tr>
+                            <tr><td>T1</td><td>Tumor invadiert Submukosa</td></tr>
+                            <tr><td>T2</td><td>Tumor invadiert Muscularis propria</td></tr>
+                            <tr><td>T3</td><td>Tumor invadiert Subserosa oder perikolisches Fettgewebe</td></tr>
+                            <tr><td>T4a</td><td>Tumor infiltriert viszerales Peritoneum</td></tr>
+                            <tr><td>T4b</td><td>Tumor infiltriert andere Organe</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>N-Kategorie (Lymphknoten)</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>N0</td><td>Keine regionären Lymphknotenmetastasen</td></tr>
+                            <tr><td>N1</td><td>1-3 regionäre Lymphknotenmetastasen</td></tr>
+                            <tr><td>N2</td><td>≥4 regionäre Lymphknotenmetastasen</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h4>M-Kategorie (Metastasen)</h4>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>M-Kategorie</th>
+                                <th>Definition</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>M0</td><td>Keine Fernmetastasen</td></tr>
+                            <tr><td>M1</td><td>Fernmetastasen vorhanden</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>UICC-Stadien</h3>
                 <div class="table-wrap">
                     <table>
                         <thead>
@@ -179,7 +340,24 @@
                             </tr>
                         </tbody>
                     </table>
-                </div>`
+                </div>
+                <h3>Metastasenlokalisation</h3>
+                <ul>
+                    <li><strong>Leber:</strong> Häufigste Metastasenlokalisation.</li>
+                    <li><strong>Lunge:</strong> Zweithäufigste Lokalisation.</li>
+                    <li><strong>Peritoneum:</strong> Peritonealkarzinose.</li>
+                    <li><strong>Lymphknoten:</strong> Extraregionale Lymphknoten.</li>
+                    <li><strong>Knochen:</strong> Seltener, bei fortgeschrittener Erkrankung.</li>
+                    <li><strong>Gehirn:</strong> Selten, bei fortgeschrittener Erkrankung.</li>
+                </ul>
+                <h3>Rektumkarzinom-spezifisches Staging</h3>
+                <ul>
+                    <li><strong>MRT Becken:</strong> Obligat zur Beurteilung der lokalen Ausbreitung.</li>
+                    <li><strong>Endosonographie:</strong> Ergänzend für uT- und uN-Staging.</li>
+                    <li><strong>CRM (Circumferential Resection Margin):</strong> Betroffener Resektionsrand ≤ 1mm.</li>
+                    <li><strong>EMVI:</strong> Extramurale Veneninvasion.</li>
+                    <li><strong>Mesorektale Faszie:</strong> Infiltration der mesorektalen Faszie.</li>
+                </ul>`
             },
             {
                 title: "Therapie des Kolonkarzinoms",
