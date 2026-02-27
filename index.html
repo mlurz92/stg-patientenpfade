@@ -34,12 +34,10 @@
     <div id="app">
         <div id="navStack" data-stack="[]"></div>
         
-        <!-- Mobile Sidebar Toggle Button -->
         <button class="sidebar-toggle-mobile" id="sidebarToggleMobile" aria-label="Menü öffnen">
             <i class="fa-solid fa-bars"></i>
         </button>
         
-        <!-- Mobile Sidebar Overlay -->
         <div class="sidebar-mobile-overlay" id="sidebarMobileOverlay">
             <div class="sidebar-mobile-backdrop" id="sidebarMobileBackdrop"></div>
             <aside class="sidebar-mobile" id="sidebarMobile">
@@ -150,8 +148,12 @@
                 </div>
 
                 <div class="sticky-bar" id="stickySectionBar">
-                    <i class="fa-solid fa-circle-info" id="stickySectionIcon"></i>
-                    <span id="stickySectionTitle"></span>
+                    <div class="sticky-section-selector" id="stickySectionSelector">
+                        <i class="fa-solid fa-circle-info" id="stickySectionIcon"></i>
+                        <span id="stickySectionTitle"></span>
+                        <i class="fa-solid fa-chevron-down selector-arrow"></i>
+                        <div class="sticky-section-menu" id="stickySectionMenu"></div>
+                    </div>
                     <span class="sticky-sop" id="stickySopName"></span>
                     <div class="sticky-subcat-dropdown">
                         <button class="sticky-subcat-btn" id="stickySubcatBtn">
@@ -228,8 +230,6 @@
             </nav>
         </main>
     </div>
-
-
 
     <div class="spotlight-overlay" id="spotlightOverlay">
         <div class="spotlight-backdrop" id="spotlightBackdrop"></div>
@@ -357,7 +357,6 @@
     <script src="pfade/zna/zerebrale-metastasen.js"></script>
     <script src="pfade/zna/zerebrale-venen-sinusthrombose.js"></script>
 
-    <!-- Onkologische SOPs -->
     <script src="pfade/onko/adulte-weichgewebesarkome.js"></script>
     <script src="pfade/onko/analkarzinom.js"></script>
     <script src="pfade/onko/biliaere-karzinome.js"></script>
