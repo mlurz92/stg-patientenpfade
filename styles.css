@@ -54,6 +54,7 @@
     --topbar-h: 56px;
     --btm-h: 64px;
     --font-base: 15px;
+    --header-offset: 45px; /* Offset für desk-bar (Breadcrumb) */
     --sat: env(safe-area-inset-top, 0px);
     --sab: env(safe-area-inset-bottom, 0px);
     --sal: env(safe-area-inset-left, 0px);
@@ -925,6 +926,10 @@ mark {
     object-fit: contain;
     flex-shrink: 0;
     border-radius: 8px;
+    /* Optimierte Darstellung für skalierte Bilder */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .header-title {
@@ -1090,6 +1095,13 @@ mark {
 
 .sidebar-cat-chip i {
     font-size: 0.58rem;
+}
+
+.sidebar-cat-chip img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .sidebar-cat-chip .cat-count {
@@ -1408,8 +1420,9 @@ mark {
     display: flex;
 }
 
+/* MODIFIZIERT: desk-bar Steuerung rein über CSS für bessere Stabilität */
 .desk-bar {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding: 10px 28px;
@@ -1417,6 +1430,12 @@ mark {
     flex-shrink: 0;
     min-height: 44px;
     background: var(--surface);
+}
+
+@media (min-width: 768px) {
+    .desk-bar {
+        display: flex !important;
+    }
 }
 
 .desk-crumbs {
@@ -1637,6 +1656,13 @@ mark {
      color: var(--text3);
  }
 
+ .sticky-subcat-item img {
+     width: 18px;
+     height: 18px;
+     object-fit: contain;
+     border-radius: 4px;
+ }
+
  @media (max-width: 1023px) {
      .sticky-bar {
          padding: 10px 18px;
@@ -1683,11 +1709,13 @@ mark {
 .v {
     display: none;
     padding: 28px;
+    padding-top: calc(28px + var(--header-offset, 0px));
     position: absolute;
-    top: 0;
+    top: 44px;
     left: 0;
     width: 100%;
     min-height: 100%;
+    box-sizing: border-box;
     will-change: transform, opacity;
     backface-visibility: hidden;
 }
@@ -1776,6 +1804,10 @@ mark {
     display: block;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
     transition: transform 0.3s var(--ease-out-cubic);
+    /* Optimierte Darstellung für skalierte Bilder */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .portal-logo:hover {
@@ -1791,6 +1823,10 @@ mark {
     display: block;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
     transition: transform 0.3s var(--ease-out-cubic);
+    /* Optimierte Darstellung für skalierte Bilder */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .portal-logo-header:hover {
@@ -1813,22 +1849,39 @@ mark {
 
 .portal-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
     padding: 0 28px 40px;
     max-width: 800px;
     margin: 0 auto;
+}
+
+/* Tablet: 2 Spalten mit mehr Abstand */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .portal-grid {
+        gap: 24px;
+        padding: 0 24px 36px;
+    }
+}
+
+/* Desktop Large: 2 Spalten mit maximaler Breite */
+@media (min-width: 1024px) {
+    .portal-grid {
+        gap: 32px;
+        padding: 0 32px 48px;
+        max-width: 700px;
+    }
 }
 
 .portal-card {
     background: var(--surface);
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
-    padding: 32px 24px;
+    padding: 36px 28px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 14px;
     cursor: pointer;
     transition: all 0.3s var(--ease-out-cubic);
     position: relative;
@@ -1837,6 +1890,10 @@ mark {
     text-align: center;
     -webkit-tap-highlight-color: transparent;
     touch-action: manipulation;
+    /* GPU Optimization */
+    will-change: transform, box-shadow, border-color;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .portal-card::before {
@@ -1865,15 +1922,47 @@ mark {
 }
 
 .portal-card-icon {
-    width: 72px;
-    height: 72px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     transition: transform 0.3s var(--ease-out-cubic);
+    position: relative;
+    overflow: hidden;
+}
+
+.portal-card-icon::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.3) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.portal-card-img {
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    border-radius: 12px;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.15));
+    transition: transform 0.3s var(--ease-out-cubic), filter 0.3s;
+}
+
+.portal-card:hover .portal-card-img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+}
+
+/* Kategorie-Bild-Icon */
+.cat-icon-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .portal-card:hover .portal-card-icon {
@@ -1933,6 +2022,10 @@ mark {
     display: block;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
     transition: transform 0.3s var(--ease-out-cubic);
+    /* Optimierte Darstellung für skalierte Bilder */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .hero-logo:hover {
@@ -1948,6 +2041,10 @@ mark {
     display: block;
     filter: drop-shadow(0 4px 12px rgba(0,0,0,0.08));
     transition: transform 0.3s var(--ease-out-cubic);
+    /* Optimierte Darstellung für skalierte Bilder */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
 }
 
 .hero-logo-header:hover {
@@ -2316,6 +2413,13 @@ mark {
     box-shadow: 0 2px 8px rgba(var(--primary-rgb), 0.25);
 }
 
+.browse-cat-chip img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
 .browse-list {
     display: flex;
     flex-direction: column;
@@ -2420,6 +2524,14 @@ mark {
 
 .browse-cat-header > i {
     font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+.browse-cat-header img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
     flex-shrink: 0;
 }
 
@@ -2606,6 +2718,14 @@ mark {
 
 .sop-cat-badge i {
     font-size: 0.65rem;
+    flex-shrink: 0;
+}
+
+.sop-cat-badge img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    border-radius: 3px;
     flex-shrink: 0;
 }
 
@@ -3273,10 +3393,10 @@ mark {
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 1023px) {
+/* Show bottom navigation only on mobile (< 768px) */
+@media (max-width: 767px) {
     .btm-nav {
         display: flex;
-        align-items: flex-end;
     }
 }
 
@@ -3381,23 +3501,6 @@ mark {
     transform: translateX(-50%) scaleX(1);
 }
 
-/* Ripple effect on tap (optional enhancement) */
-.btm-btn .ripple {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(var(--primary-rgb), 0.3);
-    transform: scale(0);
-    animation: rippleEffect 0.5s linear;
-    pointer-events: none;
-}
-
-@keyframes rippleEffect {
-    to {
-        transform: scale(2.5);
-        opacity: 0;
-    }
-}
-
 /* Subtle background indicator for active button */
 .btm-btn.active::before {
     content: '';
@@ -3416,19 +3519,6 @@ mark {
 
 [data-theme="dark"] .btm-btn.active::before {
     background: rgba(59, 130, 246, 0.2);
-}
-
-/* Icon-specific colors for better visual hierarchy */
-.btm-btn[data-tab="home"] i::before {
-    transition: color 0.25s var(--ease-out-cubic);
-}
-
-.btm-btn[data-tab="browse"] i::before {
-    transition: color 0.25s var(--ease-out-cubic);
-}
-
-.btm-btn[data-tab="search"] i::before {
-    transition: color 0.25s var(--ease-out-cubic);
 }
 
 /* Focus visible for accessibility */
@@ -3513,18 +3603,30 @@ mark {
     }
 }
 
-.spotlight-overlay {
+/* MODIFIZIERT: Overlays strikt ausblenden im Standardzustand */
+.spotlight-overlay,
+.picker-overlay,
+.skeleton-overlay {
     position: fixed;
     inset: 0;
-    z-index: 200;
-    display: none;
+    z-index: 2000;
+    display: none !important;
+    visibility: hidden;
+    opacity: 0;
     align-items: flex-start;
     justify-content: flex-start;
     padding-top: calc(60px + var(--sat));
+    pointer-events: none;
 }
 
-.spotlight-overlay.show {
-    display: flex;
+/* Übersteuerung nur durch .show Klasse */
+.spotlight-overlay.show,
+.picker-overlay.show,
+.skeleton-overlay.show {
+    pointer-events: auto;
+    display: flex !important;
+    visibility: visible;
+    opacity: 1;
 }
 
 .spotlight-backdrop {
@@ -3654,6 +3756,13 @@ mark {
     flex-shrink: 0;
 }
 
+.spotlight-result-icon img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
 .spotlight-result-info {
     flex: 1;
     min-width: 0;
@@ -3719,19 +3828,6 @@ mark {
     opacity: 0.5;
 }
 
-.picker-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: 100;
-    display: none;
-    pointer-events: none;
-}
-
-.picker-overlay.show {
-    display: block;
-    pointer-events: auto;
-}
-
 .picker-bg {
     position: absolute;
     inset: 0;
@@ -3747,7 +3843,7 @@ mark {
 }
 
 .picker-sheet {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -3763,6 +3859,7 @@ mark {
     touch-action: pan-y;
     overscroll-behavior: contain;
     will-change: transform;
+    z-index: 2001;
 }
 
 .picker-overlay.show .picker-sheet {
@@ -3901,18 +3998,10 @@ mark {
 }
 
 .skeleton-overlay {
-    position: fixed;
-    inset: 0;
     background: var(--bg);
-    z-index: 150;
-    display: none;
     padding: 28px;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-}
-
-.skeleton-overlay.show {
-    display: block;
 }
 
 .skeleton-sop {
@@ -4602,6 +4691,11 @@ mark {
 .skeleton-browse-item:nth-child(8) { animation-delay: 0.4s; }
 
 @media (max-width: 767px) {
+    /* Hide desktop sidebar on mobile */
+    .sidebar {
+        display: none !important;
+    }
+    
     /* Show mobile sidebar toggle only on mobile (< 768px) */
     .sidebar-toggle-mobile {
         display: flex !important;
@@ -4611,8 +4705,14 @@ mark {
         display: flex;
     }
     
+    /* Desktop Breadcrumb: auf Mobile komplett ausblenden */
     .desk-bar {
-        display: none;
+        display: none !important;
+    }
+    
+    /* Set header offset to 0 on mobile since desk-bar is hidden */
+    :root {
+        --header-offset: 0px;
     }
     
     .btm-nav {
@@ -4624,6 +4724,7 @@ mark {
         padding-left: calc(18px + var(--sal));
         padding-right: calc(18px + var(--sar));
         padding-bottom: calc(90px + var(--sab-js));
+        padding-top: calc(18px + var(--header-offset, 0px));
     }
     
     .v-sop {
@@ -4653,12 +4754,33 @@ mark {
     
     .portal-grid {
         padding: 0 18px 30px;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 16px;
+        max-width: 100%;
     }
     
     .portal-card {
-        padding: 24px 20px;
+        padding: 28px 20px;
+        gap: 12px;
+    }
+    
+    .portal-card-icon {
+        width: 72px;
+        height: 72px;
+    }
+    
+    .portal-card-img {
+        width: 48px;
+        height: 48px;
+        border-radius: 10px;
+    }
+    
+    .portal-card h3 {
+        font-size: 1.15rem;
+    }
+    
+    .portal-card p {
+        font-size: 0.85rem;
     }
     
     .hero {

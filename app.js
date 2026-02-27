@@ -4,26 +4,26 @@
     var APP_VERSION = '3.2.0';
 
     var CATS = {
-        'kardio': { name: 'Kardiologie', icon: 'fa-heart-pulse', mod: 'zna' },
-        'pulmo': { name: 'Pneumologie', icon: 'fa-lungs', mod: 'zna' },
-        'gi': { name: 'Gastroenterologie', icon: 'fa-burger', mod: 'zna' },
-        'neuro': { name: 'Neurologie', icon: 'fa-brain', mod: 'zna' },
-        'nephro': { name: 'Nephrologie', icon: 'fa-kidney', mod: 'zna' },
-        'metab': { name: 'Metabolisch', icon: 'fa-flask', mod: 'zna' },
-        'haem': { name: 'Hämatologie', icon: 'fa-pills', mod: 'zna' },
-        'infekt': { name: 'Infektiologie', icon: 'fa-virus', mod: 'zna' },
-        'tox': { name: 'Toxikologie', icon: 'fa-skull-crossbones', mod: 'zna' },
-        'leit': { name: 'Leitsymptom', icon: 'fa-stethoscope', mod: 'zna' },
-        'sonst': { name: 'Sonstige', icon: 'fa-ellipsis', mod: 'zna' },
-        'onko': { name: 'Onkologie', icon: 'fa-ribbon', mod: 'onko' },
-        // Onkologie-Unterkategorien
-        'onko-gi': { name: 'Gastrointestinale Tumoren', icon: 'fa-burger', mod: 'onko', parent: 'onko' },
-        'onko-uro': { name: 'Urologische Tumoren', icon: 'fa-bladder', mod: 'onko', parent: 'onko' },
-        'onko-gyn': { name: 'Gynäkologische Tumoren', icon: 'fa-venus-mars', mod: 'onko', parent: 'onko' },
-        'onko-pulmo': { name: 'Pulmonale Tumoren', icon: 'fa-lungs', mod: 'onko', parent: 'onko' },
-        'onko-hno': { name: 'Kopf-Hals-Tumoren', icon: 'fa-user-nurse', mod: 'onko', parent: 'onko' },
-        'onko-haem': { name: 'Hämatologische Neoplasien', icon: 'fa-dna', mod: 'onko', parent: 'onko' },
-        'onko-sonst': { name: 'Sonstige Tumoren', icon: 'fa-disease', mod: 'onko', parent: 'onko' }
+        'zna': { name: 'Zentrale Notaufnahme', icon: 'fa-house-medical', mod: 'zna', imgIcon: 'img/Icons/ZNA/zna_alle_pfade.png' },
+        'kardio': { name: 'Kardiologie', icon: 'fa-heart-pulse', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_kardio.png' },
+        'pulmo': { name: 'Pneumologie', icon: 'fa-lungs', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_pneumologie.png' },
+        'gi': { name: 'Gastroenterologie', icon: 'fa-burger', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_gastroenterologie.png' },
+        'neuro': { name: 'Neurologie', icon: 'fa-brain', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_neurologie.png' },
+        'nephro': { name: 'Nephrologie', icon: 'fa-kidney', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_nephrologie.png' },
+        'metab': { name: 'Metabolisch', icon: 'fa-flask', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_metabolisch.png' },
+        'haem': { name: 'Hämatologie', icon: 'fa-pills', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_haematologie.png' },
+        'infekt': { name: 'Infektiologie', icon: 'fa-virus', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_infektiologie.png' },
+        'tox': { name: 'Toxikologie', icon: 'fa-skull-crossbones', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_toxikologie.png' },
+        'leit': { name: 'Leitsymptom', icon: 'fa-stethoscope', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_leitsymptome.png' },
+        'sonst': { name: 'Sonstige', icon: 'fa-ellipsis', mod: 'zna', parent: 'zna', imgIcon: 'img/Icons/ZNA/zna_alle_pfade.png' },
+        'onko': { name: 'Onkologie', icon: 'fa-ribbon', mod: 'onko', imgIcon: 'img/Icons/Onko/onko_alle_pfade.png' },
+        'onko-gi': { name: 'Gastrointestinale Tumoren', icon: 'fa-burger', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_gi_tumore.png' },
+        'onko-uro': { name: 'Urologische Tumoren', icon: 'fa-bladder', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_urologisch.png' },
+        'onko-gyn': { name: 'Gynäkologische Tumoren', icon: 'fa-venus-mars', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_gyn.png' },
+        'onko-pulmo': { name: 'Pulmonale Tumoren', icon: 'fa-lungs', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_pulmonal.png' },
+        'onko-hno': { name: 'Kopf-Hals-Tumoren', icon: 'fa-user-nurse', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_kopf-hals.png' },
+        'onko-haem': { name: 'Hämatologische Neoplasien', icon: 'fa-dna', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_haematologisch.png' },
+        'onko-sonst': { name: 'Sonstige Tumoren', icon: 'fa-disease', mod: 'onko', parent: 'onko', imgIcon: 'img/Icons/Onko/onko_sonstige.png' }
     };
 
     var CNM = {};
@@ -64,7 +64,6 @@
         '5. Spezielle Situationen (Metastasen, nccRCC)': 'fa-shapes',
         '6. Erbliche Tumoren': 'fa-users-line',
         '7. Rehabilitation & Nachsorge': 'fa-person-walking-arrow-right',
-        // Erweiterte Onkologie Icons
         'Epidemiologie & Risikofaktoren': 'fa-users',
         'Epidemiologie': 'fa-users',
         'Prävention & Vorsorge': 'fa-shield-virus',
@@ -112,13 +111,11 @@
         'Risikofaktoren': 'fa-triangle-exclamation',
         'Prävention': 'fa-shield-virus',
         'Vorsorge': 'fa-calendar-check',
-        // Weitere fehlende Onkologie Icons
         'Risikofaktoren, Prävention und Früherkennung': 'fa-shield-virus',
         'Histopathologische und molekulare Diagnostik': 'fa-dna',
         'Bildgebende Diagnostik': 'fa-microscope',
         'Operative und interventionelle Therapieverfahren': 'fa-scalpel',
         'Systemtherapie': 'fa-pills',
-        'Pathologie': 'fa-dna',
         'Nachsorge & Verlauf': 'fa-calendar-check',
         'Therapieindikation': 'fa-clipboard-check',
         'Transplantationskandidaten (fit, ≤70 Jahre)': 'fa-user-md',
@@ -178,7 +175,6 @@
         'leit': '#6366f1',
         'sonst': '#64748b',
         'onko': '#be185d',
-        // Onkologie-Unterkategorien Farben
         'onko-gi': '#ea580c',
         'onko-uro': '#0891b2',
         'onko-gyn': '#db2777',
@@ -228,35 +224,34 @@
     var E = {};
     var mobileSidebarOpen = false;
 
-     function cache() {
-         var ids = [
-             'app', 'mobileHeader', 'backBtn', 'mobileTitle', 'themeToggleMobile', 'themeToggleMobileIcon',
-             'sidebar', 'appLogo', 'searchInput', 'searchClear', 'categoryFilters', 'navList',
-             'themeToggle', 'themeToggleIcon', 'themeToggleLabel', 'mainContent', 'contentHeader',
-             'breadcrumb', 'desktopTocBtn', 'contentScroll', 'viewPortal', 'viewHome', 'viewBrowse', 'viewSearch', 'viewSOP',
-             'heroArea', 'catGrid', 'homeInfo', 'browseSearchInput', 'browseSearchClear',
-             'browseCategoryFilters', 'browseList', 'searchViewInput', 'searchViewClear', 'searchResultsArea',
-             'bottomNav', 'metaThemeColor', 'sectionPickerOverlay', 'sectionPickerBackdrop',
-             'sectionPickerClose', 'sectionPickerList', 'sectionPickerPrint', 'offlineBanner', 'offlineTimestamp',
-             'stickySectionBar', 'stickySectionIcon', 'stickySectionTitle', 'stickySopName',
-             'stickySubcatBtn', 'stickySubcatLabel', 'stickySubcatMenu',
-             'fontDecMobile', 'fontIncMobile', 'fontIndicatorMobile',
-             'fontDecDesktop', 'fontIncDesktop', 'fontIndicatorDesktop', 'pullIndicator',
-             'sidebarCatToggle', 'browseCatToggle', 'viewContainer',
-             'spotlightOverlay', 'spotlightBackdrop', 'spotlightContainer', 'spotlightInput',
-             'spotlightClear', 'spotlightResults', 'spotlightCancel', 'spotlightBtn',
-             'skeletonOverlay', 'pickerSheet', 'pickerHandle', 'moduleSubtitle',
-             // Mobile Sidebar elements
-             'sidebarToggleMobile', 'sidebarMobileOverlay', 'sidebarMobileBackdrop', 'sidebarMobile',
-             'sidebarMobileClose', 'searchInputMobile', 'searchClearMobile',
-             'sidebarCatToggleMobile', 'categoryFiltersMobile', 'sidebarNavMobile', 'navListMobile',
-             'themeToggleMobileBtn', 'themeToggleMobileIcon', 'themeToggleMobileLabel',
-             'fontDecMobileBtn', 'fontIncMobileBtn', 'fontIndicatorMobileBtn'
-         ];
-         for (var i = 0; i < ids.length; i++) {
-             E[ids[i]] = document.getElementById(ids[i]);
-         }
-     }
+    function cache() {
+        var ids = [
+            'app', 'mobileHeader', 'backBtn', 'mobileTitle', 'themeToggleMobile', 'themeToggleMobileIcon',
+            'sidebar', 'appLogo', 'searchInput', 'searchClear', 'categoryFilters', 'navList',
+            'themeToggle', 'themeToggleIcon', 'themeToggleLabel', 'mainContent', 'contentHeader',
+            'breadcrumb', 'desktopTocBtn', 'contentScroll', 'viewPortal', 'viewHome', 'viewBrowse', 'viewSearch', 'viewSOP',
+            'heroArea', 'catGrid', 'homeInfo', 'browseSearchInput', 'browseSearchClear',
+            'browseCategoryFilters', 'browseList', 'searchViewInput', 'searchViewClear', 'searchResultsArea',
+            'bottomNav', 'metaThemeColor', 'sectionPickerOverlay', 'sectionPickerBackdrop',
+            'sectionPickerClose', 'sectionPickerList', 'sectionPickerPrint', 'offlineBanner', 'offlineTimestamp',
+            'stickySectionBar', 'stickySectionIcon', 'stickySectionTitle', 'stickySopName',
+            'stickySubcatBtn', 'stickySubcatLabel', 'stickySubcatMenu',
+            'fontDecMobile', 'fontIncMobile', 'fontIndicatorMobile',
+            'fontDecDesktop', 'fontIncDesktop', 'fontIndicatorDesktop', 'pullIndicator',
+            'sidebarCatToggle', 'browseCatToggle', 'viewContainer',
+            'spotlightOverlay', 'spotlightBackdrop', 'spotlightContainer', 'spotlightInput',
+            'spotlightClear', 'spotlightResults', 'spotlightCancel', 'spotlightBtn',
+            'skeletonOverlay', 'pickerSheet', 'pickerHandle', 'moduleSubtitle',
+            'sidebarToggleMobile', 'sidebarMobileOverlay', 'sidebarMobileBackdrop', 'sidebarMobile',
+            'sidebarMobileClose', 'searchInputMobile', 'searchClearMobile',
+            'sidebarCatToggleMobile', 'categoryFiltersMobile', 'sidebarNavMobile', 'navListMobile',
+            'themeToggleMobileBtn', 'themeToggleMobileIcon', 'themeToggleMobileLabel',
+            'fontDecMobileBtn', 'fontIncMobileBtn', 'fontIndicatorMobileBtn'
+        ];
+        for (var i = 0; i < ids.length; i++) {
+            E[ids[i]] = document.getElementById(ids[i]);
+        }
+    }
 
     function rc(v) {
         if (!v) return 'sonst';
@@ -275,18 +270,17 @@
         return CC[k] || '#64748b';
     }
 
-    function isOnkoSubCat(k) {
-        return CATS[k] && CATS[k].parent === 'onko';
+    function renderCatIcon(catKey, color, sizeClass) {
+        var cat = CATS[catKey];
+        if (!cat) return '<i class="fa-solid fa-circle" style="color:' + color + '"></i>';
+        if (cat.imgIcon) {
+            return '<img src="' + cat.imgIcon + '" alt="' + cat.name + '" class="cat-icon-img">';
+        }
+        return '<i class="fa-solid ' + cat.icon + ' ' + sizeClass + '" style="color:' + color + '"></i>';
     }
 
-    function getOnkoSubCats() {
-        var result = [];
-        for (var k in CATS) {
-            if (CATS[k].parent === 'onko') {
-                result.push(k);
-            }
-        }
-        return result;
+    function isOnkoSubCat(k) {
+        return CATS[k] && CATS[k].parent === 'onko';
     }
 
     function strip(html) {
@@ -300,9 +294,6 @@
         var e = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         return text.replace(new RegExp('(' + e + ')', 'gi'), '<mark>$1</mark>');
     }
-
-    function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
-    function easeOutCubic(t) { return 1 - Math.pow(1 - t, 3); }
 
     function throttle(func, limit) {
         var inThrottle;
@@ -334,6 +325,7 @@
     }
 
     function normSop(d) {
+        if (!d) return null;
         if (!d.name) d.name = d.title || 'Unbenannt';
         if (d.module === 'onkologie') d.module = 'onko';
         if (!d.module) d.module = 'zna';
@@ -401,7 +393,6 @@
         S.isNavigating = true;
         S.navStack.push(window.location.hash);
         S.sopId = newSopId;
-        // Close mobile sidebar if open
         if (mobileSidebarOpen) {
             closeMobileSidebar();
         }
@@ -612,7 +603,11 @@
             var catName = CATS[obj.category] ? CATS[obj.category].name : '';
             html += '<div class="spotlight-result" data-id="' + obj.id + '">';
             html += '<div class="spotlight-result-icon" style="background:' + cl + ';color:#fff">';
-            html += '<i class="fa-solid ' + (CATS[obj.category] ? CATS[obj.category].icon : 'fa-file-medical') + '"></i>';
+            if (CATS[obj.category] && CATS[obj.category].imgIcon) {
+                html += '<img src="' + CATS[obj.category].imgIcon + '" alt="" class="cat-icon-img" style="width:20px;height:20px;border-radius:4px;">';
+            } else {
+                html += '<i class="fa-solid ' + (CATS[obj.category] ? CATS[obj.category].icon : 'fa-file-medical') + '"></i>';
+            }
             html += '</div>';
             html += '<div class="spotlight-result-info">';
             html += '<div class="spotlight-result-name">' + hl(obj.name || '', query) + '</div>';
@@ -687,82 +682,33 @@
         }
     }
 
-    function initSegmentedKeyboardNav(container) {
-        if (!container) return;
-        var buttons = container.querySelectorAll('.segmented-btn');
-        if (buttons.length === 0) return;
-        for (var i = 0; i < buttons.length; i++) {
-            (function(btn) {
-                btn.addEventListener('keydown', function(e) {
-                    var currentIndex = -1;
-                    var btns = container.querySelectorAll('.segmented-btn');
-                    for (var j = 0; j < btns.length; j++) {
-                        if (btns[j] === e.target) { currentIndex = j; break; }
-                    }
-                    var nextIndex = -1;
-                    switch (e.key) {
-                        case 'ArrowRight':
-                        case 'ArrowDown':
-                            e.preventDefault();
-                            nextIndex = (currentIndex + 1) % btns.length;
-                            break;
-                        case 'ArrowLeft':
-                        case 'ArrowUp':
-                            e.preventDefault();
-                            nextIndex = (currentIndex - 1 + btns.length) % btns.length;
-                            break;
-                        case 'Home':
-                            e.preventDefault();
-                            nextIndex = 0;
-                            break;
-                        case 'End':
-                            e.preventDefault();
-                            nextIndex = btns.length - 1;
-                            break;
-                        case 'Enter':
-                        case ' ':
-                            e.preventDefault();
-                            e.target.click();
-                            return;
-                    }
-                    if (nextIndex >= 0 && nextIndex < btns.length) {
-                        btns[nextIndex].focus();
-                    }
-                });
-            })(buttons[i]);
-        }
-    }
-
-    function handleSegTouchStart(e, d, segIndex) {
-        var touch = e.touches[0];
-        segTouchState.startX = touch.clientX;
-        segTouchState.startY = touch.clientY;
-        segTouchState.startTime = Date.now();
-        segTouchState.hasMoved = false;
-        segTouchState.targetBtn = e.currentTarget;
+    function handleSegTouchStart(e, d, si) {
+        var t = e.touches[0]; 
+        segTouchState.startX = t.clientX; 
+        segTouchState.startY = t.clientY; 
+        segTouchState.startTime = Date.now(); 
+        segTouchState.hasMoved = false; 
+        segTouchState.targetBtn = e.currentTarget; 
         e.currentTarget.classList.add('tap-active');
     }
 
     function handleSegTouchMove(e) {
         if (!segTouchState.targetBtn) return;
-        var touch = e.touches[0];
-        var deltaX = Math.abs(touch.clientX - segTouchState.startX);
-        var deltaY = Math.abs(touch.clientY - segTouchState.startY);
-        if (deltaX > SEG_TOUCH_THRESHOLD || deltaY > SEG_TOUCH_THRESHOLD) {
-            segTouchState.hasMoved = true;
-            segTouchState.targetBtn.classList.remove('tap-active');
+        var t = e.touches[0];
+        var dx = Math.abs(t.clientX - segTouchState.startX);
+        var dy = Math.abs(t.clientY - segTouchState.startY);
+        if (dx > SEG_TOUCH_THRESHOLD || dy > SEG_TOUCH_THRESHOLD) { 
+            segTouchState.hasMoved = true; 
+            segTouchState.targetBtn.classList.remove('tap-active'); 
         }
     }
 
-    function handleSegTouchEnd(e, d, segIndex) {
-        if (segTouchState.targetBtn) {
-            segTouchState.targetBtn.classList.remove('tap-active');
+    function handleSegTouchEnd(e, d, si) {
+        if (segTouchState.targetBtn) segTouchState.targetBtn.classList.remove('tap-active');
+        if (!segTouchState.hasMoved && (Date.now() - segTouchState.startTime) < SEG_TAP_TIMEOUT) {
+            handleSegmentedClick(d, si);
         }
-        var duration = Date.now() - segTouchState.startTime;
-        if (!segTouchState.hasMoved && duration < SEG_TAP_TIMEOUT) {
-            handleSegmentedClick(d, segIndex);
-        }
-        segTouchState.targetBtn = null;
+        segTouchState.targetBtn = null; 
         segTouchState.hasMoved = false;
     }
 
@@ -1104,7 +1050,13 @@
             }
         }
         if (E.backBtn) E.backBtn.classList.remove('show');
-        if (E.desktopTocBtn) E.desktopTocBtn.style.display = 'none';
+        if (E.desktopTocBtn) {
+            if (window.innerWidth >= 768 && t === 'sop') {
+                E.desktopTocBtn.style.display = 'flex';
+            } else {
+                E.desktopTocBtn.style.display = 'none';
+            }
+        }
         if (E.fabAction) E.fabAction.classList.remove('show');
         if (E.stickySectionBar) E.stickySectionBar.classList.remove('show');
         if (E.sidebar) {
@@ -1114,13 +1066,15 @@
                 E.sidebar.classList.remove('hidden');
             }
         }
-        // Mobile Sidebar Toggle Visibility - nur in mobiler Ansicht anzeigen
+        
         updateSidebarToggleVisibility();
         dSO();
+        
         if (t === 'portal') {
             if (E.viewPortal) E.viewPortal.classList.add('active');
             if (E.mobileTitle) E.mobileTitle.textContent = 'Patientenpfade';
             rPortal();
+            rBC([]);
         } else if (t === 'home') {
             if (E.viewHome) E.viewHome.classList.add('active');
             rHome();
@@ -1143,7 +1097,6 @@
                 if (bb) bb.classList.add('active');
             }
             if (E.backBtn) E.backBtn.classList.add('show');
-            // FAB nicht in Browse-Ansicht anzeigen - nur in SOP-Ansicht
         } else if (t === 'search') {
             if (E.viewSearch) E.viewSearch.classList.add('active');
             rSearch();
@@ -1159,8 +1112,6 @@
             if (E.viewSOP) E.viewSOP.classList.add('active');
             rSOP();
             if (E.backBtn) E.backBtn.classList.add('show');
-            if (E.desktopTocBtn) E.desktopTocBtn.style.display = '';
-            if (E.fabAction) E.fabAction.classList.add('show');
             var d = null;
             for (var k = 0; k < S.data.length; k++) {
                 if (S.data[k].id === S.sopId) {
@@ -1199,7 +1150,6 @@
 
     function rSB() {
         if (!S.mod) return;
-        // Desktop Sidebar
         if (E.categoryFilters) {
             renderCategoryFilters(E.categoryFilters, S.catD, function(catKey) {
                 if (catKey === 'onko') {
@@ -1212,7 +1162,6 @@
                 rSB();
             });
         }
-        // Mobile Sidebar
         if (E.categoryFiltersMobile) {
             renderCategoryFilters(E.categoryFiltersMobile, S.catD, function(catKey) {
                 if (catKey === 'onko') {
@@ -1223,7 +1172,6 @@
                 S.catD = catKey;
                 rNav();
                 rSB();
-                // Close mobile sidebar when category is selected
                 closeMobileSidebar();
             });
         }
@@ -1268,13 +1216,13 @@
             }
             if (counts[key] > 0 || hasSubCats) {
                 var cl = gc(key);
-                html += '<span class="sidebar-cat-chip' + (activeCat === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + ' <span class="cat-count">' + counts[key] + '</span></span>';
+                html += '<span class="sidebar-cat-chip' + (activeCat === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + renderCatIcon(key, cl, '') + ' ' + catObj.name + ' <span class="cat-count">' + counts[key] + '</span></span>';
                 if ((key === 'onko' && S.onkoCatOpen) || isOnkoSubCat(activeCat)) {
                     for (var t = 0; t < subKeys.length; t++) {
                         var subKey = subKeys[t];
                         if (CATS[subKey].parent === key && counts[subKey] > 0) {
                             var subCl = gc(subKey);
-                            html += '<span class="sidebar-cat-chip sidebar-subcat' + (activeCat === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' <span class="cat-count">' + counts[subKey] + '</span></span>';
+                            html += '<span class="sidebar-cat-chip sidebar-subcat' + (activeCat === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + renderCatIcon(subKey, subCl, '') + ' ' + CATS[subKey].name + ' <span class="cat-count">' + counts[subKey] + '</span></span>';
                         }
                     }
                 }
@@ -1299,11 +1247,9 @@
 
     function rNav() {
         if (!S.mod) return;
-        // Desktop Navigation
         if (E.navList) {
             renderNavList(E.navList);
         }
-        // Mobile Navigation
         if (E.navListMobile) {
             renderNavList(E.navListMobile, true);
         }
@@ -1366,7 +1312,6 @@
         document.body.style.overflow = 'hidden';
         mobileSidebarOpen = true;
         haptic('light');
-        // Render mobile sidebar content if module is selected
         if (S.mod) {
             rSB();
             rNav();
@@ -1380,11 +1325,9 @@
         mobileSidebarOpen = false;
     }
 
-    // Mobile Sidebar Toggle Visibility - wird bei Resize aufgerufen
     function updateSidebarToggleVisibility() {
         if (!E.sidebarToggleMobile) return;
         var isMobile = window.innerWidth < 768;
-        // Button anzeigen nur wenn: mobile Ansicht UND nicht auf Portal
         if (S.tab !== 'portal' && isMobile) {
             E.sidebarToggleMobile.classList.add('show');
         } else {
@@ -1436,26 +1379,13 @@
         }
         var gh = '<div class="cat-card cat-card-all" data-cat="all" style="--cat-color:var(--primary)"><i class="fa-solid fa-list cat-card-icon" style="color:var(--primary)"></i><span class="cat-card-name">Alle Pfade</span><span class="cat-card-count">' + modData.length + ' Einträge</span></div>';
         
-        // Für Onkologie: Zeige Unterkategorien direkt
-        if (isOnko) {
-            for (var k = 0; k < keys.length; k++) {
-                var key = keys[k];
-                // Unterkategorien direkt anzeigen
-                for (var t = 0; t < subKeys.length; t++) {
-                    var subKey = subKeys[t];
-                    if (CATS[subKey].parent === key && counts[subKey] > 0) {
-                        var subCl = gc(subKey);
-                        gh += '<div class="cat-card" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid ' + CATS[subKey].icon + ' cat-card-icon" style="color:' + subCl + '"></i><span class="cat-card-name">' + CATS[subKey].name + '</span><span class="cat-card-count">' + counts[subKey] + ' Pfade</span></div>';
-                    }
-                }
-            }
-        } else {
-            // ZNA-Modul: Normale Darstellung
-            for (var k = 0; k < keys.length; k++) {
-                if (counts[keys[k]] > 0) {
-                    var cl = gc(keys[k]);
-                    var ic = CATS[keys[k]].icon;
-                    gh += '<div class="cat-card" data-cat="' + keys[k] + '" style="--cat-color:' + cl + '"><i class="fa-solid ' + ic + ' cat-card-icon" style="color:' + cl + '"></i><span class="cat-card-name">' + CATS[keys[k]].name + '</span><span class="cat-card-count">' + counts[keys[k]] + ' Pfade</span></div>';
+        for (var k = 0; k < keys.length; k++) {
+            var key = keys[k];
+            for (var t = 0; t < subKeys.length; t++) {
+                var subKey = subKeys[t];
+                if (CATS[subKey].parent === key && counts[subKey] > 0) {
+                    var subCl = gc(subKey);
+                    gh += '<div class="cat-card" data-cat="' + subKey + '" style="--cat-color:' + subCl + '">' + renderCatIcon(subKey, subCl, 'cat-card-icon') + '<span class="cat-card-name">' + CATS[subKey].name + '</span><span class="cat-card-count">' + counts[subKey] + ' Pfade</span></div>';
                 }
             }
         }
@@ -1537,30 +1467,26 @@
                 if (counts[c] !== undefined) counts[c]++;
             }
         }
-        // Kategorie-Chips als Sprung-Navigation
         var html = '<span class="browse-cat-chip' + (S.catB === 'all' ? ' active' : '') + '" data-cat="all">Alle</span>';
         for (var k = 0; k < keys.length; k++) {
             var key = keys[k];
             var catObj = CATS[key];
             var hasSubCats = false;
-            // Prüfen ob diese Kategorie Unterkategorien hat
             for (var s = 0; s < subKeys.length; s++) {
                 if (CATS[subKeys[s]].parent === key) {
                     hasSubCats = true;
                     break;
                 }
             }
-            // Hauptkategorie anzeigen
             if (counts[key] > 0 || hasSubCats) {
                 var cl = gc(key);
-                html += '<span class="browse-cat-chip' + (S.catB === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + catObj.name + '</span>';
-                // Unterkategorien anzeigen wenn Onkologie-Hauptkategorie ausgewählt ist UND Onko-Expansion aktiviert ist
+                html += '<span class="browse-cat-chip' + (S.catB === key ? ' active' : '') + '" data-cat="' + key + '" style="--cat-color:' + cl + '">' + renderCatIcon(key, cl, '') + ' ' + catObj.name + '</span>';
                 if ((key === 'onko' && S.onkoCatOpen) || isOnkoSubCat(S.catB)) {
                     for (var t = 0; t < subKeys.length; t++) {
                         var subKey = subKeys[t];
                         if (CATS[subKey].parent === key && counts[subKey] > 0) {
                             var subCl = gc(subKey);
-                            html += '<span class="browse-cat-chip browse-subcat' + (S.catB === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + CATS[subKey].name + ' (' + counts[subKey] + ')</span>';
+                            html += '<span class="browse-cat-chip browse-subcat' + (S.catB === subKey ? ' active' : '') + '" data-cat="' + subKey + '" style="--cat-color:' + subCl + '"><i class="fa-solid fa-corner-down-right"></i> ' + renderCatIcon(subKey, subCl, '') + ' ' + CATS[subKey].name + ' (' + counts[subKey] + ')</span>';
                         }
                     }
                 }
@@ -1572,14 +1498,11 @@
             (function(ch) {
                 ch.addEventListener('click', function() {
                     var catKey = ch.getAttribute('data-cat');
-                    // Onkologie-Expansion toggeln oder zurücksetzen
                     if (catKey === 'onko') {
                         S.onkoCatOpen = !S.onkoCatOpen;
                     } else if (catKey !== 'all') {
-                        // Wenn andere Kategorie gewählt, Onko-Expansion zurücksetzen
                         S.onkoCatOpen = false;
                     }
-                    // Aktiven Chip aktualisieren
                     var allChips = E.browseCategoryFilters.querySelectorAll('.browse-cat-chip');
                     for (var n = 0; n < allChips.length; n++) {
                         allChips[n].classList.remove('active');
@@ -1587,7 +1510,6 @@
                     ch.classList.add('active');
                     S.catB = catKey;
                     
-                    // Zur Kategorie scrollen (Sprung-Navigation)
                     if (catKey !== 'all' && E.browseList) {
                         var targetItem = E.browseList.querySelector('.browse-cat-header[data-cat="' + catKey + '"]');
                         if (targetItem) {
@@ -1597,7 +1519,7 @@
                         E.contentScroll.scrollTo({ top: 0, behavior: 'smooth' });
                     }
                     
-                    rBrowseCats(); // Neu rendern für Unterkategorien
+                    rBrowseCats();
                 });
             })(chips[m]);
         }
@@ -1606,15 +1528,11 @@
     function rBrowseList() {
         if (!E.browseList) return;
         var list = [];
-        
-        // Alle SOPs des aktuellen Moduls holen
         for (var i = 0; i < S.data.length; i++) {
             if (S.data[i].module === S.mod) {
                 list.push(S.data[i]);
             }
         }
-        
-        // Nach Suche filtern
         if (S.bQ) {
             var q = S.bQ.toLowerCase();
             var filtered = [];
@@ -1625,8 +1543,6 @@
             }
             list = filtered;
         }
-        
-        // Nach Kategorie gruppieren
         var grouped = {};
         var categoryOrder = [];
         for (var k = 0; k < list.length; k++) {
@@ -1638,25 +1554,18 @@
             }
             grouped[cat].push(d);
         }
-        
-        // HTML generieren mit Kategorie-Headern
         var html = '';
         for (var c = 0; c < categoryOrder.length; c++) {
             var catKey = categoryOrder[c];
             var catItems = grouped[catKey];
             var catCl = gc(catKey);
             var catName = CATS[catKey] ? CATS[catKey].name : '';
-            var catIcon = CATS[catKey] ? CATS[catKey].icon : 'fa-circle';
-            
-            // Kategorie-Header
             html += '<div class="browse-cat-header" data-cat="' + catKey + '">';
             html += '<span class="browse-cat-header-dot" style="background:' + catCl + '"></span>';
-            html += '<i class="fa-solid ' + catIcon + '" style="color:' + catCl + '"></i>';
+            html += renderCatIcon(catKey, catCl, '');
             html += '<span class="browse-cat-header-name">' + catName + '</span>';
             html += '<span class="browse-cat-header-count">' + catItems.length + '</span>';
             html += '</div>';
-            
-            // SOPs dieser Kategorie
             for (var m = 0; m < catItems.length; m++) {
                 var item = catItems[m];
                 var itemCl = gc(item.category);
@@ -1668,10 +1577,8 @@
                 html += '</div>';
             }
         }
-        
         if (list.length === 0) html = '<div class="search-empty"><i class="fa-solid fa-search"></i><p>Keine Pfade gefunden.</p></div>';
         E.browseList.innerHTML = html;
-        
         var items = E.browseList.querySelectorAll('.browse-item');
         for (var n = 0; n < items.length; n++) {
             (function(it) {
@@ -1755,7 +1662,13 @@
         var cn = CATS[d.category] ? CATS[d.category].name : '';
         var ci = CATS[d.category] ? CATS[d.category].icon : 'fa-circle-info';
         var secCount = d.sections ? d.sections.length : 0;
-        var html = '<div class="sop-header"><div class="sop-header-top"><span class="sop-cat-badge" style="background:' + cl + '"><i class="fa-solid ' + ci + '"></i> ' + cn + '</span>' + (d.stand ? '<span class="sop-meta-item"><i class="fa-solid fa-calendar"></i> Stand: ' + d.stand + '</span>' : '') + '</div><h1 class="sop-title">' + d.name + '</h1><div class="sop-meta"><span class="sop-meta-item"><i class="fa-solid fa-layer-group"></i> ' + secCount + ' Abschnitte</span></div></div>';
+        var html = '<div class="sop-header"><div class="sop-header-top"><span class="sop-cat-badge" style="background:' + cl + '">';
+        if (CATS[d.category] && CATS[d.category].imgIcon) {
+            html += '<img src="' + CATS[d.category].imgIcon + '" alt="" class="cat-icon-img" style="width:16px;height:16px;border-radius:3px;margin-right:4px;">';
+        } else {
+            html += '<i class="fa-solid ' + ci + '"></i> ';
+        }
+        html += cn + '</span>' + (d.stand ? '<span class="sop-meta-item"><i class="fa-solid fa-calendar"></i> Stand: ' + d.stand + '</span>' : '') + '</div><h1 class="sop-title">' + d.name + '</h1><div class="sop-meta"><span class="sop-meta-item"><i class="fa-solid fa-layer-group"></i> ' + secCount + ' Abschnitte</span></div></div>';
         html += renderSegmentedControl(d);
         if (d.sections) {
             for (var i = 0; i < d.sections.length; i++) {
@@ -1767,7 +1680,6 @@
                 for (var v = 0; v < AO.length; v++) {
                     if (AO[v] === title) { isAO = true; break; }
                 }
-                // Im Onkologie-Modul keine Sections automatisch expandieren
                 var isOnkoModule = (d.module === 'onko');
                 var op = (!isOnkoModule && (S.allO || isAO));
                 html += '<div class="sop-section" data-sec="' + i + '" style="animation-delay:' + (i * 0.05) + 's"><div class="sop-section-head" data-idx="' + i + '"><i class="fa-solid ' + ic + ' sec-icon" style="color:' + cl + '"></i><span class="sec-title">' + title + '</span><i class="fa-solid fa-chevron-down sec-toggle' + (op ? ' open' : '') + '"></i></div><div class="sop-section-body' + (op ? ' open' : '') + '">' + htmlSec + '</div></div>';
@@ -1808,112 +1720,19 @@
         rPk();
     }
 
-    function handleSegTouchStart(e, d, si) {
-        var t = e.touches[0]; 
-        segTouchState.startX = t.clientX; 
-        segTouchState.startY = t.clientY; 
-        segTouchState.startTime = Date.now(); 
-        segTouchState.hasMoved = false; 
-        segTouchState.targetBtn = e.currentTarget; 
-        e.currentTarget.classList.add('tap-active');
-    }
-
-    function handleSegTouchMove(e) {
-        if (!segTouchState.targetBtn) return;
-        var t = e.touches[0];
-        var dx = Math.abs(t.clientX - segTouchState.startX);
-        var dy = Math.abs(t.clientY - segTouchState.startY);
-        if (dx > SEG_TOUCH_THRESHOLD || dy > SEG_TOUCH_THRESHOLD) { 
-            segTouchState.hasMoved = true; 
-            segTouchState.targetBtn.classList.remove('tap-active'); 
-        }
-    }
-
-    function handleSegTouchEnd(e, d, si) {
-        if (segTouchState.targetBtn) segTouchState.targetBtn.classList.remove('tap-active');
-        if (!segTouchState.hasMoved && (Date.now() - segTouchState.startTime) < SEG_TAP_TIMEOUT) {
-            handleSegmentedClick(d, si);
-        }
-        segTouchState.targetBtn = null; 
-        segTouchState.hasMoved = false;
-    }
-
-    function checkSegmentedScrollArrows() {
-        var control = document.querySelector('.segmented-control');
-        var leftArrow = document.querySelector('.segmented-scroll-left');
-        var rightArrow = document.querySelector('.segmented-scroll-right');
-        if (!control || !leftArrow || !rightArrow) return;
-        var canScrollLeft = control.scrollLeft > 5;
-        var canScrollRight = control.scrollLeft < (control.scrollWidth - control.clientWidth - 5);
-        var hasOverflow = control.scrollWidth > control.clientWidth;
-        if (!hasOverflow) {
-            leftArrow.style.opacity = '0';
-            leftArrow.style.pointerEvents = 'none';
-            rightArrow.style.opacity = '0';
-            rightArrow.style.pointerEvents = 'none';
-            return;
-        }
-        leftArrow.style.opacity = canScrollLeft ? '0.5' : '0';
-        leftArrow.style.pointerEvents = canScrollLeft ? 'auto' : 'none';
-        rightArrow.style.opacity = canScrollRight ? '0.5' : '0';
-        rightArrow.style.pointerEvents = canScrollRight ? 'auto' : 'none';
-    }
-
-    function scrollSegmented(direction) {
-        var control = document.querySelector('.segmented-control');
-        if (!control) return;
-        var scrollAmount = 120;
-        control.scrollBy({
-            left: direction === 'left' ? -scrollAmount : scrollAmount,
-            behavior: 'smooth'
-        });
-        haptic('light');
-    }
-
-    function initSegmentedScrollArrows() {
-        var control = document.querySelector('.segmented-control');
-        var leftArrow = document.querySelector('.segmented-scroll-left');
-        var rightArrow = document.querySelector('.segmented-scroll-right');
-        if (!control) return;
-        control.addEventListener('scroll', throttle(checkSegmentedScrollArrows, 50), { passive: true });
-        if (leftArrow) {
-            leftArrow.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                scrollSegmented('left');
-            });
-        }
-        if (rightArrow) {
-            rightArrow.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                scrollSegmented('right');
-            });
-        }
-        setTimeout(checkSegmentedScrollArrows, 50);
-        window.addEventListener('resize', debounce(checkSegmentedScrollArrows, 150));
-    }
-
     function rBC(items) {
         if (!E.breadcrumb) return;
         var html = '<a href="#/" class="bc-portal">Portal</a>';
         if (S.mod) {
-            // Verwende vollständige Modulnamen
             var modName = S.mod === 'zna' ? 'Zentrale Notaufnahme' : 'Onkologie';
             html += '<span class="sep"><i class="fa-solid fa-chevron-right"></i></span><a href="#/' + S.mod + '/home" class="bc-home">' + modName + '</a>';
-            
-            // Kategorie anzeigen wenn eine ausgewählt ist
             var currentCat = S.tab === 'browse' ? S.catB : S.catD;
             if (currentCat && currentCat !== 'all' && CATS[currentCat]) {
-                // Prüfen ob es eine Onkologie-Unterkategorie ist
                 var catObj = CATS[currentCat];
                 var catLabel = catObj.name;
-                
-                // Wenn Unterkategorie, zeige "Onkologie > Unterkategorie"
                 if (catObj.parent && CATS[catObj.parent]) {
                     catLabel = CATS[catObj.parent].name + ' > ' + catLabel;
                 }
-                
                 html += '<span class="sep"><i class="fa-solid fa-chevron-right"></i></span><span class="bc-cat">' + catLabel + '</span>';
             }
         }
@@ -2080,7 +1899,6 @@
                      if (S.data[j].id === S.sopId) { d = S.data[j]; break; }
                  }
                  if (d && E.stickySopName) E.stickySopName.textContent = d.name || '';
-                 // Unterkategorien-Menü rendern
                  renderSubcatMenu(d);
                  E.stickySectionBar.classList.add('show');
              }
@@ -2092,7 +1910,6 @@
      function renderSubcatMenu(sopData) {
          if (!sopData || !E.stickySubcatMenu) return;
          var category = sopData.category;
-         // Prüfen, ob die Kategorie Unterkategorien hat
          var subcats = [];
          for (var k in CATS) {
              if (CATS[k].parent === category) {
@@ -2104,22 +1921,20 @@
              return;
          }
          if (E.stickySubcatBtn) E.stickySubcatBtn.style.display = 'flex';
-         // Menü-Inhalte generieren
          var html = '';
          for (var i = 0; i < subcats.length; i++) {
              var subcatKey = subcats[i];
              var subcat = CATS[subcatKey];
+             var subcatColor = gc(subcatKey);
              html += '<button class="sticky-subcat-item" data-cat="' + subcatKey + '">';
-             html += '<i class="fa-solid ' + subcat.icon + '"></i> ' + subcat.name;
+             html += renderCatIcon(subcatKey, subcatColor, '') + ' ' + subcat.name;
              html += '</button>';
          }
          E.stickySubcatMenu.innerHTML = html;
-         // Event-Listener für Unterkategorien-Items
          var items = E.stickySubcatMenu.querySelectorAll('.sticky-subcat-item');
          for (var j = 0; j < items.length; j++) {
              (function(item, subcatKey) {
                  item.addEventListener('click', function() {
-                     // Navigation zur Unterkategorie
                      S.catB = subcatKey;
                      window.location.hash = '#/' + S.mod + '/browse';
                  });
@@ -2195,7 +2010,13 @@
             });
         }
         if (E.appLogo) {
-            E.appLogo.addEventListener('click', function(e) { e.preventDefault(); window.location.hash = '#/'; });
+            E.appLogo.addEventListener('click', function(e) {
+                e.preventDefault();
+                S.navStack = [];
+                S.mod = null;
+                S.sopId = null;
+                window.location.hash = '#/';
+            });
         }
         if (E.sidebarCatToggle) {
             E.sidebarCatToggle.addEventListener('click', function() {
@@ -2286,9 +2107,17 @@
         window.addEventListener('online', function() { S.off = false; uOff(); });
         window.addEventListener('offline', function() { S.off = true; S.ts = new Date(); uOff(); });
         window.addEventListener('resize', function() { 
-            S.mob = window.innerWidth < 1024; 
-            // Mobile Sidebar Toggle Visibility bei Resize aktualisieren
+            S.mob = window.innerWidth < 1024;
             updateSidebarToggleVisibility();
+            if (E.desktopTocBtn) {
+                E.desktopTocBtn.style.display = window.innerWidth >= 768 && S.tab === 'sop' ? 'flex' : 'none';
+            }
+            if (E.spotlightOverlay && E.spotlightOverlay.classList.contains('show')) {
+                closeSpotlight();
+            }
+            if (E.sectionPickerOverlay && E.sectionPickerOverlay.classList.contains('show')) {
+                cPk();
+            }
         });
         if (E.spotlightBtn) {
             E.spotlightBtn.addEventListener('click', openSpotlight);
@@ -2329,7 +2158,6 @@
             }
         });
         
-        // Mobile Sidebar Event Listeners
         if (E.sidebarToggleMobile) {
             E.sidebarToggleMobile.addEventListener('click', function() {
                 if (mobileSidebarOpen) {
@@ -2395,22 +2223,37 @@
         lFs();
         aFs();
         initSafeAreaRuntime();
-        if (window.SOP_DATA && window.SOP_DATA.length) {
-            for (var i = 0; i < window.SOP_DATA.length; i++) {
-                var d = window.SOP_DATA[i];
-                if (d && d.id) {
-                    S.data.push(normSop(d));
+        
+        var rawData = (window.SOP_DATA || []).concat(window.PFADE_DATA || []);
+        for (var i = 0; i < rawData.length; i++) {
+            var d = normSop(rawData[i]);
+            if (d && d.id) {
+                var exists = false;
+                for (var j = 0; j < S.data.length; j++) {
+                    if (S.data[j].id === d.id) { exists = true; break; }
                 }
+                if (!exists) S.data.push(d);
             }
         }
         S.data.sort(function(a, b) {
             return (a.name || '').localeCompare(b.name || '', 'de');
         });
+        
         bind();
         initSwipeGestures();
         initDraggablePicker();
-        // Initiale Sidebar-Toggle-Sichtbarkeit setzen
         updateSidebarToggleVisibility();
+        
+        if (E.spotlightOverlay) {
+            E.spotlightOverlay.classList.remove('show');
+        }
+        if (E.sectionPickerOverlay) {
+            E.sectionPickerOverlay.classList.remove('show');
+        }
+        if (E.skeletonOverlay) {
+            E.skeletonOverlay.classList.remove('show');
+        }
+        
         router();
         if (window.location.protocol !== 'file:') {
             setTimeout(checkForUpdate, 1000);
@@ -2418,8 +2261,18 @@
     }
 
     window.registerSOP = function(d) {
-        if (!d || !d.id) return;
-        S.data.push(normSop(d));
+        var n = normSop(d);
+        if (!n || !n.id) return;
+        var exists = false;
+        for (var i = 0; i < S.data.length; i++) {
+            if (S.data[i].id === n.id) { exists = true; break; }
+        }
+        if (!exists) {
+            S.data.push(n);
+            S.data.sort(function(a, b) {
+                return (a.name || '').localeCompare(b.name || '', 'de');
+            });
+        }
     };
 
     if (document.readyState === 'loading') {
